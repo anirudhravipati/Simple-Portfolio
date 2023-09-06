@@ -18,17 +18,51 @@ import {
 import { Link as RouterLink } from "react-router-dom";
 import "./App.css";
 import { ProjectListData, Icons } from "./data/ProjectListData";
-import { ArrowRight, Sun,MoonStars } from "@phosphor-icons/react";
-import { useState } from "react";
+import { ArrowRight, Sun, MoonStars } from "@phosphor-icons/react";
+import { useEffect, useState } from "react";
 import { SiteMenuDropdown } from "./components/Dropdown/SiteMenuDropdown";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  const [mode, setMode] = useState(false);
+
+  // Dark Mode Setup
+  const [mode, setMode] = useState(() =>{
+    if(JSON.parse(localStorage.getItem("darkMode") !== undefined))
+    {
+      console.log("Read mode: " + JSON.parse(localStorage.getItem("darkMode")))      
+      return JSON.parse(localStorage.getItem("darkMode"))?true:false
+
+    }
+    else {
+      console.log("dark mode read is undefined!")
+      localStorage.setItem("darkMode",JSON.stringify(false))
+      return false
+    }
+  });
+
+  useEffect( ()=> {
+    if(JSON.parse(localStorage.getItem("darkMode") !== undefined))
+    {
+      console.log("First Retriveved mode: " + JSON.parse(localStorage.getItem("darkMode")))
+      setMode(
+        JSON.parse(localStorage.getItem("darkMode"))?true:false
+      )
+    }
+    else {
+      console.log("dark mode is undefined!")
+      localStorage.setItem("darkMode",JSON.stringify(mode))
+    }
+  },[])
+
+  useEffect(()=>{
+    console.log("setting mode! : "+mode)
+    localStorage.setItem("darkMode",JSON.stringify(mode))
+  },[mode])
+  // END Dark Mode Setup
 
   return (
     <Theme
-      appearance={mode ? "light":"dark"}
+      appearance={mode ? "light" : "dark"}
       accentColor="jade"
       grayColor="sand"
       panelBackground="solid"
@@ -39,8 +73,7 @@ function App() {
         variant="soft"
         style={{ position: "absolute", right: "2rem", top: "1rem" }}
       >
-        {mode ? <MoonStars size={"1.5rem"} />:<Sun size={"1.5rem"} />}
-        
+        {mode ? <MoonStars size={"1.5rem"} /> : <Sun size={"1.5rem"} />}
       </IconButton>
       <Home />
     </Theme>
@@ -73,7 +106,7 @@ function Blurb() {
     <Container>
       <Text as="p" size={"6"} align={"center"}>
         I am a product designer with a background in software development.
-        Currently, I am currently designing products for{" "}
+        Currently, I am designing for{" "}
         <Link asChild>
           <a href="https://www.cloudaeye.com/"> CloudAEye </a>
         </Link>

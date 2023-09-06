@@ -28,7 +28,7 @@ export const ProjectListData = [
     src: "Portfolio v3/Project/zhuojun-yu-xhC-pVI_Gno-unsplash (1).jpg",
     content:
       "Ex possimus quas eum atque quia est beatae eligendi est animi amet. Ut deleniti eligendi ea nihil necessitatibus est recusandae corrupti qui earum nostrum eos autem sequi.",
-    tags: ["Confluence", "Confluence", "Confluence"],
+    tags: ["Confluence", "User Research", "User Experience"],
     page: "FAM"
   },
   {
@@ -37,7 +37,7 @@ export const ProjectListData = [
     src: "Portfolio v3/Project/red-zeppelin-sdfiCCK99G0-unsplash.jpg",
     content:
       "Aut neque distinctio ut tempora earum vel corporis corporis et ipsam praesentium. Et minima adipisci ex amet reprehenderit est illum internos ut distinctio neque hic atque architecto eum officiis exercitationem.",
-    tags: ["React", "React", "React"],
+    tags: ["React", "Testing", "Advanced Prototyping"],
     page: "FAM"
   },
 ];
