@@ -58,7 +58,7 @@ function App() {
     console.log("setting mode! : "+mode)
     localStorage.setItem("darkMode",JSON.stringify(mode))
   },[mode])
-  // END Dark Mode Setup
+  // END Dark Mode
 
   return (
     <Theme
