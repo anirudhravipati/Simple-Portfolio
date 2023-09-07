@@ -2,3 +2,9 @@
     margin: 0;
     padding: 0;
 }
+
+.hotspot-content {
+    min-width: 250px;
+    max-width: 30vw;
+    overflow-y: scroll;
+}
