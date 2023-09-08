@@ -20,6 +20,8 @@ import Footer from "../../components/Footer/Footer";
 import "./FAM.css";
 import LoremIpsum from "react-lorem-ipsum";
 import ImageHotspot from "../../components/ImageHotspot/ImageHotspot";
+import ImageViewer from "../../components/ImageViewer/ImageViewer";
+import ProjectData from "../../data/ProjectData"
 
 export default function FAM() {
   // Dark Mode Setup
@@ -96,33 +98,7 @@ function FAMBody() {
             </Text>
           </Container>
         </Flex>
-        <Container size={"4"}>
-          <Flex position={"relative"}>
-            <AspectRatio ratio={4 / 3}>
-              <img
-                src="https://images.unsplash.com/photo-1479030160180-b1860951d696?&auto=format&fit=crop&w=1200&q=80"
-                style={{
-                  objectFit: "cover",
-                  width: "100%",
-                  height: "100%",
-                  borderRadius: "0.5rem",
-                }}
-              />
-            </AspectRatio>
-            <ImageHotspot
-              top="30%"
-              left="20%"
-              title={"Hello!"}
-              content={<LoremIpsum p={3} />}
-            />
-            <ImageHotspot
-              top="10%"
-              left="20%"
-              title={"Hello!"}
-              content={<LoremIpsum p={3} />}
-            />
-          </Flex>
-        </Container>
+        <ImageViewer size={"4"} {...ProjectData} />
       </Flex>
 
       <Footer />

@@ -90,7 +90,7 @@ function AboutContent() {
       />
 
       <Container>
-        <Text>
+        <Text align={"center"}>
           <LoremIpsum />
         </Text>
       </Container>
