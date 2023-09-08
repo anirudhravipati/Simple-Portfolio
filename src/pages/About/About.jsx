@@ -80,7 +80,7 @@ function AboutContent() {
       </Heading>
 
       <img
-        src="/public/PXL_20230709_111903848.jpg"
+        src="/PXL_20230709_111903848.jpg"
         style={{
           borderRadius: "8px",
           objectFit: "cover",
