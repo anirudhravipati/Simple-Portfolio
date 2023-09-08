@@ -19,6 +19,7 @@ import { SiteMenuDropdown } from "../../components/Dropdown/SiteMenuDropdown";
 import Footer from "../../components/Footer/Footer";
 import "./FAM.css";
 import LoremIpsum from "react-lorem-ipsum";
+import ImageHotspot from "../../components/ImageHotspot/ImageHotspot";
 
 export default function FAM() {
   // Dark Mode Setup
@@ -83,7 +84,7 @@ function FAMBody() {
           <Heading align={"center"} size="9">
             FAM
           </Heading>
-          <Flex direction={"column"} gap={"3"} p={"4"}>
+          <Flex direction={"column"} gap={"3"} p={"9"}>
             <Text size={"4"}>
               <LoremIpsum p={"6"} />
             </Text>
@@ -120,32 +121,5 @@ function FAMBody() {
 
       <Footer />
     </>
-  );
-}
-
-function ImageHotspot({ top, left, title, content }) {
-  return (
-    <Popover.Root>
-      <Popover.Trigger style={{ position: "absolute", top, left }}>
-        <IconButton color="bronze" radius="full" size={"2"} variant="solid">
-          <Plus size={"1rem"} weight="bold" />
-        </IconButton>
-      </Popover.Trigger>
-      <Popover.Content size="3" className="hotspot-content">
-        <Flex direction={"column"}>
-          <Heading>{title}</Heading>
-          <ScrollArea
-            size={"1"}
-            type="always"
-            scrollbars="vertical"
-            style={{ height: "fit-content", maxHeight: "20vh" }}
-          >
-            <Box pr={"3"}>
-              <Text size={"3"}>{content}</Text>
-            </Box>
-          </ScrollArea>
-        </Flex>
-      </Popover.Content>
-    </Popover.Root>
   );
 }

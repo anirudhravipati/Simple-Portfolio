@@ -4,14 +4,12 @@ import {
   Flex,
   Heading,
   Link,
-  Section,
   Text,
   Badge,
   Box,
   ScrollArea,
   Button,
   Theme,
-  Separator,
   IconButton,
 } from "@radix-ui/themes";
 
@@ -191,16 +189,6 @@ function ProjectCard({ title, src, content, tags, page }) {
         </Flex>
       </Flex>
     </Card>
-  );
-}
-
-function TFooter() {
-  return (
-    <Section height={"1"} right={"0"} left={"0"} mt={"9"}>
-      <Flex align={"center"} justify={"center"} direction={"column"} gap={"3"}>
-        <Text size={"3"}>Footer</Text>
-      </Flex>
-    </Section>
   );
 }
 

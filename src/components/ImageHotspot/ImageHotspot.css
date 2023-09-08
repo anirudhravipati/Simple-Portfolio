@@ -1,0 +1,5 @@
+.hotspot-content {
+    min-width: 250px;
+    max-width: 40vw;
+    overflow-y: scroll;
+}
