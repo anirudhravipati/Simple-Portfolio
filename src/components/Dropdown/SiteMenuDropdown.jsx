@@ -18,6 +18,8 @@ export function SiteMenuDropdown() {
         <DropdownMenu.Item asChild>
           <RouterLink to={"/"}> Home</RouterLink>
         </DropdownMenu.Item>
+        <DropdownMenu.Separator />
+        <DropdownMenu.Label>Design</DropdownMenu.Label>
         <DropdownMenu.Sub>
           <DropdownMenu.SubTrigger>Projects</DropdownMenu.SubTrigger>
           <DropdownMenu.SubContent>
@@ -29,7 +31,9 @@ export function SiteMenuDropdown() {
           </DropdownMenu.SubContent>
         </DropdownMenu.Sub>
         <DropdownMenu.Separator />
-        <DropdownMenu.Item>About</DropdownMenu.Item>
+        <DropdownMenu.Item asChild>
+          <RouterLink to={"/About"}> About</RouterLink>
+        </DropdownMenu.Item>
       </DropdownMenu.Content>
     </DropdownMenu.Root>
   );
