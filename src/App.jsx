@@ -16,46 +16,40 @@ import {
 import { Link as RouterLink } from "react-router-dom";
 import "./App.css";
 import { ProjectListData, Icons } from "./data/ProjectListData";
-import { ArrowRight, Sun, MoonStars } from "@phosphor-icons/react";
+import { ArrowRight, Sun, MoonStars, File } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
 import { SiteMenuDropdown } from "./components/Dropdown/SiteMenuDropdown";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-
   // Dark Mode Setup
-  const [mode, setMode] = useState(() =>{
-    if(JSON.parse(localStorage.getItem("darkMode") !== undefined))
-    {
-      console.log("Read mode: " + JSON.parse(localStorage.getItem("darkMode")))      
-      return JSON.parse(localStorage.getItem("darkMode"))?true:false
-
-    }
-    else {
-      console.log("dark mode read is undefined!")
-      localStorage.setItem("darkMode",JSON.stringify(false))
-      return false
+  const [mode, setMode] = useState(() => {
+    if (JSON.parse(localStorage.getItem("darkMode") !== undefined)) {
+      console.log("Read mode: " + JSON.parse(localStorage.getItem("darkMode")));
+      return JSON.parse(localStorage.getItem("darkMode")) ? true : false;
+    } else {
+      console.log("dark mode read is undefined!");
+      localStorage.setItem("darkMode", JSON.stringify(false));
+      return false;
     }
   });
 
-  useEffect( ()=> {
-    if(JSON.parse(localStorage.getItem("darkMode") !== undefined))
-    {
-      console.log("First Retriveved mode: " + JSON.parse(localStorage.getItem("darkMode")))
-      setMode(
-        JSON.parse(localStorage.getItem("darkMode"))?true:false
-      )
+  useEffect(() => {
+    if (JSON.parse(localStorage.getItem("darkMode") !== undefined)) {
+      console.log(
+        "First Retriveved mode: " + JSON.parse(localStorage.getItem("darkMode"))
+      );
+      setMode(JSON.parse(localStorage.getItem("darkMode")) ? true : false);
+    } else {
+      console.log("dark mode is undefined!");
+      localStorage.setItem("darkMode", JSON.stringify(mode));
     }
-    else {
-      console.log("dark mode is undefined!")
-      localStorage.setItem("darkMode",JSON.stringify(mode))
-    }
-  },[])
+  }, []);
 
-  useEffect(()=>{
-    console.log("setting mode! : "+mode)
-    localStorage.setItem("darkMode",JSON.stringify(mode))
-  },[mode])
+  useEffect(() => {
+    console.log("setting mode! : " + mode);
+    localStorage.setItem("darkMode", JSON.stringify(mode));
+  }, [mode]);
   // END Dark Mode
 
   return (
@@ -85,6 +79,7 @@ function Home() {
         <Title />
         <Blurb />
       </Flex>
+
       <ProjectList />
       <Footer />
     </>
@@ -112,8 +107,30 @@ function Blurb() {
         With my multidisciplinary training in design, research and development,
         I aim to walk the fine line between aesthetic, utility and need.
       </Text>
+      <Flex mt={"3"} gap={"6"} justify={"center"}>
+        <Button size="3" variant="ghost" asChild>
+          <RouterLink to={"About"}>
+            <ArrowRight size={"1rem"} />
+            View More
+          </RouterLink>
+        </Button>
+        <Button size={"3"} color="yellow" variant="ghost" asChild>
+          <RouterLink
+            to={"/public/Resume Product Design.pdf"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <File size={"1rem"} />
+            Download Résumé
+          </RouterLink>
+        </Button>
+      </Flex>
     </Container>
   );
+}
+
+function SpecialMention() {
+  return <Container></Container>;
 }
 
 function ProjectList() {

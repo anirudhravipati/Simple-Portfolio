@@ -5,23 +5,15 @@ import {
   IconButton,
   Text,
   Container,
-  Card,
-  Inset,
-  AspectRatio,
-  HoverCard,
-  Box,
-  Popover,
-  ScrollArea,
 } from "@radix-ui/themes";
 import { useState, useEffect } from "react";
-import { Car, Plus, MoonStars, Sun } from "@phosphor-icons/react";
+import { MoonStars, Sun } from "@phosphor-icons/react";
 import { SiteMenuDropdown } from "../../components/Dropdown/SiteMenuDropdown";
 import Footer from "../../components/Footer/Footer";
 import "./FAM.css";
 import LoremIpsum from "react-lorem-ipsum";
-import ImageHotspot from "../../components/ImageHotspot/ImageHotspot";
 import ImageViewer from "../../components/ImageViewer/ImageViewer";
-import ProjectData from "../../data/ProjectData"
+import ProjectData from "../../data/ProjectData";
 
 export default function FAM() {
   // Dark Mode Setup
@@ -87,11 +79,7 @@ function FAMBody() {
         <Heading align={"center"} size="9">
           FAM
         </Heading>
-        <Flex
-          direction={"column"}
-          gap={"3"}
-          p={"3"}
-        >
+        <Flex direction={"column"} gap={"3"} p={"3"}>
           <Container size={"4"}>
             <Text size={"4"}>
               <LoremIpsum p={"6"} />
@@ -100,7 +88,6 @@ function FAMBody() {
         </Flex>
         <ImageViewer size={"4"} {...ProjectData} />
       </Flex>
-
       <Footer />
     </>
   );
