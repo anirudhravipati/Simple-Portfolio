@@ -183,7 +183,7 @@ function SpecialMention() {
               </Link>
             </Flex>
             <Separator size={"4"} />
-            <Flex align={"center"} justify={"center"} gap={"2"}>
+            <Flex wrap={"wrap"} align={"center"} justify={"center"} gap={"2"}>
               <Text align={"center"} size={"2"} color="gray">
                 contact me on
               </Text>
