@@ -150,9 +150,8 @@ function SpecialMention() {
             <Text align={"center"} color="gray" size={"1"}>
               companies I've previously worked for
             </Text>
-            {/* <Separator size={"4"} /> */}
             <Flex align={"center"} gap={"3"} justify={"center"}>
-              <Link href="https://www.google.com/">
+              <Link target="_blank" rel="noreferrer" href="https://www.google.com/">
                 <SiGoogle
                   size={"2rem"}
                   weight="fill"
@@ -160,7 +159,7 @@ function SpecialMention() {
                 />
               </Link>
               <Separator size={"2"} orientation="vertical" />
-              <Link href="https://www.fb.com/">
+              <Link target="_blank" rel="noreferrer" href="https://www.fb.com/">
                 <SiFacebook
                   size={"2rem"}
                   weight="fill"
@@ -168,14 +167,14 @@ function SpecialMention() {
                 />
               </Link>
               <Separator size={"2"} orientation="vertical" />
-              <Link href="https://www.enel.com//" ml={"3"} mr={"3"}>
+              <Link target="_blank" rel="noreferrer" href="https://www.enel.com//" ml={"3"} mr={"3"}>
                 <img
                   src="/Enel_Logo_Primary_RGB.png"
                   style={{ color: "inherit", height: "1.5rem" }}
                 />
               </Link>
               <Separator size={"2"} orientation="vertical" />
-              <Link href="https://research.samsung.com/sri-b">
+              <Link target="_blank" rel="noreferrer" href="https://research.samsung.com/sri-b">
                 <SiSamsung
                   size={"4rem"}
                   weight="fill"

@@ -1,4 +1,11 @@
-import { Section, Flex, Text, Separator, IconButton } from "@radix-ui/themes";
+import {
+  Section,
+  Flex,
+  Text,
+  Separator,
+  IconButton,
+  Link,
+} from "@radix-ui/themes";
 import {
   LinkedinLogo,
   Envelope,
@@ -9,7 +16,7 @@ import {
 
 export default function Footer() {
   const d = new Date();
-let year = d.getFullYear();
+  let year = d.getFullYear();
 
   return (
     <Section size="1" position={"relative"} right={"0"} left={"0"} bottom={"0"}>
@@ -61,7 +68,27 @@ let year = d.getFullYear();
         </a>
       </Flex>
       <Flex mt={"3"} direction={"column"}>
-      <Text size="1" color="jade" align={"center"}>Copyright {year} Aniruddh Ravipati. All rights reserved.</Text>
+        <Text mt={"1"} mb={"1"} size="1" color="jade" align={"center"}>
+          This website was built using{" "}
+          <Link href="https://react.dev/" color="jade">
+            React
+          </Link>
+          ,{" "}
+          <Link href="https://www.radix-ui.com/" color="jade">
+            Radix
+          </Link>
+          {" "}and{" "}
+          <Link href="https://vitejs.dev/" color="jade">
+            Vite
+          </Link>,{" "}
+          and hosted on{" "}
+          <Link href="https://vercel.com/" color="jade">
+          Vercel</Link>
+        </Text>
+
+        <Text size="1" color="jade" align={"center"}>
+          Copyright {year} Aniruddh Ravipati. All rights reserved.
+        </Text>
       </Flex>
     </Section>
   );
