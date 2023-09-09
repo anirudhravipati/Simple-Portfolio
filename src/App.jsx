@@ -150,7 +150,7 @@ function SpecialMention() {
             <Text align={"center"} color="gray" size={"1"}>
               companies I've previously worked for
             </Text>
-            <Flex align={"center"} gap={"3"} justify={"center"}>
+            <Flex wrap={"wrap"} align={"center"} gap={"3"} justify={"center"}>
               <Link target="_blank" rel="noreferrer" href="https://www.google.com/">
                 <SiGoogle
                   size={"2rem"}

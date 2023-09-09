@@ -8,7 +8,14 @@ const  FAMImage = {
             left: "20%",
             title: "Hello",
             content: <LoremIpsum p={3} />
+        },
+        {
+            top: "50%",
+            left: "50%",
+            title: "Hello",
+            content: "content is here. content is here.content is here"
         }
+
     ]
 
 }
