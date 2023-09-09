@@ -116,7 +116,7 @@ function Blurb() {
         </Button>
         <Button size={"3"} color="yellow" variant="ghost" asChild>
           <RouterLink
-            to={"/public/Resume Product Design.pdf"}
+            to={"/Resume Product Design.pdf"}
             target="_blank"
             rel="noopener noreferrer"
           >
