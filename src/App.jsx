@@ -30,7 +30,7 @@ import {
 import { useEffect, useState } from "react";
 import { SiteMenuDropdown } from "./components/Dropdown/SiteMenuDropdown";
 import Footer from "./components/Footer/Footer";
-import { SiSamsung } from "@icons-pack/react-simple-icons";
+import { SiFacebook, SiGoogle, SiSamsung } from "@icons-pack/react-simple-icons";
 
 function App() {
   // Dark Mode Setup
@@ -145,7 +145,7 @@ function SpecialMention() {
   return (
     <Container mt={"5"} p={"3"}>
       <Flex justify={"center"}>
-        <Card size={"3"} style={{ width: "fit-content" }}>
+        <Card size={"1"} style={{ width: "fit-content" }}>
           <Flex direction={"column"} gap={"3"}>
             <Text align={"center"} color="gray" size={"1"}>
               companies I've previously worked for
@@ -153,28 +153,31 @@ function SpecialMention() {
             {/* <Separator size={"4"} /> */}
             <Flex align={"center"} gap={"3"} justify={"center"}>
               <Link href="https://www.google.com/">
-                <GoogleLogo
-                  size={"3rem"}
+                <SiGoogle
+                  size={"2rem"}
                   weight="fill"
                   style={{ marginLeft: "0.5rem", marginRight: "0.5rem" }}
                 />
               </Link>
               <Separator size={"2"} orientation="vertical" />
               <Link href="https://www.fb.com/">
-                <FacebookLogo
-                  size={"3rem"}
+                <SiFacebook
+                  size={"2rem"}
                   weight="fill"
                   style={{ marginLeft: "0.5rem", marginRight: "0.5rem" }}
                 />
               </Link>
               <Separator size={"2"} orientation="vertical" />
               <Link href="https://www.enel.com//" ml={"3"} mr={"3"}>
-                <Text size={"6"}>Enel</Text>{" "}
+                <img
+                  src="/Enel_Logo_Primary_RGB.png"
+                  style={{ color: "inherit", height: "1.5rem" }}
+                />
               </Link>
               <Separator size={"2"} orientation="vertical" />
               <Link href="https://research.samsung.com/sri-b">
                 <SiSamsung
-                  size={"3rem"}
+                  size={"4rem"}
                   weight="fill"
                   style={{ marginLeft: "0.5rem", marginRight: "0.5rem" }}
                 />
@@ -199,9 +202,12 @@ function SpecialMention() {
                 </HoverCard.Content>
               </HoverCard.Root>
               <Text size={"2"} color="gray">
-                or{" "}
+                or
               </Text>
               <Link href="mailto: ravipatianirudh@gmail.com">email</Link>
+              <Text align={"center"} size={"2"} color="gray">
+                to discuss freelance projects in web design, development or creative tech
+              </Text>
             </Flex>
           </Flex>
         </Card>
