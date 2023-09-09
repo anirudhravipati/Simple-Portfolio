@@ -11,12 +11,22 @@ import {
   Button,
   Theme,
   IconButton,
+  Separator,
+  HoverCard,
 } from "@radix-ui/themes";
 
 import { Link as RouterLink } from "react-router-dom";
 import "./App.css";
 import { ProjectListData, Icons } from "./data/ProjectListData";
-import { ArrowRight, Sun, MoonStars, File } from "@phosphor-icons/react";
+import {
+  ArrowRight,
+  Sun,
+  MoonStars,
+  File,
+  Star,
+  GoogleLogo,
+  FacebookLogo,
+} from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
 import { SiteMenuDropdown } from "./components/Dropdown/SiteMenuDropdown";
 import Footer from "./components/Footer/Footer";
@@ -125,12 +135,68 @@ function Blurb() {
           </RouterLink>
         </Button>
       </Flex>
+      <SpecialMention />
     </Container>
   );
 }
 
 function SpecialMention() {
-  return <Container></Container>;
+  return (
+    <Container mt={"5"} p={"3"}>
+      <Flex justify={"center"}>
+        <Card size={"3"} style={{ width: "fit-content" }}>
+          <Flex direction={"column"} gap={"3"}>
+            <Text align={"center"} color="gray" size={"1"}>
+              companies I've previously worked for
+            </Text>
+            <Separator size={"4"} />
+            <Flex align={"center"} gap={"3"} justify={"center"}>
+              <Link href="https://www.google.com/">
+                <GoogleLogo
+                  size={"3rem"}
+                  weight="fill"
+                  style={{ marginLeft: "0.5rem", marginRight: "0.5rem" }}
+                />
+              </Link>
+              <Separator size={"2"} orientation="vertical" />
+              <Link href="https://www.fb.com/">
+                <FacebookLogo
+                  size={"3rem"}
+                  weight="fill"
+                  style={{ marginLeft: "0.5rem", marginRight: "0.5rem" }}
+                />
+              </Link>
+              <Separator size={"2"} orientation="vertical" />
+              <Link href="https://www.enel.com//" ml={"3"} mr={"3"}>
+                <Text size={"6"}>Enel</Text>{" "}
+              </Link>
+            </Flex>
+            <Separator size={"4"} />
+            <Flex align={"center"} gap={"2"} justify={"end"}>
+              <Text size={"2"} color="gray">
+                contact me on
+              </Text>
+              <HoverCard.Root>
+                <HoverCard.Trigger>
+                  <Link href="https://wa.me/qr/HZ6B54KNMH4JA1">whatsapp</Link>
+                </HoverCard.Trigger>
+                <HoverCard.Content size={"1"}>
+                  <Flex>
+                    <img
+                      src="/whatsapp.jpeg"
+                      style={{ width: "12rem", height: "12rem" }}
+                    />
+                  </Flex>
+                </HoverCard.Content>
+              </HoverCard.Root>
+              <Text size={"2"} color="gray">or </Text>
+              <Link href="mailto: ravipatianirudh@gmail.com">email</Link>
+            </Flex>
+          </Flex>
+        </Card>
+      </Flex>
+    </Container>
+  );
 }
 
 function ProjectList() {
