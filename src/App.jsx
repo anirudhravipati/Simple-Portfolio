@@ -30,6 +30,7 @@ import {
 import { useEffect, useState } from "react";
 import { SiteMenuDropdown } from "./components/Dropdown/SiteMenuDropdown";
 import Footer from "./components/Footer/Footer";
+import { SiSamsung } from "@icons-pack/react-simple-icons";
 
 function App() {
   // Dark Mode Setup
@@ -149,7 +150,7 @@ function SpecialMention() {
             <Text align={"center"} color="gray" size={"1"}>
               companies I've previously worked for
             </Text>
-            <Separator size={"4"} />
+            {/* <Separator size={"4"} /> */}
             <Flex align={"center"} gap={"3"} justify={"center"}>
               <Link href="https://www.google.com/">
                 <GoogleLogo
@@ -170,10 +171,18 @@ function SpecialMention() {
               <Link href="https://www.enel.com//" ml={"3"} mr={"3"}>
                 <Text size={"6"}>Enel</Text>{" "}
               </Link>
+              <Separator size={"2"} orientation="vertical" />
+              <Link href="https://research.samsung.com/sri-b">
+                <SiSamsung
+                  size={"3rem"}
+                  weight="fill"
+                  style={{ marginLeft: "0.5rem", marginRight: "0.5rem" }}
+                />
+              </Link>
             </Flex>
             <Separator size={"4"} />
-            <Flex align={"center"} gap={"2"} justify={"end"}>
-              <Text size={"2"} color="gray">
+            <Flex align={"center"} justify={"center"} gap={"2"}>
+              <Text align={"center"} size={"2"} color="gray">
                 contact me on
               </Text>
               <HoverCard.Root>
@@ -189,7 +198,9 @@ function SpecialMention() {
                   </Flex>
                 </HoverCard.Content>
               </HoverCard.Root>
-              <Text size={"2"} color="gray">or </Text>
+              <Text size={"2"} color="gray">
+                or{" "}
+              </Text>
               <Link href="mailto: ravipatianirudh@gmail.com">email</Link>
             </Flex>
           </Flex>
