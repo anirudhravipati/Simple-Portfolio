@@ -176,7 +176,7 @@ function SpecialMention() {
               <Separator size={"2"} orientation="vertical" />
               <Link target="_blank" rel="noreferrer" href="https://research.samsung.com/sri-b">
                 <SiSamsung
-                  size={"4rem"}
+                  size={"3rem"}
                   weight="fill"
                   style={{ marginLeft: "0.5rem", marginRight: "0.5rem" }}
                 />
