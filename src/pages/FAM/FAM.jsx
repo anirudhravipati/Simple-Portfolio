@@ -10,15 +10,15 @@ import {
   Inset,
   Em,
   Link,
+  Badge,
 } from "@radix-ui/themes";
 import { useState, useEffect } from "react";
-import { Car, MoonStars, Sun } from "@phosphor-icons/react";
+import {  MoonStars, Sun } from "@phosphor-icons/react";
 import { SiteMenuDropdown } from "../../components/Dropdown/SiteMenuDropdown";
 import Footer from "../../components/Footer/Footer";
 import "./FAM.css";
-import LoremIpsum from "react-lorem-ipsum";
 import ImageViewer from "../../components/ImageViewer/ImageViewer";
-import ProjectData from "../../data/ProjectData";
+import { FigmaBadge, Icons, UserExperienceBadge, UserResearchBadge } from "../../data/ProjectListData";
 
 export default function FAM() {
   // Dark Mode Setup
@@ -87,87 +87,100 @@ function FAMBody() {
         </Heading>
 
         {/* Title Section*/}
-        <Container size={"4"}>
-          <Flex direction={"column"} gap={"3"} align={"center"}>
-            <Card size={"3"}>
-              <Flex
-                direction="column"
-                p={"4"}
-                style={{ width: "60vw", minWidth: "350px" }}
-              >
-                <Inset side="top">
-                  <img
-                    src="FAM/cover.png"
-                    style={{
-                      borderRadius: "0.5rem",
-                      objectFit: "contain",
-                      width: "100%",
-                      height: "40rem",
-                    }}
-                  />
-                </Inset>
-                <Text weight={"light"} align={"center"} size={"3"}>
-                  FAM is a self-help app that focuses on combating loneliness
-                  for people who are either new to a place or just shy. It
-                  combines an events app with a journal to help those that
-                  struggle with social anxiety
-                </Text>
-              </Flex>
-            </Card>
-            <Card style={{ minWidth: "350px", width: "30vw" }}>
-              <Flex direction={"column"} gap={"1"}>
-                <Heading color="gray" size={"1"}>
-                  Context
-                </Heading>
-                <Text>
-                  FAM is an app that was prototyped as a result of a 4 week
-                  design sprint of Life-Centered Research course at CIID
-                </Text>
-              </Flex>
-            </Card>
-          </Flex>
-        </Container>
-
-        {/*Problen & Soultion */}
-        <Container size={"4"}>
-          <Flex justify={"center"} wrap={"wrap"} gap={"3"}>
-            <Card style={{ minWidth: "350px", width: "45%" }}>
-              <Flex direction={"column"} gap={"1"}>
-                <Heading size={"1"} color="gray">
-                  Problem
-                </Heading>
-                <Text>
-                  In an increasingly urbanized environment, the paradox that is
-                  present is that while one lives in a setting where they are
-                  surrounded by people but also tend to become lonely -
-                  especially if they’re shy or if they come from a more communal
-                  space such as a village or a town
-                </Text>
-              </Flex>
-            </Card>
-            <Card style={{ minWidth: "350px", width: "45%", height: "100%" }}>
-              <Flex direction={"column"} gap={"1"}>
-                <Heading size={"1"} color="gray">
-                  Solution
-                </Heading>
-                <Text>
-                  The philosophy of FAM is change through action coupled with
-                  meaningful reflection. It takes the unlikely combination of an
-                  events app and journalling app into a tool for those looking
-                  to step out into the world by gently guiding and checking in
-                  with the user
-                </Text>
-              </Flex>
-            </Card>
-          </Flex>
-        </Container>
-      
-      <Touchpoints />
-
+        <TitleSection />
+        <ProblemAndSolution />
+        <Touchpoints />
       </Flex>
 
       <Footer />
     </>
+  );
+}
+
+function TitleSection() {
+  return (
+    <Container size={"4"}>
+      <Flex direction={"column"} gap={"3"} align={"center"}>
+        <Card size={"3"}>
+          <Flex
+            direction="column"
+            p={"4"}
+            style={{ width: "60vw", minWidth: "350px" }}
+          >
+            <Inset side="top">
+              <img
+                src="FAM/cover.png"
+                style={{
+                  borderRadius: "0.5rem",
+                  objectFit: "contain",
+                  width: "100%",
+                  height: "40rem",
+                }}
+              />
+            </Inset>
+            <Text weight={"light"} align={"center"} size={"3"}>
+              FAM is a self-help app that focuses on combating loneliness for
+              people who are either new to a place or just shy. It combines an
+              events app with a journal to help those that struggle with social
+              anxiety
+            </Text>
+          </Flex>
+        </Card>
+        <Card style={{ minWidth: "350px", width: "30vw" }}>
+          <Flex direction={"column"} gap={"1"}>
+            <Heading color="gray" size={"1"}>
+              Context
+            </Heading>
+            <Text>
+              FAM is an app that was prototyped as a result of a 4 week design
+              sprint of Life-Centered Research course at CIID
+            </Text>
+            <Flex mt={"2"} wrap={"wrap"} justify={"center"} gap={"2"}>
+              <UserResearchBadge />
+              <UserExperienceBadge />
+              <FigmaBadge />
+            </Flex>
+          </Flex>
+        </Card>
+      </Flex>
+    </Container>
+  );
+}
+
+function ProblemAndSolution() {
+  return (
+    <Container size={"4"}>
+      <Flex justify={"center"} wrap={"wrap"} gap={"3"}>
+        <Card style={{ minWidth: "350px", width: "45%" }}>
+          <Flex direction={"column"} gap={"1"}>
+            <Heading size={"1"} color="gray">
+              Problem
+            </Heading>
+            <Text>
+              In an increasingly urbanized environment, the paradox that is
+              present is that while one lives in a setting where they are
+              surrounded by people but also tend to become lonely - especially
+              if they’re shy or if they come from a more communal space such as
+              a village or a town
+            </Text>
+          </Flex>
+        </Card>
+        <Card style={{ minWidth: "350px", width: "45%", height: "100%" }}>
+          <Flex direction={"column"} gap={"1"}>
+            <Heading size={"1"} color="gray">
+              Solution
+            </Heading>
+            <Text>
+              The philosophy of FAM is change through action coupled with
+              meaningful reflection. It takes the unlikely combination of an
+              events app and journalling app into a tool for those looking to
+              step out into the world by gently guiding and checking in with the
+              user
+            </Text>
+          </Flex>
+        </Card>
+      </Flex>
+    </Container>
   );
 }
 

@@ -9,8 +9,10 @@ import {
   BoundingBox,
   FlowArrow,
   ShieldCheck,
-  Play
+  Play,
 } from "@phosphor-icons/react";
+
+import { Badge } from "@radix-ui/themes";
 
 export const ProjectListData = [
   {
@@ -19,27 +21,14 @@ export const ProjectListData = [
     src: "Portfolio v3/Project/dan-meyers-hA-3tgkoiIQ-unsplash.jpg",
     content:
       "Nam exercitationem culpa et molestiae voluptatibus aut dolore quasi in omnis esse. Cum Quis quisquam non natus incidunt hic aliquam rerum. Et aperiam exercitationem qui itaque repellat aut fuga asperiores. Hic saepe autem nam tenetur culpa cum ipsam laborum aut corrupti ullam et quisquam labore et beatae minima quo dolores quae.",
-    tags: [ "Figma","User Research", "Product Design","User Experience","Testing","Advanced Prototyping"],
-    page: "FAM"
+    tags: [
+      <UserResearchBadge key="user-research" />,
+      <UserExperienceBadge key="ux"/>,
+      <FigmaBadge key="figma" />,
+    ],
+    page: "FAM",
   },
-  {
-    key: "2",
-    title: "Title 2",
-    src: "Portfolio v3/Project/zhuojun-yu-xhC-pVI_Gno-unsplash (1).jpg",
-    content:
-      "Ex possimus quas eum atque quia est beatae eligendi est animi amet. Ut deleniti eligendi ea nihil necessitatibus est recusandae corrupti qui earum nostrum eos autem sequi.",
-    tags: ["Confluence", "User Research", "User Experience"],
-    page: "FAM"
-  },
-  {
-    key: "3",
-    title: "Title 3",
-    src: "Portfolio v3/Project/red-zeppelin-sdfiCCK99G0-unsplash.jpg",
-    content:
-      "Aut neque distinctio ut tempora earum vel corporis corporis et ipsam praesentium. Et minima adipisci ex amet reprehenderit est illum internos ut distinctio neque hic atque architecto eum officiis exercitationem.",
-    tags: ["React", "Testing", "Advanced Prototyping"],
-    page: "FAM"
-  },
+
 ];
 
 export const Icons = [
@@ -87,5 +76,86 @@ export const Icons = [
     name: "Advanced Prototyping",
     tagColor: "cyan",
     logo: <Play size={"1rem"} />,
-  }
+  },
 ];
+
+export function AdvancedPrototypingBadge() {
+  return (
+    <Badge size="2" color="cyan">
+      <Play size={"1rem"} />
+      Advanced Prototyping
+    </Badge>
+  );
+}
+
+export function TestingBadge() {
+  return (
+    <Badge size="2" color="Iris">
+      <ShieldCheck size={"1rem"} />
+      Testing
+    </Badge>
+  );
+}
+
+export function UserExperienceBadge() {
+  return (
+    <Badge size="2" color="plum">
+      <FlowArrow size={"1rem"} />
+      User Experience
+    </Badge>
+  );
+}
+
+export function ProductDesignBadge() {
+  return (
+    <Badge size="2" color="crimson">
+      <BoundingBox size={"1rem"} />
+      Product Design
+    </Badge>
+  );
+}
+
+export function UserResearchBadge() {
+  return (
+    <Badge size="2" color="teal">
+      <SealQuestion size={"1rem"} />
+      User Research
+    </Badge>
+  );
+}
+
+export function MuiBadge() {
+  return (
+    <Badge size="2" color="brown">
+      <SiMui size="1rem" />
+      MUI
+    </Badge>
+  );
+}
+
+export function ReactBadge() {
+  return (
+    <Badge size="2" color="blue">
+      <SiReact size="1rem" />
+      React
+    </Badge>
+  );
+}
+
+export function ConfluenceBadge() {
+  return (
+    <Badge size="2" color="indigo">
+      <SiConfluence size="1rem" />
+      Confluence
+    </Badge>
+  );
+}
+
+export function FigmaBadge() {
+  return (
+    <Badge size="2" color="gold">
+      <SiFigma size={"1rem"} />
+      Figma
+    </Badge>
+  );
+}

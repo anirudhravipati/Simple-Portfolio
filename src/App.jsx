@@ -260,20 +260,7 @@ function ProjectCard({ title, src, content, tags, page }) {
             </Box>
           </ScrollArea>
           <Flex wrap={"wrap"} gap="2">
-            {tags.map((tag) => (
-              <Badge
-                key={tag}
-                size="2"
-                color={
-                  Icons.find((t) => t.name == tag) &&
-                  Icons.find((t) => t.name == tag).tagColor
-                }
-              >
-                {Icons.find((t) => t.name == tag) &&
-                  Icons.find((t) => t.name == tag).logo}
-                {tag}
-              </Badge>
-            ))}
+            {...tags}
           </Flex>
           <RouterLink to={page}>
             <Button
