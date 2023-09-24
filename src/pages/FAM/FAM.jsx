@@ -543,13 +543,13 @@ function Credits() {
             <Heading size={"1"} color="gray">
               Research & Synthesis
             </Heading>
-            <Link href="https://www.linkedin.com/in/anirudh-ravipati-13541bb5/">
+            <Link mb={"1"} href="https://www.linkedin.com/in/anirudh-ravipati-13541bb5/">
               Aniruddh Ravipati
             </Link>
-            <Link href="https://www.linkedin.com/in/pablo-corella/en?trk=people-guest_people_search-card&originalSubdomain=cr">
+            <Link mb={"1"} href="https://www.linkedin.com/in/pablo-corella/en?trk=people-guest_people_search-card&originalSubdomain=cr">
               Pablo Corella
             </Link>
-            <Link href="https://www.linkedin.com/in/joshua-tercero-loria-369087158?originalSubdomain=cr">
+            <Link mb={"1"} href="https://www.linkedin.com/in/joshua-tercero-loria-369087158?originalSubdomain=cr">
               Joshua Tercero
             </Link>
           </Flex>
