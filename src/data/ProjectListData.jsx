@@ -17,10 +17,13 @@ import { Badge } from "@radix-ui/themes";
 export const ProjectListData = [
   {
     key: "1",
-    title: "Title 1",
-    src: "Portfolio v3/Project/dan-meyers-hA-3tgkoiIQ-unsplash.jpg",
+    title: "FAM",
+    src: "/FAM/cover.png",
     content:
-      "Nam exercitationem culpa et molestiae voluptatibus aut dolore quasi in omnis esse. Cum Quis quisquam non natus incidunt hic aliquam rerum. Et aperiam exercitationem qui itaque repellat aut fuga asperiores. Hic saepe autem nam tenetur culpa cum ipsam laborum aut corrupti ullam et quisquam labore et beatae minima quo dolores quae.",
+      "FAM is a self-improvement app that remixes an events app with\
+      Cognitive Behavioural Therapy techniques - a way for those that\
+      are feeling lonely get out of their situation through action, led\
+      by the app’s gentle instruction and checks!",
     tags: [
       <UserResearchBadge key="user-research" />,
       <UserExperienceBadge key="ux"/>,

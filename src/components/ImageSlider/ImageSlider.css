@@ -1,0 +1,12 @@
+.simple-slider-card {
+    width: 80vw;
+    height: "400px";
+}
+
+/* Media query for mobile devices with a maximum width of 768px */
+@media (max-width: 961px) {
+    .simple-slider-card {
+        width: 90vw;
+        height: "400px";
+    }
+  }

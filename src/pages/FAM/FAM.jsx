@@ -10,15 +10,23 @@ import {
   Inset,
   Em,
   Link,
-  Badge,
+  Quote,
+  Grid,
 } from "@radix-ui/themes";
 import { useState, useEffect } from "react";
-import {  MoonStars, Sun } from "@phosphor-icons/react";
+import { MoonStars, Sun } from "@phosphor-icons/react";
 import { SiteMenuDropdown } from "../../components/Dropdown/SiteMenuDropdown";
 import Footer from "../../components/Footer/Footer";
 import "./FAM.css";
 import ImageViewer from "../../components/ImageViewer/ImageViewer";
-import { FigmaBadge, Icons, UserExperienceBadge, UserResearchBadge } from "../../data/ProjectListData";
+import {
+  FigmaBadge,
+  UserExperienceBadge,
+  UserResearchBadge,
+} from "../../data/ProjectListData";
+import TextHoverCard from "../../components/TextHoverCard/TextHoverCard";
+import LoremIpsum from "react-lorem-ipsum";
+import SimpleSlider from "../../components/ImageSlider/ImageSlider";
 
 export default function FAM() {
   // Dark Mode Setup
@@ -76,7 +84,7 @@ function FAMBody() {
     <>
       <Flex
         p={"3"}
-        gap={"5"}
+        gap={"7"}
         direction={"column"}
         align={"center"}
         justify={"center"}
@@ -86,10 +94,37 @@ function FAMBody() {
           FAM
         </Heading>
 
-        {/* Title Section*/}
         <TitleSection />
         <ProblemAndSolution />
+
+        <Research />
+
+        <Insights />
+
+        <Opportunity />
+
+        {/* Introducing FAM */}
+        <Container>
+          <Flex gap={"2"} direction={"column"} align={"center"}>
+            <Heading color="jade" size={"8"}>
+              Introducing FAM!
+            </Heading>
+            <Text color="jade" size={"4"} align={"center"}>
+              FAM is a self-improvement app that remixes an events app with
+              Cognitive Behavioural Therapy techniques - a way for those that
+              are feeling lonely get out of their situation through action, led
+              by the app’s gentle instruction and checks!
+            </Text>
+          </Flex>
+        </Container>
+
         <Touchpoints />
+
+        <ProcessPhotos />
+
+        <Afterword />
+
+        <Credits />
       </Flex>
 
       <Footer />
@@ -100,7 +135,7 @@ function FAMBody() {
 function TitleSection() {
   return (
     <Container size={"4"}>
-      <Flex direction={"column"} gap={"3"} align={"center"}>
+      <Flex direction={"column"} gap={"2"} align={"center"}>
         <Card size={"3"}>
           <Flex
             direction="column"
@@ -184,9 +219,195 @@ function ProblemAndSolution() {
   );
 }
 
+function Research() {
+  return (
+    <Flex align={"center"} direction={"column"} gap={"2"}>
+      <Heading size={"8"}>User Research</Heading>
+      <Container>
+        <Flex direction={"column"} gap={"3"} align={"center"}>
+          {/*Intial Brief*/}
+          <Card style={{ minWidth: "350px", maxWidth: "75%" }}>
+            <Flex direction={"column"}>
+              <Heading color="gray" size={"1"}>
+                Initial Brief
+              </Heading>
+              <Quote align={"center"}>
+                To develop new methods to combat mental health conditions that
+                worsened in a post-COVID world specifically targeting those who
+                work long hours in desk jobs
+              </Quote>
+            </Flex>
+          </Card>
+
+          {/*Focus Point*/}
+          <Card>
+            <Flex align={"center"} direction={"column"}>
+              <Heading
+                color="gray"
+                size={"1"}
+                style={{ alignSelf: "flex-start" }}
+              >
+                Focus Point
+              </Heading>
+              <Text size={"2"} mb={"3"}>
+                The next task we set out to do was to root the brief in context.
+                We discussed within the team about how this brief would apply to{" "}
+                <TextHoverCard
+                  trigger="Costa Rica"
+                  content="The overaching CIID Interaction Design program and hence this course were held in San José, Costa Rica"
+                />{" "}
+                and what kind of demographics were we looking at. We took turns
+                playing investigator and interviewing the others about what life
+                was like as young{" "}
+                <TextHoverCard
+                  trigger="ticos"
+                  content="Tico is an informal word that Costa Ricans use to refer to themselves"
+                />{" "}
+                in the city and what kinds of jobs did each of us had experience
+                in. We also executed "5 Whys" rounds to get to the root what we
+                believed the brief was trying to solve. The whole process led us
+                to the following <strong>focus point</strong>
+              </Text>
+
+              <Text size={"4"} weight={"bold"} align={"center"} color="jade">
+                How to combat loneliness and instill a sense of belonging for
+                people who moved from a rural community to a new urban setting
+                for desk white collar work
+              </Text>
+            </Flex>
+          </Card>
+
+          {/*Images*/}
+          <Card>
+            <Flex gap={"3"}>
+              <ImageViewer src={"/FAM/Pablo Interview.png"} hotspots={[]} />
+              <ImageViewer src={"/FAM/interview pic 2.png"} hotspots={[]} />
+            </Flex>
+
+            <Flex
+              mt={"3"}
+              gap={"2"}
+              direction={"column"}
+              align={"center"}
+              justify={"center"}
+            >
+              <Flex width={"50%"}>
+                <ImageViewer src={"/FAM/interview pic.webp"} hotspots={[]} />
+              </Flex>
+              <Text size={"1"}>
+                Armed with a focus point we interviewed 15 people which included
+                experts in psychology, creative workshop organizers, and white
+                collar workers who moved in from a rural area to the city.
+              </Text>
+            </Flex>
+          </Card>
+        </Flex>
+      </Container>
+    </Flex>
+  );
+}
+
+function Insights() {
+  return (
+    <Flex direction={"column"} align={"center"} width={"100%"}>
+      <Heading size={"8"}>Insights</Heading>
+      <Container mt={"3"}>
+        <Flex direction={"column"} gap={"2"}>
+          <Text color="gray" align={"center"}>
+            With that we had surprising insights which led us to see that, while
+            the user we focused on was niche, the insights about their problems
+            were applicable to a larger base.
+          </Text>
+          <Grid columns={"2"} gap={"3"}>
+            <Card>
+              <Heading color="gray" size={"1"}>
+                Competitive Enviroments
+              </Heading>
+              <Text size={"3"}>
+                The way one expresses themselves in a competitive environment
+                (workplace) vs. expression in a non-competitive environment (a
+                hobby) is radically different. A non-competitive space is easy
+                on the mind and is a fertile ground for new connections
+              </Text>
+            </Card>
+            <Card>
+              <Heading color="gray" size={"1"}>
+                Invisible Sacrifice
+              </Heading>
+              <Text size={"3"}>
+                Regardless of the fact of their affinity to their small-town
+                environments, most people who move from small towns do end up
+                moving from a highly communal atmosphere to one that is
+                extremely individualistic.
+              </Text>
+            </Card>
+            <Card>
+              <Heading color="gray" size={"1"}>
+                Nice Communities
+              </Heading>
+              <Text size={"3"}>
+                Niche workshops or communities based around a skillset are great
+                non-competitive spaces. The focus is on the individual's
+                improvement regardless of skill level
+              </Text>
+            </Card>
+            <Card>
+              <Heading color="gray" size={"1"}>
+                2 Disciplines
+              </Heading>
+              <Text size={"3"}>
+                Self-expression through disciplined work in one’s own interest
+                is vastly more spiritually satisfying compared to the discipline
+                imposed by the environment & time schedule of the workplace
+              </Text>
+            </Card>
+            <Card>
+              <Heading color="gray" size={"1"}>
+                Passionate & Shy
+              </Heading>
+              <Text size={"3"}>
+                Shyness takes a back-seat to passion! Even shy people, when
+                talking about their interests, talk with vigor
+              </Text>
+            </Card>
+          </Grid>
+          <Text color="gray" align={"center"}>
+            We realized that the problem threading all these insights together
+            was lonelineess. More specifically, loneliness that was a caused by
+            shyness, introversion or a radical shift in social dynamics. We
+            wanted to refine the problem space further and iterated on
+            opportunity areas. We decided on the one below
+          </Text>
+        </Flex>
+      </Container>
+    </Flex>
+  );
+}
+
+function Opportunity() {
+  return (
+    <Container>
+      <Heading align={"center"} size={"8"}>
+        Opportunity
+      </Heading>
+
+      <Card mt={"3"}>
+        <Flex>
+          <Text color="gold" align={"center"} size={"5"}>
+            How might we suggest activities for young white collar profesionals
+            in a city that are looking to schedule their free time in a non
+            competitive spaces weekly and become aware of their social needs and
+            strengths/weaknesses
+          </Text>
+        </Flex>
+      </Card>
+    </Container>
+  );
+}
+
 function Touchpoints() {
   return (
-    <>
+    <Flex width={"100%"} align={"center"} direction={"column"} gap={"1"}>
       {/* Key Touchpoints */}
       <Heading align={"center"} size={8}>
         Key Touchpoints
@@ -207,7 +428,9 @@ function Touchpoints() {
           allowFullScreen
         />
         <Container>
-          <ImageViewer {...OnboardingFlowImage} />
+          <Card>
+            <ImageViewer {...OnboardingFlowImage} />
+          </Card>
         </Container>
       </Flex>
 
@@ -270,7 +493,87 @@ function Touchpoints() {
           </Card>
         </Container>
       </Flex>
-    </>
+    </Flex>
+  );
+}
+
+function ProcessPhotos() {
+  return (
+    <Flex width={"100%"} align={"center"} direction={"column"} gap={"3"}>
+      <Heading size={"8"}>Process Photos</Heading>
+      <SimpleSlider images={MiscImages} />
+    </Flex>
+  );
+}
+
+function Afterword() {
+  return (
+    <Container>
+      <Heading size={"8"} mb={"3"} align={"center"}>
+        Afterword
+      </Heading>
+      <Flex gap={"3"} align={"start"} justify={"center"} width={"100%"}>
+        <Card>
+          This was one of my first UI/UX Projects with an extensive amount of
+          research done. It was my focus that I take in as much of the process
+          as possible and trust the result. It was an insightful journey because
+          one is used to knowing what they're going to make ; in this case, we
+          had no idea what could be the solution to the problem!
+        </Card>
+        <Card>
+          If I had more time, then I'd reiterate on the user flows, and
+          integrate the mindful journalling aspect deeper into the flows. I have
+          a sense that there can be a more deeper personal mechanic that can be
+          unlocked with the right intervention at the right time
+        </Card>
+      </Flex>
+    </Container>
+  );
+}
+
+function Credits() {
+  return (
+    <Container width={"100%"}>
+      <Heading mb={"3"} align={"center"} size={"8"}>
+        Credits
+      </Heading>
+      <Grid columns={"3"} gap={"3"}>
+        <Card>
+          <Flex direction={"column"}>
+            <Heading size={"1"} color="gray">
+              Research & Synthesis
+            </Heading>
+            <Link href="https://www.linkedin.com/in/anirudh-ravipati-13541bb5/">
+              Aniruddh Ravipati
+            </Link>
+            <Link href="https://www.linkedin.com/in/pablo-corella/en?trk=people-guest_people_search-card&originalSubdomain=cr">
+              Pablo Corella
+            </Link>
+            <Link href="https://www.linkedin.com/in/joshua-tercero-loria-369087158?originalSubdomain=cr">
+              Joshua Tercero
+            </Link>
+          </Flex>
+        </Card>
+        <Card>
+          <Flex direction={"column"}>
+            <Heading size={"1"} color="gray">
+              User Flow & UI/UX
+            </Heading>
+            <Link href="https://www.linkedin.com/in/anirudh-ravipati-13541bb5/">
+              Aniruddh Ravipati
+            </Link>
+          </Flex>
+        </Card>
+        <Card>
+          <Flex direction={"column"}>
+            <Heading size={"1"} color="gray">
+              Faculty
+            </Heading>
+            <Link href="https://www.linkedin.com/in/melaniekahl/">Melanie Kahl</Link>
+          </Flex>
+        </Card>
+      </Grid>
+    </Container>
   );
 }
 
@@ -416,3 +719,30 @@ const PostEventCheckInImage = {
     },
   ],
 };
+
+const MiscImages = [
+  {
+    original: "/FAM/Color Themes.png",
+    originalHeight: "500px",
+  },
+  {
+    original: "/FAM/Elevation System.png",
+    originalHeight: "500px",
+  },
+  {
+    original: "/FAM/Wireframe v1.png",
+    originalHeight: "500px",
+  },
+  {
+    original: "/FAM/Wireframe v2.png",
+    originalHeight: "500px",
+  },
+  {
+    original: "/FAM/Paper Wireframes/IMG_20221022_162304.jpg",
+    originalHeight: "500px",
+  },
+  {
+    original: "/FAM/Paper Wireframes/IMG_20221022_162337.jpg",
+    originalHeight: "500px",
+  },
+];

@@ -85,7 +85,7 @@ function App() {
 
 function Home() {
   return (
-    <>
+    <Flex direction={"column"} style={{minHeight: "100vh"}}>
       <Flex p={"3"} gap={"3"} direction={"column"}>
         <Title />
         <Blurb />
@@ -93,7 +93,7 @@ function Home() {
 
       <ProjectList />
       <Footer />
-    </>
+    </Flex>
   );
 }
 
@@ -119,13 +119,13 @@ function Blurb() {
         I aim to walk the fine line between aesthetic, utility and need.
       </Text>
       <Flex mt={"3"} gap={"6"} justify={"center"}>
-        <Button size="3" variant="ghost" asChild>
+        <Button size="3" variant="surface" asChild>
           <RouterLink to={"About"}>
             <ArrowRight size={"1rem"} />
             View More
           </RouterLink>
         </Button>
-        <Button size={"3"} color="yellow" variant="ghost" asChild>
+        <Button size={"3"} color="yellow" variant="surface" asChild>
           <RouterLink
             to={"/Resume Product Design.pdf"}
             target="_blank"
@@ -192,11 +192,12 @@ function SpecialMention() {
                   <Link href="https://wa.me/qr/HZ6B54KNMH4JA1">whatsapp</Link>
                 </HoverCard.Trigger>
                 <HoverCard.Content size={"1"}>
-                  <Flex>
+                  <Flex align={"center"} gap={"1"} direction={"column"}>
                     <img
                       src="/whatsapp.jpeg"
                       style={{ width: "12rem", height: "12rem" }}
                     />
+                    <Link href="tel:+919985887990"><Text size={"2"}>+91 9985887990</Text></Link>
                   </Flex>
                 </HoverCard.Content>
               </HoverCard.Root>
@@ -232,12 +233,12 @@ function ProjectCard({ title, src, content, tags, page }) {
     <Card variant="surface" size="1">
       <Flex>
         <img
-          src="https://images.unsplash.com/photo-1479030160180-b1860951d696?&auto=format&fit=crop&w=1200&q=80"
-          alt="A house in a forest"
+          src={src}
           style={{
-            objectFit: "cover",
+            objectFit: "scale-down",
             borderRadius: "var(--radius-2)",
             width: "40%",
+            height: "20rem",
             marginRight: "1rem",
           }}
         />
