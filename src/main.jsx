@@ -8,6 +8,7 @@ import { StrictMode } from "react";
 import { Theme } from "@radix-ui/themes";
 import { Analytics } from "@vercel/analytics/react"
 import About from "./pages/About/About.jsx";
+import LogManagement from "./pages/LogManagement/LogManagement.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "About",
     element: <About/>
+  },
+  {
+    path: "LogManagement",
+    element: <LogManagement />
   }
 ]);
 

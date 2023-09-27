@@ -27,6 +27,9 @@ export function SiteMenuDropdown() {
             <DropdownMenu.Item asChild>
               <RouterLink to={"/FAM"}> FAM</RouterLink>
             </DropdownMenu.Item>
+            <DropdownMenu.Item asChild>
+              <RouterLink to={"/LogManagement"}> Log Management</RouterLink>
+            </DropdownMenu.Item>
           </DropdownMenu.SubContent>
         </DropdownMenu.Sub>
 
