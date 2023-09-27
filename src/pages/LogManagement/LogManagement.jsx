@@ -11,8 +11,9 @@ import {
   Separator,
   Blockquote,
   Strong,
+  Callout,
 } from "@radix-ui/themes";
-import { Car, MoonStars, Sun } from "@phosphor-icons/react";
+import { Car, MoonStars, Star, Sun } from "@phosphor-icons/react";
 import { SiteMenuDropdown } from "../../components/Dropdown/SiteMenuDropdown";
 import TextHoverCard from "../../components/TextHoverCard/TextHoverCard";
 import Footer from "../../components/Footer/Footer";
@@ -97,6 +98,7 @@ function LogManagementBody() {
       <Overview />
       <Brief />
       <Research />
+      <UserExperience />
     </Flex>
   );
 }
@@ -302,7 +304,7 @@ function Research() {
         </Heading>
         <Card>
           <Flex direction={"column"} gap={"3"}>
-          <Flex direction={"column"}>
+            <Flex direction={"column"}>
               <img
                 src="/LogManagement/Cover Photos/Logs Insights/Sarari - DarkResearch.png"
                 style={{
@@ -312,7 +314,8 @@ function Research() {
                 }}
               />
               <Text align={"center"} size={"1"} color="gray">
-                The three dimensions along which research was conducted : user experience, technology, & competition  
+                The three dimensions along which research was conducted : user
+                experience, technology, & competition
               </Text>
             </Flex>
             <Text>
@@ -355,3 +358,72 @@ function Research() {
     </Container>
   );
 }
+
+function UserExperience() {
+  return (
+    <Container size={"4"} width={"100%"}>
+      <Flex direction={"column"} gap={"3"}>
+        <Heading align={"center"} size={"8"}>
+          User Experience
+        </Heading>
+        <Card>
+          <Flex direction={"column"} gap={"3"}>
+            <Flex direction={"column"}>
+              <img
+                src="/LogManagement/Cover Photos/Logs Insights/Sarari - DarkUX Flow.png"
+                style={{
+                  borderRadius: "0.5rem",
+                  objectFit: "contain",
+                  width: "100%",
+                }}
+              />
+              <Text align={"center"} size={"1"} color="gray">
+                We use flow diagrams and we iterate on the flows based
+                on discussions with the development team and the CEO
+              </Text>
+            </Flex>
+
+            <Text>
+              With the research phase done, the next step in process is to draft
+              a UX flow I do this using flow diagrams and we iterate on the
+              flows based on discussions with the development team and the CEO
+            </Text>
+
+            <Callout.Root size={"1"}>
+              <Callout.Icon>
+                <Star size={"1rem"} />
+              </Callout.Icon>
+              <Callout.Text size={"3"}>
+                The major criteria that is considered at this step of the
+                process is that the UX is fast. Because this product is all
+                about helping the developer during,at worst, critical outages -
+                no end point of a flow should take too long to get to - we
+                measure the speed in clicks
+              </Callout.Text>
+            </Callout.Root>
+
+            <Flex direction={"column"}>
+              <img
+                src="/LogManagement/Cover Photos/Logs Insights/Sarari - DarkUX Flow 2.png"
+                style={{
+                  borderRadius: "0.5rem",
+                  objectFit: "contain",
+                  width: "100%",
+                }}
+              />
+              <Text align={"center"} size={"1"} color="gray">
+                UX Flow for the User Billing Section
+              </Text>
+            </Flex>
+            <Text>
+              The initial starting point of the UX derives from the APIs and in
+              case the API usage is too tedious in practice, a new API is
+              requested that speeds up the UX
+            </Text>
+          </Flex>
+        </Card>
+      </Flex>
+    </Container>
+  );
+}
+
