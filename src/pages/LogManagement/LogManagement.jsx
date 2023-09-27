@@ -24,6 +24,7 @@ import {
   LaptopBadge,
   ProductDesignBadge,
 } from "../../data/ProjectListData";
+import ImageViewer from "../../components/ImageViewer/ImageViewer";
 
 export default function LogManagement() {
   // Dark Mode Setup
@@ -99,6 +100,8 @@ function LogManagementBody() {
       <Brief />
       <Research />
       <UserExperience />
+      <PrototypeAndDeliverable />
+      <Conclusion />
     </Flex>
   );
 }
@@ -378,8 +381,8 @@ function UserExperience() {
                 }}
               />
               <Text align={"center"} size={"1"} color="gray">
-                We use flow diagrams and we iterate on the flows based
-                on discussions with the development team and the CEO
+                We use flow diagrams and we iterate on the flows based on
+                discussions with the development team and the CEO
               </Text>
             </Flex>
 
@@ -427,3 +430,121 @@ function UserExperience() {
   );
 }
 
+function PrototypeAndDeliverable() {
+  return (
+    <Container size={"4"} width={"100%"}>
+      <Flex direction={"column"} gap={"3"}>
+        <Heading align={"center"} size={"8"}>
+          Prototyping
+        </Heading>
+        <Card>
+          <Flex direction={"column"} gap={"3"}>
+            {/* <img
+                src="/LogManagement/Cover Photos/Logs Insights/Sarari - DarkFigma Overview.png"
+                style={{
+                  borderRadius: "0.5rem",
+                  objectFit: "contain",
+                  width: "100%",
+                }}
+              /> */}
+
+            <ImageViewer {...FigmaOverview} />
+            <Text>
+              Once the UX has been decided, the next step of the process is to
+              design the UI layout and elements. I provide multiple variations
+              of layout as wireframes which are discussed with the development
+              team and the CEO. We pick and choose the features and elements we
+              like and after 2-3 rounds, we finalise the design.
+            </Text>
+          </Flex>
+        </Card>
+      </Flex>
+    </Container>
+  );
+}
+
+function Conclusion() {
+  return (
+    <Container size={"4"} width={"100%"}>
+      <Flex direction={"column"} gap={"3"}>
+        <Heading align={"center"} size={"8"}>
+          Afterword
+        </Heading>
+        <Card>
+          <Flex direction={"column"} gap={"3"}>
+            This is my first job right out of design school. But I mention too
+            that I was a software developer before I was in design school. I had
+            experienced the great gap of practice between academia and industry
+            and Design seemed to be no exception to this. In a way it was a
+            chance to start a section of my life over again and therefore, I did
+            things differently.
+            <Flex gap={"3"}>
+              <Card>
+                <Heading color="jade" size={"1"}>
+                  Do Things Right (when you can)
+                </Heading>
+                <Text>
+                  The problem of practice in school is that there is no real
+                  stake in the work. It is merely a personal stake of reputation
+                  or at worst, a grade. In the real world, others depend on you
+                  doing your job. Furthermore, the luxury of time is a rare
+                  thing to find and therefore, I have learnt to compress what I
+                  learnt in design school and apply it to the sprints that
+                  happen in the real world
+                </Text>
+              </Card>
+              <Card>
+                <Heading color="jade" size={"1"}>
+                  Let It Grow
+                </Heading>
+                <Text>
+                  A curious thing I found when going through the process of
+                  Design at CloudAEye was when I was tasked with parallely
+                  building a design system for the company. The nature of work
+                  at the company forced me to adopt the method of allowing the
+                  design system to grow incrementally and organically out of the
+                  main work i.e. product design of Log Management (and other
+                  products of CloudAEye). Watching the design system grow
+                  incrementally and organically as a result of battle tested
+                  components and slow adjustments have taught me how to run
+                  multiple threads of work without having to context switch or
+                  have the either of the work suffer from distraction of the
+                  other
+                </Text>
+              </Card>
+            </Flex>
+          </Flex>
+        </Card>
+      </Flex>
+    </Container>
+  );
+}
+
+const FigmaOverview = {
+  src: "/LogManagement/Cover Photos/Logs Insights/Sarari - DarkFigma Overview.png",
+  hotspots: [
+    {
+      top: "50%",
+      left: "66%",
+      title: "Feedback",
+      content: (
+        <Text>
+          Feedback would be given through Figma comments and votes would also be
+          cast as comments for elements that were good or bad
+        </Text>
+      ),
+    },
+    {
+      top: "80%",
+      left: "56%",
+      title: "Breakpoints",
+      content: (
+        <Text>
+          The final design also comes with a number of variations of each screen
+          so that each breakpoint can have a layout that is navigable by the
+          user
+        </Text>
+      ),
+    },
+  ],
+};
