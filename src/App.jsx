@@ -207,7 +207,7 @@ function SpecialMention() {
               </Text>
               <HoverCard.Root>
                 <HoverCard.Trigger>
-                  <Link color="tomato" href="https://wa.me/qr/HZ6B54KNMH4JA1">
+                  <Link href="https://wa.me/qr/HZ6B54KNMH4JA1">
                     whatsapp
                   </Link>
                 </HoverCard.Trigger>
@@ -217,7 +217,7 @@ function SpecialMention() {
                       src="/whatsapp.jpeg"
                       style={{ width: "12rem", height: "12rem" }}
                     />
-                    <Link color="tomato" href="tel:+919985887990">
+                    <Link href="tel:+919985887990">
                       <Text size={"2"}>+91 9985887990</Text>
                     </Link>
                   </Flex>
