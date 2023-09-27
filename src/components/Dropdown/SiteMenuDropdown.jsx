@@ -33,7 +33,6 @@ export function SiteMenuDropdown() {
           </DropdownMenu.SubContent>
         </DropdownMenu.Sub>
 
-
         {/* <DropdownMenu.Separator />
         <DropdownMenu.Label>Code</DropdownMenu.Label>
         <DropdownMenu.Sub>
@@ -47,7 +46,6 @@ export function SiteMenuDropdown() {
           </DropdownMenu.SubContent>
         </DropdownMenu.Sub> */}
 
-        
         {/* <DropdownMenu.Separator />
         <DropdownMenu.Label>Creative Tech</DropdownMenu.Label>
         <DropdownMenu.Sub>
@@ -72,6 +70,7 @@ export function SiteMenuDropdown() {
         </DropdownMenu.Sub>
 
         <DropdownMenu.Separator /> */}
+        <DropdownMenu.Separator />
 
         <DropdownMenu.Item asChild>
           <RouterLink to={"/About"}> About</RouterLink>
