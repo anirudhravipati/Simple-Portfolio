@@ -7,6 +7,8 @@ import {
   Container,
   Card,
   Text,
+  Link,
+  Separator,
 } from "@radix-ui/themes";
 import { Car, MoonStars, Sun } from "@phosphor-icons/react";
 import { SiteMenuDropdown } from "../../components/Dropdown/SiteMenuDropdown";
@@ -67,8 +69,7 @@ export default function LogManagement() {
         {mode ? <MoonStars size={"1.5rem"} /> : <Sun size={"1.5rem"} />}
       </IconButton>
       <LogManagementBody />
-      <Context />
-      <Overview />
+
       <Footer />
     </Theme>
   );
@@ -87,6 +88,10 @@ function LogManagementBody() {
         Log Management <Heading size={"4"}>by CloudAEye</Heading>
       </Heading>
       <CoverSection />
+      <Context />
+      <Overview />
+      <Brief />
+      <Research/>
     </Flex>
   );
 }
@@ -102,7 +107,6 @@ function CoverSection() {
               borderRadius: "0.5rem",
               objectFit: "contain",
               width: "100%",
-              height: "40rem",
             }}
           />
           <Text weight={"light"} align={"center"} size={"3"}>
@@ -164,59 +168,139 @@ function Context() {
 
 function Overview() {
   return (
-    <Container mt={"5"}>
+    <Container>
       <Card>
-        <Flex direction={"column"} justify={"center"} align={"center"} gap={"1"}>
-        <Text weight={"light"} color="gray" size={"2"}>
-          While each feature of Log Management is unique, an overview of the
-          process followed to get to the design can broken down into these steps
-        </Text>
-        <Flex align={"stretch"} gap={"3"} wrap={"wrap"}>
-          <Card size={"5"} variant="classic">
-            <Flex align={"center"} justify={"between"} gap={"1"}>
-              <Heading size={"9"} color="jade">
-                1
-              </Heading>
-              <Heading size={"9"} color="gray">
-                Brief
-              </Heading>
-            </Flex>
-          </Card>
-          <Card size={"5"} variant="classic">
-            <Flex align={"center"} justify={"between"} gap={"1"}>
-              <Heading size={"9"} color="jade">
-                2
-              </Heading>
-              <Heading size={"9"} color="gray">
-                Research
-              </Heading>
-            </Flex>
-          </Card>
-          <Card size={"5"} variant="classic">
-            <Flex align={"center"} justify={"between"} gap={"1"}>
-              <Heading size={"9"} color="jade">
-                3
-              </Heading>
-              <Heading size={"9"} color="gray">
-                User Experience Design
-              </Heading>
-            </Flex>
-          </Card>
-          <Card size={"5"} variant="classic">
-            <Flex align={"center"} justify={"between"} gap={"1"}>
-              <Heading size={"9"} color="jade">
-                4
-              </Heading>
-              <Heading size={"9"} color="gray">
-                Prototype & Deliverable
-              </Heading>
-            </Flex>
-          </Card>
-          
+        <Flex direction={"column"} justify={"center"} gap={"3"}>
+          <Heading align={"left"} size={"1"} color="gray">
+            Overview
+          </Heading>
+          <Text align={"center"} weight={"light"} color="gray" size={"2"}>
+            While each feature of Log Management is unique, an overview of the
+            process followed to get to the design can broken down into these
+            steps
+          </Text>
+          <Flex justify={"center"} align={"center"} gap={"3"} wrap={"wrap"}>
+            <Card size={"1"} variant="classic">
+              <Flex align={"center"} justify={"between"} gap={"1"}>
+                <Heading size={"7"} color="jade">
+                  1
+                </Heading>
+                <Heading size={"7"} color="gray">
+                  Brief
+                </Heading>
+              </Flex>
+            </Card>
+            <Card size={"1"} variant="classic">
+              <Flex align={"center"} justify={"between"} gap={"1"}>
+                <Heading size={"7"} color="jade">
+                  2
+                </Heading>
+                <Heading size={"7"} color="gray">
+                  Research
+                </Heading>
+              </Flex>
+            </Card>
+            <Card size={"1"} variant="classic">
+              <Flex align={"center"} justify={"between"} gap={"1"}>
+                <Heading size={"7"} color="jade">
+                  3
+                </Heading>
+                <Heading size={"7"} color="gray">
+                  User Experience Design
+                </Heading>
+              </Flex>
+            </Card>
+            <Card size={"1"} variant="classic">
+              <Flex align={"center"} justify={"between"} gap={"1"}>
+                <Heading size={"7"} color="jade">
+                  4
+                </Heading>
+                <Heading size={"7"} color="gray">
+                  Prototype & Deliverable
+                </Heading>
+              </Flex>
+            </Card>
+          </Flex>
         </Flex>
-        </Flex>
-        
       </Card>
     </Container>
   );
+}
+
+function Brief() {
+  return (
+    <Container size={"4"} width={"100%"}>
+      <Flex direction={"column"} gap={"3"}>
+        <Heading align={"center"} size={"8"}>
+          Brief
+        </Heading>
+        <Card>
+          <Flex direction={"column"} gap={"3"}>
+            <Flex direction={"column"}>
+              <img
+                src="/LogManagement/Cover Photos/Logs Insights/Sarari - DarkAPI Confluence .png"
+                style={{
+                  borderRadius: "0.5rem",
+                  objectFit: "contain",
+                  width: "100%",
+                }}
+              />
+              <Text align={"center"} size={"1"} color="gray">
+                APIs were documented in{" "}
+                <Link href="https://www.atlassian.com/software/confluence">
+                  Confluence
+                </Link>
+              </Text>
+            </Flex>
+            <Text>
+              Each feature was documented by the CEO regarding{" "}
+              <TextHoverCard trigger="APIs" content={"What is an API?"} /> that
+              were to be exposed to the user. An example of an input & output
+              for APIs would be given.
+            </Text>
+            <Separator size={"4"} />
+            <Flex direction={"column"}>
+              <img
+                src="/LogManagement/Cover Photos/Logs Insights/Sarari - DarkJIRA Issue Summary.png"
+                style={{
+                  borderRadius: "0.5rem",
+                  objectFit: "contain",
+                  width: "100%",
+                }}
+              />
+              <Text align={"center"} size={"1"} color="gray">
+                Briefs were documented in{" "}
+                <Link href="https://www.atlassian.com/software/jira">JIRA</Link>{" "}
+                and{" "}
+                <Link href="https://www.atlassian.com/software/confluence">
+                  Confluence
+                </Link>
+              </Text>
+            </Flex>
+            <Text>
+              During discussions, the overarching idea of how this feature would
+              help our user solve their problem was always laid out{" "}
+            </Text>
+          </Flex>
+        </Card>
+      </Flex>
+    </Container>
+  );
+}
+
+function Research() {
+    return(
+        <Container size={"4"} width={"100%"}>
+        <Flex direction={"column"} gap={"3"}>
+          <Heading align={"center"} size={"8"}>
+            Research
+          </Heading>
+          <Card>
+            <Flex direction={"column"} gap={"3"}>
+              
+            </Flex>
+          </Card>
+        </Flex>
+      </Container>
+    )
 }
