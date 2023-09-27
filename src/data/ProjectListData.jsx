@@ -10,6 +10,8 @@ import {
   FlowArrow,
   ShieldCheck,
   Play,
+  Laptop,
+  DeviceMobile,
 } from "@phosphor-icons/react";
 
 import { Badge } from "@radix-ui/themes";
@@ -28,6 +30,7 @@ export const ProjectListData = [
       <UserResearchBadge key="user-research" />,
       <UserExperienceBadge key="ux"/>,
       <FigmaBadge key="figma" />,
+      <MobileBadge key="mobile" />
     ],
     page: "FAM",
   },
@@ -159,6 +162,25 @@ export function FigmaBadge() {
     <Badge size="2" color="gold">
       <SiFigma size={"1rem"} />
       Figma
+    </Badge>
+  );
+}
+
+export function LaptopBadge() {
+  return (
+    <Badge size="2" color="grass">
+      <Laptop size={"1rem"} />
+      Web
+    </Badge>
+  );
+}
+
+
+export function MobileBadge() {
+  return (
+    <Badge size="2" color="ruby">
+      <DeviceMobile size={"1rem"} />
+      Mobile
     </Badge>
   );
 }

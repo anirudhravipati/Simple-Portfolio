@@ -30,7 +30,11 @@ import {
 import { useEffect, useState } from "react";
 import { SiteMenuDropdown } from "./components/Dropdown/SiteMenuDropdown";
 import Footer from "./components/Footer/Footer";
-import { SiFacebook, SiGoogle, SiSamsung } from "@icons-pack/react-simple-icons";
+import {
+  SiFacebook,
+  SiGoogle,
+  SiSamsung,
+} from "@icons-pack/react-simple-icons";
 
 function App() {
   // Dark Mode Setup
@@ -85,7 +89,7 @@ function App() {
 
 function Home() {
   return (
-    <Flex direction={"column"} style={{minHeight: "100vh"}}>
+    <Flex direction={"column"} style={{ minHeight: "100vh" }}>
       <Flex p={"3"} gap={"3"} direction={"column"}>
         <Title />
         <Blurb />
@@ -151,7 +155,11 @@ function SpecialMention() {
               companies I've previously worked for
             </Text>
             <Flex wrap={"wrap"} align={"center"} gap={"3"} justify={"center"}>
-              <Link target="_blank" rel="noreferrer" href="https://www.google.com/">
+              <Link
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.google.com/"
+              >
                 <SiGoogle
                   size={"2rem"}
                   weight="fill"
@@ -167,14 +175,24 @@ function SpecialMention() {
                 />
               </Link>
               <Separator size={"2"} orientation="vertical" />
-              <Link target="_blank" rel="noreferrer" href="https://www.enel.com//" ml={"3"} mr={"3"}>
+              <Link
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.enel.com//"
+                ml={"3"}
+                mr={"3"}
+              >
                 <img
                   src="/Enel_Logo_Primary_RGB.png"
                   style={{ color: "inherit", height: "1.5rem" }}
                 />
               </Link>
               <Separator size={"2"} orientation="vertical" />
-              <Link target="_blank" rel="noreferrer" href="https://research.samsung.com/sri-b">
+              <Link
+                target="_blank"
+                rel="noreferrer"
+                href="https://research.samsung.com/sri-b"
+              >
                 <SiSamsung
                   size={"3rem"}
                   weight="fill"
@@ -189,7 +207,9 @@ function SpecialMention() {
               </Text>
               <HoverCard.Root>
                 <HoverCard.Trigger>
-                  <Link href="https://wa.me/qr/HZ6B54KNMH4JA1">whatsapp</Link>
+                  <Link color="tomato" href="https://wa.me/qr/HZ6B54KNMH4JA1">
+                    whatsapp
+                  </Link>
                 </HoverCard.Trigger>
                 <HoverCard.Content size={"1"}>
                   <Flex align={"center"} gap={"1"} direction={"column"}>
@@ -197,7 +217,9 @@ function SpecialMention() {
                       src="/whatsapp.jpeg"
                       style={{ width: "12rem", height: "12rem" }}
                     />
-                    <Link href="tel:+919985887990"><Text size={"2"}>+91 9985887990</Text></Link>
+                    <Link color="tomato" href="tel:+919985887990">
+                      <Text size={"2"}>+91 9985887990</Text>
+                    </Link>
                   </Flex>
                 </HoverCard.Content>
               </HoverCard.Root>
@@ -206,7 +228,8 @@ function SpecialMention() {
               </Text>
               <Link href="mailto: ravipatianirudh@gmail.com">email</Link>
               <Text align={"center"} size={"2"} color="gray">
-                to discuss freelance projects in web design, development or creative tech
+                to discuss freelance projects in web design, development or
+                creative tech
               </Text>
             </Flex>
           </Flex>
@@ -263,16 +286,17 @@ function ProjectCard({ title, src, content, tags, page }) {
           <Flex wrap={"wrap"} gap="2">
             {...tags}
           </Flex>
-          <RouterLink to={page}>
-            <Button
-              size="3"
-              color="jade"
-              variant="surface"
-              style={{ width: "fit-content" }}
-            >
+
+          <Button
+            size="3"
+            color="jade"
+            variant="surface"
+            style={{ width: "fit-content" }}
+          >
+            <RouterLink to={page} style={{textDecoration: "none", color: "inherit"}}>
               <ArrowRight size={"1rem"} /> View{" "}
-            </Button>
-          </RouterLink>
+            </RouterLink>
+          </Button>
         </Flex>
       </Flex>
     </Card>
