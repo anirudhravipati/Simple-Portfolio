@@ -20,6 +20,22 @@ import { Badge } from "@radix-ui/themes";
 export const ProjectListData = [
   {
     key: "1",
+    title: "Log Management by CloudAEye",
+    src: "/LogManagement/Cover Photos/Logs Insights/Sarari - DarkInsights.png",
+    content:
+      "Log Management is a SaaS service that takes in all logs of a user’s cloud applications,\
+       uses AI to analyze the logs and identify any anomalies, provide alerts when such anomalies occur,\
+        and provide possible solutions to the occurring anomalies",
+    tags: [
+      <ProductDesignBadge key={"product"} />,
+      <UserExperienceBadge key="ux" />,
+      <FigmaBadge key="figma" />,
+      <LaptopBadge key="mobile" />,
+    ],
+    page: "FAM",
+  },
+  {
+    key: "2",
     title: "FAM",
     src: "/FAM/cover.png",
     content:
@@ -29,13 +45,13 @@ export const ProjectListData = [
       by the app’s gentle instruction and checks!",
     tags: [
       <UserResearchBadge key="user-research" />,
-      <UserExperienceBadge key="ux"/>,
+      <UserExperienceBadge key="ux" />,
       <FigmaBadge key="figma" />,
-      <MobileBadge key="mobile" />
+      <MobileBadge key="mobile" />,
     ],
     page: "FAM",
   },
-
+  
 ];
 
 export const Icons = [
@@ -167,7 +183,6 @@ export function LaptopBadge() {
   );
 }
 
-
 export function MobileBadge() {
   return (
     <Badge size="2" color="ruby">
@@ -178,10 +193,10 @@ export function MobileBadge() {
 }
 
 export function ProductDesignBadge() {
-  return(
+  return (
     <Badge size="2" color="purple">
       <Component1Icon size={"1rem"} />
       Product Design
     </Badge>
-  )
+  );
 }
