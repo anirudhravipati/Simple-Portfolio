@@ -121,22 +121,31 @@ function CoverSection() {
           />
           <Text weight={"light"} align={"center"} size={"3"}>
             CloudAEye is a SaaS company that specialises in{" "}
-            <TextHoverCard trigger={"AI Ops"} content={"What is AI Ops"} /> for
-            cloud applications. Their first product was Log Management which is
-            a SaaS service that takes in all logs of a user’s cloud
+            <TextHoverCard
+              trigger={"AI Ops"}
+              content={
+                "AI Ops, short for Artificial Intelligence for IT Operations, is a technology-driven approach that leverages artificial intelligence and machine learning to enhance the management and performance of IT operations. It combines automation, data analytics, and predictive capabilities to streamline and optimize various IT processes, such as monitoring, troubleshooting, and incident response. AI Ops helps organizations proactively identify and resolve IT issues, improve system reliability, and enhance overall operational efficiency, ultimately leading to better user experiences and reduced downtime"
+              }
+            />{" "}
+            for cloud applications. Their first product was Log Management which
+            is a SaaS service that takes in all logs of a user’s cloud
             applications, uses AI to analyze the logs and identify any
             anomalies, provide alerts when such anomalies occur, and provide
             possible solutions to the occurring anomalies. Additionally, the
             product also provided many more tools like a{" "}
             <TextHoverCard
               trigger={"GROK Parser"}
-              content={"What is GROK Parser"}
+              content={
+                "GROK parsing is a data processing technique that uses pre-defined patterns to extract structured information from unstructured log data. It's commonly used in log analysis and monitoring systems to make sense of complex and varied log entries, allowing for easier data analysis and troubleshooting"
+              }
             />{" "}
             , a basic user management dashboard to manage access to the team
             within CloudAEye features, and intelligent{" "}
             <TextHoverCard
               trigger={"Billing Dashboards"}
-              content={"What is Billing Dashboards"}
+              content={
+                "The billing dashboards at CloudAEye come with AI assisted forecasts of costs for each service"
+              }
             />{" "}
           </Text>
           <Flex mt={"2"} wrap={"wrap"} justify={"center"} gap={"2"}>
@@ -264,9 +273,14 @@ function Brief() {
             </Flex>
             <Text>
               Each feature was documented by the CEO regarding{" "}
-              <TextHoverCard trigger="APIs" content={"What is an API?"} /> that
-              were to be exposed to the user. An example of an input & output
-              for APIs would be given.
+              <TextHoverCard
+                trigger="APIs"
+                content={
+                  "APIs are the hidden machinery powering your digital product. They provide a structured way for the front-end to communicate with the server and access data and functionality. These APIs serve as a contract between the design and development teams, defining how data can be fetched, updated, and manipulated. They allow designers to create user interfaces that seamlessly interact with the server, ensuring a smooth and responsive user experience"
+                }
+              />{" "}
+              that were to be exposed to the user. An example of an input &
+              output for APIs would be given.
             </Text>
             <Separator size={"4"} />
             <Flex direction={"column"}>
