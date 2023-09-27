@@ -91,7 +91,21 @@ function AboutContent() {
 
       <Container>
         <Text align={"center"}>
-          <LoremIpsum />
+          Hi! Thank you for visiting my website! This is where I like to
+          showcase some select digital projects. I'm an
+          engineer-turned-designer. I made the switch by training at CIID where
+          I've had the oppurtunity to be immersed in projects with companies
+          such as Google, Meta, & Fundacíon CRUSA. Along the way, I've been
+          inspired by the sheer variety of skills that my peers brought to the
+          table. It allowed me to understand and speak the different langauges
+          of different disciplines. As a designer, what I've learned to aim at
+          is to seek a balance of utility, aesthetic, and ethics. As a result,
+          I've learned that the best method to truly understand how I could make
+          a difference is to immerse myself in the contexts of the user and the
+          product. I like to leverage technology and the media it creates.
+          Progression of technology offers new ways to present, or talk to the
+          user and I have been lucky enough to walk the worlds of engineering
+          and design to leverage the strengths of both
         </Text>
       </Container>
     </Flex>
