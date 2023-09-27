@@ -6,6 +6,6 @@
 
 @media screen and (max-width: 914px) {
     .afterword-cards{
-        min-width: 350px;
+        width: 100%;
     }
 }
