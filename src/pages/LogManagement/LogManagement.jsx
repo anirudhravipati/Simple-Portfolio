@@ -25,6 +25,7 @@ import {
   ProductDesignBadge,
 } from "../../data/ProjectListData";
 import ImageViewer from "../../components/ImageViewer/ImageViewer";
+import "./LogManagement.css"
 
 export default function LogManagement() {
   // Dark Mode Setup
@@ -492,8 +493,8 @@ function Conclusion() {
             and Design seemed to be no exception to this. In a way it was a
             chance to start a section of my life over again and therefore, I did
             things differently.
-            <Flex gap={"3"}>
-              <Card>
+            <Flex wrap="wrap" justify={"center"} gap={"3"}>
+              <Card className="afterword-cards">
                 <Heading color="jade" size={"1"}>
                   Do Things Right (when you can)
                 </Heading>
@@ -507,7 +508,7 @@ function Conclusion() {
                   happen in the real world
                 </Text>
               </Card>
-              <Card>
+              <Card className="afterword-cards">
                 <Heading color="jade" size={"1"}>
                   Let It Grow
                 </Heading>

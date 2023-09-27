@@ -1,0 +1,11 @@
+.afterword-cards{
+    width: 49%;
+    background-color: aqua;
+}
+}
+
+@media screen and (max-width: 914px) {
+    .afterword-cards{
+        min-width: 350px;
+    }
+}
