@@ -13,6 +13,7 @@ import {
   Laptop,
   DeviceMobile,
 } from "@phosphor-icons/react";
+import { Component1Icon } from "@radix-ui/react-icons";
 
 import { Badge } from "@radix-ui/themes";
 
@@ -112,15 +113,6 @@ export function UserExperienceBadge() {
   );
 }
 
-export function ProductDesignBadge() {
-  return (
-    <Badge size="2" color="crimson">
-      <BoundingBox size={"1rem"} />
-      Product Design
-    </Badge>
-  );
-}
-
 export function UserResearchBadge() {
   return (
     <Badge size="2" color="teal">
@@ -183,4 +175,13 @@ export function MobileBadge() {
       Mobile
     </Badge>
   );
+}
+
+export function ProductDesignBadge() {
+  return(
+    <Badge size="2" color="purple">
+      <Component1Icon size={"1rem"} />
+      Product Design
+    </Badge>
+  )
 }
