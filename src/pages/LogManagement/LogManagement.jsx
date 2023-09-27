@@ -9,6 +9,8 @@ import {
   Text,
   Link,
   Separator,
+  Blockquote,
+  Strong,
 } from "@radix-ui/themes";
 import { Car, MoonStars, Sun } from "@phosphor-icons/react";
 import { SiteMenuDropdown } from "../../components/Dropdown/SiteMenuDropdown";
@@ -85,13 +87,16 @@ function LogManagementBody() {
       style={{ minHeight: "100vh" }}
     >
       <Heading align={"center"} size={"9"}>
-        Log Management <Heading size={"4"}>by CloudAEye</Heading>
+        Log Management{" "}
+        <Heading align={"right"} size={"4"}>
+          by CloudAEye
+        </Heading>
       </Heading>
       <CoverSection />
       <Context />
       <Overview />
       <Brief />
-      <Research/>
+      <Research />
     </Flex>
   );
 }
@@ -289,18 +294,64 @@ function Brief() {
 }
 
 function Research() {
-    return(
-        <Container size={"4"} width={"100%"}>
-        <Flex direction={"column"} gap={"3"}>
-          <Heading align={"center"} size={"8"}>
-            Research
-          </Heading>
-          <Card>
-            <Flex direction={"column"} gap={"3"}>
-              
+  return (
+    <Container size={"4"} width={"100%"}>
+      <Flex direction={"column"} gap={"3"}>
+        <Heading align={"center"} size={"8"}>
+          Research
+        </Heading>
+        <Card>
+          <Flex direction={"column"} gap={"3"}>
+          <Flex direction={"column"}>
+              <img
+                src="/LogManagement/Cover Photos/Logs Insights/Sarari - DarkResearch.png"
+                style={{
+                  borderRadius: "0.5rem",
+                  objectFit: "contain",
+                  width: "100%",
+                }}
+              />
+              <Text align={"center"} size={"1"} color="gray">
+                The three dimensions along which research was conducted : user experience, technology, & competition  
+              </Text>
             </Flex>
-          </Card>
-        </Flex>
-      </Container>
-    )
+            <Text>
+              At this time of CloudAEye, we’re yet to launch the product and
+              reel in customers. To get customers, we need the product out fast,
+              so there was no time to conduct a User Experience Research
+              cycle.To ground design decisions, I decided to attack the problem
+              in an alternative way
+            </Text>
+            <Flex wrap={"wrap"} gap={"3"}>
+              <Card>
+                <Heading size={"7"} color="jade">
+                  1
+                </Heading>
+                The design cannot look <Strong>completely</Strong> different
+                from the existing competition. Our aim was to lure customers
+                away from competition
+              </Card>
+              <Card>
+                <Heading size={"7"} color="jade">
+                  2
+                </Heading>
+                Highlight CloudAEye’s advantages over the competition wherever
+                possible.
+              </Card>
+              <Card>
+                <Heading size={"7"} color="jade">
+                  3
+                </Heading>
+                Whenever the existing engineering of the product forced the UX
+                to be complicated - engineering was given the task to fit itself
+                according to design so that the end user will have a UX wherein
+                the flow doesn’t last several steps to get to the desired
+                information
+              </Card>
+            </Flex>
+          </Flex>
+        </Card>
+      </Flex>
+    </Container>
+  );
 }
