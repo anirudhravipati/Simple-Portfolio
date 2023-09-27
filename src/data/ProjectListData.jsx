@@ -32,7 +32,7 @@ export const ProjectListData = [
       <FigmaBadge key="figma" />,
       <LaptopBadge key="mobile" />,
     ],
-    page: "FAM",
+    page: "LogManagement",
   },
   {
     key: "2",
