@@ -36,6 +36,8 @@ import {
   SiSamsung,
 } from "@icons-pack/react-simple-icons";
 
+import "./App.css"
+
 function App() {
   // Dark Mode Setup
   const [mode, setMode] = useState(() => {
@@ -254,16 +256,17 @@ function ProjectList() {
 function ProjectCard({ title, src, content, tags, page }) {
   return (
     <Card variant="surface" size="1">
-      <Flex>
+      <Flex className="card-flex-box">
         <img
           src={src}
-          style={{
-            objectFit: "scale-down",
-            borderRadius: "var(--radius-2)",
-            width: "40%",
-            height: "20rem",
-            marginRight: "1rem",
-          }}
+          className="project-card-image"
+          // style={{
+          // //   objectFit: "scale-down",
+          //   borderRadius: "var(--radius-2)",
+          // //   width: "40%",
+          // //   height: "20rem",
+          // //   marginRight: "1rem",
+          // }}
         />
         <Flex
           justify={"center"}

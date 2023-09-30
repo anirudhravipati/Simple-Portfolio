@@ -1,0 +1,19 @@
+.project-card-image {
+    object-fit: scale-down;
+    min-width: 40%;
+    width: 40%;
+    max-height: 20rem;
+    margin-right: 1rem;
+}
+
+
+@media screen and (max-width: 914px) {
+    .card-flex-box {
+        flex-direction: column;
+    }
+    .project-card-image{
+        width: 100%;
+        height: fit-content;
+        object-fit: scale-down;
+    }
+}
