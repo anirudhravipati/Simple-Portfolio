@@ -1,0 +1,19 @@
+.prototype-images {
+
+}
+
+.prototype-image {
+    width: 50%;
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 914px) {
+    .prototype-images {
+        flex-direction: column;
+    }
+
+    .prototype-image {
+        width: 100%;
+    }
+    
+}
