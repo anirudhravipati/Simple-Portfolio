@@ -249,7 +249,7 @@ function PrototypeDemo() {
       </Heading>
       <Card>
         <Flex align="center" direction={"column"}>
-          <video src="/public/Alien Radio/alien radio.webm" controls autoPlay={false} style={{width: "100%",borderRadius: "0.5rem"}} />
+          <video src="/Alien Radio/alien radio.webm" controls autoPlay={false} style={{width: "100%",borderRadius: "0.5rem"}} />
         </Flex>
       </Card>
     </Container>
