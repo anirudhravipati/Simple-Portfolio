@@ -20,56 +20,35 @@ export function SiteMenuDropdown() {
         </DropdownMenu.Item>
 
         <DropdownMenu.Separator />
-        <DropdownMenu.Label>Design</DropdownMenu.Label>
+
         <DropdownMenu.Sub>
-          <DropdownMenu.SubTrigger>Projects</DropdownMenu.SubTrigger>
+          <DropdownMenu.SubTrigger>
+            Digital Product Design
+          </DropdownMenu.SubTrigger>
           <DropdownMenu.SubContent>
-            <DropdownMenu.Item asChild>
-              <RouterLink to={"/FAM"}> FAM</RouterLink>
-            </DropdownMenu.Item>
             <DropdownMenu.Item asChild>
               <RouterLink to={"/LogManagement"}> Log Management</RouterLink>
             </DropdownMenu.Item>
           </DropdownMenu.SubContent>
         </DropdownMenu.Sub>
 
-        {/* <DropdownMenu.Separator />
-        <DropdownMenu.Label>Code</DropdownMenu.Label>
         <DropdownMenu.Sub>
-          <DropdownMenu.SubTrigger>Projects</DropdownMenu.SubTrigger>
+          <DropdownMenu.SubTrigger>User Research</DropdownMenu.SubTrigger>
           <DropdownMenu.SubContent>
             <DropdownMenu.Item asChild>
               <RouterLink to={"/FAM"}> FAM</RouterLink>
             </DropdownMenu.Item>
-            <DropdownMenu.Item>Title 1</DropdownMenu.Item>
-            <DropdownMenu.Item>Title 2</DropdownMenu.Item>
-          </DropdownMenu.SubContent>
-        </DropdownMenu.Sub> */}
-
-        {/* <DropdownMenu.Separator />
-        <DropdownMenu.Label>Creative Tech</DropdownMenu.Label>
-        <DropdownMenu.Sub>
-          <DropdownMenu.SubTrigger>Projects</DropdownMenu.SubTrigger>
-          <DropdownMenu.SubContent>
-            <DropdownMenu.Item asChild>
-              <RouterLink to={"/FAM"}> FAM</RouterLink>
-            </DropdownMenu.Item>
-            <DropdownMenu.Item>Title 1</DropdownMenu.Item>
-            <DropdownMenu.Item>Title 2</DropdownMenu.Item>
-          </DropdownMenu.SubContent>
-        </DropdownMenu.Sub>
-        <DropdownMenu.Sub>
-          <DropdownMenu.SubTrigger>Experiments</DropdownMenu.SubTrigger>
-          <DropdownMenu.SubContent>
-            <DropdownMenu.Item asChild>
-              <RouterLink to={"/FAM"}> FAM</RouterLink>
-            </DropdownMenu.Item>
-            <DropdownMenu.Item>Title 1</DropdownMenu.Item>
-            <DropdownMenu.Item>Title 2</DropdownMenu.Item>
+            {/* <DropdownMenu.Item>Switch Twitch</DropdownMenu.Item> */}
           </DropdownMenu.SubContent>
         </DropdownMenu.Sub>
 
-        <DropdownMenu.Separator /> */}
+        <DropdownMenu.Sub>
+          <DropdownMenu.SubTrigger>Creative Tech</DropdownMenu.SubTrigger>
+          <DropdownMenu.SubContent>
+            <DropdownMenu.Item asChild><RouterLink to={"/AlienRadio"}> Alien Radio</RouterLink></DropdownMenu.Item>
+          </DropdownMenu.SubContent>
+        </DropdownMenu.Sub>
+
         <DropdownMenu.Separator />
 
         <DropdownMenu.Item asChild>

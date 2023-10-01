@@ -9,11 +9,14 @@ import { Theme } from "@radix-ui/themes";
 import { Analytics } from "@vercel/analytics/react"
 import About from "./pages/About/About.jsx";
 import LogManagement from "./pages/LogManagement/LogManagement.jsx";
+import Error from "./pages/Error/Error.jsx";
+import AlienRadio from "./pages/AlienRadio/AlienRadio.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Error/>
   },
   {
     path: "FAM",
@@ -26,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "LogManagement",
     element: <LogManagement />
+  },
+  {
+    path: "AlienRadio",
+    element: <AlienRadio/>
   }
 ]);
 
