@@ -15,7 +15,7 @@ import {
   HoverCard,
 } from "@radix-ui/themes";
 
-import { Link as RouterLink } from "react-router-dom";
+import { Route, Link as RouterLink } from "react-router-dom";
 import "./App.css";
 import { ProjectListData, Icons } from "./data/ProjectListData";
 import {
@@ -35,8 +35,9 @@ import {
   SiGoogle,
   SiSamsung,
 } from "@icons-pack/react-simple-icons";
+import PortfolioLogo from "./components/Portfolio Logo/PortfolioLogo";
 
-import "./App.css"
+import "./App.css";
 
 function App() {
   // Dark Mode Setup
@@ -92,22 +93,25 @@ function App() {
 function Home() {
   return (
     <Flex direction={"column"} style={{ minHeight: "100vh" }}>
-      <Flex p={"3"} gap={"3"} direction={"column"}>
+      <Flex p={"5"} gap={"3"} align={"center"} direction={"column"}>
+        <PortfolioLogo height="3rem" />
         <Title />
         <Blurb />
       </Flex>
-
       <ProjectList />
       <Footer />
     </Flex>
   );
 }
 
+
 function Title() {
   return (
-    <Heading size={"9"} align={"center"}>
-      Aniruddh Ravipati
-    </Heading>
+    <Flex>
+      <Heading size={"9"} align={"center"}>
+        Aniruddh Ravipati
+      </Heading>
+    </Flex>
   );
 }
 
@@ -209,9 +213,7 @@ function SpecialMention() {
               </Text>
               <HoverCard.Root>
                 <HoverCard.Trigger>
-                  <Link href="https://wa.me/qr/HZ6B54KNMH4JA1">
-                    whatsapp
-                  </Link>
+                  <Link href="https://wa.me/qr/HZ6B54KNMH4JA1">whatsapp</Link>
                 </HoverCard.Trigger>
                 <HoverCard.Content size={"1"}>
                   <Flex align={"center"} gap={"1"} direction={"column"}>
@@ -296,7 +298,10 @@ function ProjectCard({ title, src, content, tags, page }) {
             variant="surface"
             style={{ width: "fit-content" }}
           >
-            <RouterLink to={page} style={{textDecoration: "none", color: "inherit"}}>
+            <RouterLink
+              to={page}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <ArrowRight size={"1rem"} /> View{" "}
             </RouterLink>
           </Button>

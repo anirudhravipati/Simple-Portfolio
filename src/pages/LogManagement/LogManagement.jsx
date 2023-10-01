@@ -26,6 +26,7 @@ import {
 } from "../../data/ProjectListData";
 import ImageViewer from "../../components/ImageViewer/ImageViewer";
 import "./LogManagement.css"
+import PortfolioLogo from "../../components/Portfolio Logo/PortfolioLogo";
 
 export default function LogManagement() {
   // Dark Mode Setup
@@ -83,12 +84,13 @@ export default function LogManagement() {
 function LogManagementBody() {
   return (
     <Flex
-      p={"3"}
-      gap={"7"}
+      p={"5"}
+      gap={"5"}
       direction={"column"}
       align={"center"}
       style={{ minHeight: "100vh" }}
     >
+      <PortfolioLogo height={"3rem"} />
       <Heading align={"center"} size={"9"}>
         Log Management{" "}
         <Heading align={"right"} size={"4"}>

@@ -27,6 +27,7 @@ import {
 import TextHoverCard from "../../components/TextHoverCard/TextHoverCard";
 import LoremIpsum from "react-lorem-ipsum";
 import SimpleSlider from "../../components/ImageSlider/ImageSlider";
+import PortfolioLogo from "../../components/Portfolio Logo/PortfolioLogo";
 
 export default function FAM() {
   // Dark Mode Setup
@@ -83,13 +84,14 @@ function FAMBody() {
   return (
     <>
       <Flex
-        p={"3"}
+        p={"5"}
         gap={"7"}
         direction={"column"}
         align={"center"}
         justify={"center"}
         style={{ minHeight: "100vh" }}
       >
+        <PortfolioLogo height={"3rem"} />
         <Heading align={"center"} size="9">
           FAM
         </Heading>

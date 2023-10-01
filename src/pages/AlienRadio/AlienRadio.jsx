@@ -18,6 +18,7 @@ import Footer from "../../components/Footer/Footer";
 import TextHoverCard from "../../components/TextHoverCard/TextHoverCard";
 import "./AlienRadio.css";
 import ReactPlayer from "react-player";
+import PortfolioLogo from "../../components/Portfolio Logo/PortfolioLogo";
 
 export default function AlienRadio() {
   // Dark Mode Setup
@@ -74,12 +75,13 @@ export default function AlienRadio() {
 function AlienRadioBody() {
   return (
     <Flex
-      p={"3"}
+      p={"5"}
       gap={"3"}
       direction={"column"}
       align={"center"}
       style={{ minHeight: "100vh" }}
     >
+      <PortfolioLogo height={"3rem"} />
       <Heading size={"9"}>Alien Radio</Heading>
       <HeroSection />
       <Brief />
