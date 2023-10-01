@@ -17,7 +17,6 @@ import { Sun, MoonStars, ArrowSquareOut } from "@phosphor-icons/react";
 import Footer from "../../components/Footer/Footer";
 import TextHoverCard from "../../components/TextHoverCard/TextHoverCard";
 import "./AlienRadio.css";
-import ReactPlayer from "react-player";
 import PortfolioLogo from "../../components/Portfolio Logo/PortfolioLogo";
 
 export default function AlienRadio() {
@@ -245,10 +244,12 @@ function IdeationPrototyping() {
 function PrototypeDemo() {
   return (
     <Container>
-        <Heading mb={"2"} size={"8"} align={"center"}>Introducing Alien Radio!</Heading>
+      <Heading mb={"2"} size={"8"} align={"center"}>
+        Introducing Alien Radio!
+      </Heading>
       <Card>
         <Flex align="center" direction={"column"}>
-          <ReactPlayer  controls url={"https://vimeo.com/656765105"} style={{borderRadius: "0.5rem"}}/>
+          <video src="/public/Alien Radio/alien radio.webm" controls autoPlay={false} style={{width: "100%",borderRadius: "0.5rem"}} />
         </Flex>
       </Card>
     </Container>
