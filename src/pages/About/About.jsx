@@ -13,6 +13,7 @@ import { SiteMenuDropdown } from "../../components/Dropdown/SiteMenuDropdown";
 import { Car, MoonStars, Sun } from "@phosphor-icons/react";
 import Footer from "../../components/Footer/Footer";
 import LoremIpsum from "react-lorem-ipsum";
+import PortfolioLogo from "../../components/Portfolio Logo/PortfolioLogo";
 
 export default function About() {
   // Dark Mode Setup
@@ -71,10 +72,11 @@ function AboutContent() {
     <Flex
       align={"center"}
       direction={"column"}
-      p={"3"}
+      p={"5"}
       gap={"5"}
       style={{ minHeight: "100vh" }}
     >
+      <PortfolioLogo height={"3rem"} />
       <Heading align="center" size={"9"}>
         About
       </Heading>
