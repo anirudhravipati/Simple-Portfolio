@@ -98,8 +98,8 @@ function SEBody() {
       <Heading size={"9"}>
         Software Engineering
         <Heading size={"3"}>
-          A CV of the my work in Software Engineering at collegiate,research and
-          business levels
+          A CV of the my work in Software Engineering in college,research and
+          business 
         </Heading>
       </Heading>
       <HeroSection />
