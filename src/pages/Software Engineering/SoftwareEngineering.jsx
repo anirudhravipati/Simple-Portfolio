@@ -77,7 +77,7 @@ function SEBody() {
   return (
     <Flex
       p={"5"}
-      gap={"3"}
+      gap={"4"}
       direction={"column"}
       align={"center"}
       justify={"start"}
@@ -87,7 +87,7 @@ function SEBody() {
       <Heading size={"9"}>
         Software Engineering
         <Heading size={"3"}>
-          A CV of the work done in both collegiate and professional environments
+          A CV of the my work in Software Engineering at collegiate,research and business levels
         </Heading>
       </Heading>
       <HeroSection />
@@ -103,7 +103,7 @@ function HeroSection() {
   return (
     <Container grow={"0"} shrink={"1"}>
       <Flex direction={"column"} gap={"2"} align={"center"}>
-        <Card>
+        <Card size={"4"}>
           <Flex direction={"column"}>
             <Text align={"center"}>
               I started studying Computer Science during my undergrad at{" "}
