@@ -23,7 +23,7 @@ import {
   FigmaBadge,
   LaptopBadge,
   ProductDesignBadge,
-} from "../../data/ProjectListData";
+} from "../../data/PortfolioData";
 import ImageViewer from "../../components/ImageViewer/ImageViewer";
 import "./LogManagement.css"
 import PortfolioLogo from "../../components/Portfolio Logo/PortfolioLogo";

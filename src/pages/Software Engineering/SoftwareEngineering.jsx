@@ -22,6 +22,17 @@ import {
 } from "@phosphor-icons/react";
 import TextHoverCard from "../../components/TextHoverCard/TextHoverCard";
 import { ListBulletIcon } from "@radix-ui/react-icons";
+import {
+  CBadge,
+  CPlusPlusBadge,
+  JenkinsBadge,
+  PythonBadge,
+  AzureBadge,
+  JavaBadge,
+  AndroidBadge,
+  UnityBadge,
+  CSharpBadge,
+} from "../../data/PortfolioData";
 
 export default function SoftwareEngineering() {
   // Dark Mode Setup
@@ -87,7 +98,8 @@ function SEBody() {
       <Heading size={"9"}>
         Software Engineering
         <Heading size={"3"}>
-          A CV of the my work in Software Engineering at collegiate,research and business levels
+          A CV of the my work in Software Engineering at collegiate,research and
+          business levels
         </Heading>
       </Heading>
       <HeroSection />
@@ -172,6 +184,16 @@ function SamsungWork() {
               (Docomo) choices
             </Text>
           </Flex>
+          <Separator mt={"2"} mb={"2"} size={"4"} />
+          <Heading mb={"1"} size={"1"} color="gray">
+            Tech Stack
+          </Heading>
+          <Flex gap={"2"}>
+            <CBadge />
+            <JenkinsBadge />
+            <CPlusPlusBadge />
+            <PythonBadge />
+          </Flex>
         </Flex>
       </Card>
     </Container>
@@ -226,6 +248,15 @@ function GeoConnectWork() {
               integrated to the application
             </Text>
           </Flex>
+        </Flex>
+        <Separator mt={"2"} mb={"2"} size={"4"} />
+        <Heading mb={"1"} size={"1"} color="gray">
+          Tech Stack
+        </Heading>
+        <Flex gap={"2"}>
+          <AzureBadge />
+          <JavaBadge />
+          <AndroidBadge />
         </Flex>
       </Card>
     </Container>
@@ -321,6 +352,14 @@ function Masters() {
             </Text>
           </Flex>
         </Flex>
+        <Separator mt={"2"} mb={"2"} size={"4"} />
+        <Heading mb={"1"} size={"1"} color="gray">
+          Tech Stack
+        </Heading>
+        <Flex gap={"2"}>
+          <UnityBadge />
+          <CSharpBadge />
+        </Flex>
       </Card>
     </Container>
   );
@@ -380,6 +419,15 @@ function Bachelor() {
           <Flex align={"center"} gap={"2"}>
             <Asterisk size={"1rem"} />
             <Text>A Reddit-like website - full stack</Text>
+          </Flex>
+          <Separator mt={"2"} mb={"2"} size={"4"} />
+          <Heading mb={"1"} size={"1"} color="gray">
+            Tech Stack
+          </Heading>
+          <Flex gap={"2"}>
+            <PythonBadge />
+            <CBadge />
+            <CPlusPlusBadge/>
           </Flex>
         </Flex>
       </Card>

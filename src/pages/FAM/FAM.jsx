@@ -23,7 +23,7 @@ import {
   FigmaBadge,
   UserExperienceBadge,
   UserResearchBadge,
-} from "../../data/ProjectListData";
+} from "../../data/PortfolioData";
 import TextHoverCard from "../../components/TextHoverCard/TextHoverCard";
 import LoremIpsum from "react-lorem-ipsum";
 import SimpleSlider from "../../components/ImageSlider/ImageSlider";

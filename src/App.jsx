@@ -17,7 +17,7 @@ import {
 
 import { Route, Link as RouterLink } from "react-router-dom";
 import "./App.css";
-import { ProjectListData, Icons } from "./data/ProjectListData";
+import { ProjectListData, Icons } from "./data/PortfolioData";
 import {
   ArrowRight,
   Sun,
