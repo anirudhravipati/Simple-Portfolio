@@ -51,6 +51,10 @@ export function SiteMenuDropdown() {
           </DropdownMenu.SubContent>
         </DropdownMenu.Sub>
 
+        <DropdownMenu.Item asChild>
+          <RouterLink to={"/SoftwareEngineering"}> Software Engineering</RouterLink>
+        </DropdownMenu.Item>
+
         <DropdownMenu.Separator />
 
         <DropdownMenu.Item asChild>

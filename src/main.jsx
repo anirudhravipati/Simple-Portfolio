@@ -11,6 +11,7 @@ import About from "./pages/About/About.jsx";
 import LogManagement from "./pages/LogManagement/LogManagement.jsx";
 import Error from "./pages/Error/Error.jsx";
 import AlienRadio from "./pages/AlienRadio/AlienRadio.jsx";
+import SoftwareEngineering from "./pages/Software Engineering/SoftwareEngineering.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,7 +34,12 @@ const router = createBrowserRouter([
   {
     path: "AlienRadio",
     element: <AlienRadio/>
+  },
+  {
+    path: "SoftwareEngineering",
+    element: <SoftwareEngineering/>
   }
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
