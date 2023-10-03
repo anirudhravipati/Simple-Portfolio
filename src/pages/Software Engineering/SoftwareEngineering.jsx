@@ -188,7 +188,7 @@ function SamsungWork() {
           <Heading mb={"1"} size={"1"} color="gray">
             Tech Stack
           </Heading>
-          <Flex gap={"2"}>
+          <Flex wrap={"wrap"} gap={"2"}>
             <CBadge />
             <JenkinsBadge />
             <CPlusPlusBadge />
@@ -253,7 +253,7 @@ function GeoConnectWork() {
         <Heading mb={"1"} size={"1"} color="gray">
           Tech Stack
         </Heading>
-        <Flex gap={"2"}>
+        <Flex wrap={"wrap"} gap={"2"}>
           <AzureBadge />
           <JavaBadge />
           <AndroidBadge />
@@ -356,7 +356,7 @@ function Masters() {
         <Heading mb={"1"} size={"1"} color="gray">
           Tech Stack
         </Heading>
-        <Flex gap={"2"}>
+        <Flex wrap={"wrap"} gap={"2"}>
           <UnityBadge />
           <CSharpBadge />
         </Flex>
@@ -424,7 +424,7 @@ function Bachelor() {
           <Heading mb={"1"} size={"1"} color="gray">
             Tech Stack
           </Heading>
-          <Flex gap={"2"}>
+          <Flex wrap={"wrap"} gap={"2"}>
             <PythonBadge />
             <CBadge />
             <CPlusPlusBadge/>
