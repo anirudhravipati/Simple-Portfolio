@@ -12,7 +12,7 @@ import {
   Strong,
   Em,
 } from "@radix-ui/themes";
-import { SiteMenuDropdown } from "../../components/Dropdown/SiteMenuDropdown";
+import { SiteMenuDropdown } from "../../components/SiteMenuDropdown/SiteMenuDropdown";
 import { Sun, MoonStars, ArrowSquareOut } from "@phosphor-icons/react";
 import Footer from "../../components/Footer/Footer";
 import TextHoverCard from "../../components/TextHoverCard/TextHoverCard";

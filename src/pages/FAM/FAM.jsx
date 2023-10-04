@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import {
   Theme,
   Flex,
@@ -15,7 +16,7 @@ import {
 } from "@radix-ui/themes";
 import { useState, useEffect } from "react";
 import { MoonStars, Sun } from "@phosphor-icons/react";
-import { SiteMenuDropdown } from "../../components/Dropdown/SiteMenuDropdown";
+import { SiteMenuDropdown } from "../../components/SiteMenuDropdown/SiteMenuDropdown";
 import Footer from "../../components/Footer/Footer";
 import "./FAM.css";
 import ImageViewer from "../../components/ImageViewer/ImageViewer";
@@ -25,7 +26,6 @@ import {
   UserResearchBadge,
 } from "../../data/PortfolioData";
 import TextHoverCard from "../../components/TextHoverCard/TextHoverCard";
-import LoremIpsum from "react-lorem-ipsum";
 import SimpleSlider from "../../components/ImageSlider/ImageSlider";
 import PortfolioLogo from "../../components/Portfolio Logo/PortfolioLogo";
 

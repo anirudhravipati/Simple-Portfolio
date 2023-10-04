@@ -28,7 +28,7 @@ import {
   FacebookLogo,
 } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
-import { SiteMenuDropdown } from "./components/Dropdown/SiteMenuDropdown";
+import { SiteMenuDropdown } from "./components/SiteMenuDropdown/SiteMenuDropdown";
 import Footer from "./components/Footer/Footer";
 import {
   SiFacebook,

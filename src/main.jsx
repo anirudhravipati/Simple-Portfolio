@@ -12,6 +12,7 @@ import LogManagement from "./pages/LogManagement/LogManagement.jsx";
 import Error from "./pages/Error/Error.jsx";
 import AlienRadio from "./pages/AlienRadio/AlienRadio.jsx";
 import SoftwareEngineering from "./pages/Software Engineering/SoftwareEngineering.jsx";
+import Interlink from "./pages/Interlink/Interlink.jsx";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: "SoftwareEngineering",
     element: <SoftwareEngineering/>
+  },
+  {
+    path: "Interlink",
+    element: <Interlink />
   }
   
 ]);

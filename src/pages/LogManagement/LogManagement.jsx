@@ -9,16 +9,14 @@ import {
   Text,
   Link,
   Separator,
-  Blockquote,
   Strong,
   Callout,
 } from "@radix-ui/themes";
-import { Car, MoonStars, Star, Sun } from "@phosphor-icons/react";
-import { SiteMenuDropdown } from "../../components/Dropdown/SiteMenuDropdown";
+import { MoonStars, Star, Sun } from "@phosphor-icons/react";
+import { SiteMenuDropdown } from "../../components/SiteMenuDropdown/SiteMenuDropdown";
 import TextHoverCard from "../../components/TextHoverCard/TextHoverCard";
 import Footer from "../../components/Footer/Footer";
 import {
-  UserResearchBadge,
   UserExperienceBadge,
   FigmaBadge,
   LaptopBadge,

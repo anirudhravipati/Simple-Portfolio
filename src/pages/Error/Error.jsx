@@ -1,5 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
 import { HouseSimple } from "@phosphor-icons/react";
-import { HomeIcon } from "@radix-ui/react-icons";
 import { Flex, Heading, Text, Button, Theme } from "@radix-ui/themes";
 import { Link } from "react-router-dom";
 

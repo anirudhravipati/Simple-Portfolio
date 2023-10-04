@@ -1,5 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
 import {
-  Box,
   Card,
   Text,
   Link,
@@ -12,7 +12,7 @@ import {
 } from "@radix-ui/themes";
 import PortfolioLogo from "../../components/Portfolio Logo/PortfolioLogo";
 import { useState, useEffect } from "react";
-import { SiteMenuDropdown } from "../../components/Dropdown/SiteMenuDropdown";
+import { SiteMenuDropdown } from "../../components/SiteMenuDropdown/SiteMenuDropdown";
 import {
   Sun,
   MoonStars,
@@ -20,8 +20,6 @@ import {
   ArrowRight,
   Article,
 } from "@phosphor-icons/react";
-import TextHoverCard from "../../components/TextHoverCard/TextHoverCard";
-import { ListBulletIcon } from "@radix-ui/react-icons";
 import {
   CBadge,
   CPlusPlusBadge,
