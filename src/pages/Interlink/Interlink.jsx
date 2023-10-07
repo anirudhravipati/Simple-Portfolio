@@ -293,7 +293,7 @@ function Process() {
                 }}
               />
               <img
-                src="/public/Interlink/Storyboard.jpg"
+                src="/Interlink/Storyboard.jpg"
                 style={{
                   objectFit: "scale-down",
                   width: "100%",
