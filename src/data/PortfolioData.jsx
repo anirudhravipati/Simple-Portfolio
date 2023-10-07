@@ -276,7 +276,7 @@ export function OrigamiBadge() {
   return (
     <Badge size={"2"} color="blue">
       <img
-        src="/public/Interlink/origami-logo.svg"
+        src="/Interlink/origami-logo.svg"
         style={{ height: "1.5rem" }}
       />
       Origami Studio
