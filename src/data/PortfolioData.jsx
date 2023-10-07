@@ -272,6 +272,27 @@ export function UnityBadge() {
   );
 }
 
+export function OrigamiBadge() {
+  return (
+    <Badge size={"2"} color="blue">
+      <img
+        src="/public/Interlink/origami-logo.svg"
+        style={{ height: "1.5rem" }}
+      />
+      Origami Studio
+    </Badge>
+  );
+}
+
+export function TouchDesingerBadge() {
+  return (
+    <Badge size={"2"} color="amber">
+      <img src="/public/Icons/Touchdesigner.png" style={{ height: "1.5rem" }} />
+      TouchDesigner
+    </Badge>
+  );
+}
+
 function IconC({ height }) {
   return (
     <svg height={height} viewBox="0 0 128 128">
