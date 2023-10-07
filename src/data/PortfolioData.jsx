@@ -287,7 +287,7 @@ export function OrigamiBadge() {
 export function TouchDesingerBadge() {
   return (
     <Badge size={"2"} color="amber">
-      <img src="/public/Icons/Touchdesigner.png" style={{ height: "1.5rem" }} />
+      <img src="/Icons/Touchdesigner.png" style={{ height: "1.5rem" }} />
       TouchDesigner
     </Badge>
   );
