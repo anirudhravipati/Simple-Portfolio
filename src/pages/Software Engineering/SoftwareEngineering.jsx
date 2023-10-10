@@ -16,7 +16,7 @@ import { SiteMenuDropdown } from "../../components/SiteMenuDropdown/SiteMenuDrop
 import {
   Sun,
   MoonStars,
-  Asterisk,
+  DotOutline,
   ArrowRight,
   Article,
 } from "@phosphor-icons/react";
@@ -162,20 +162,20 @@ function SamsungWork() {
             Lead Engineer heading a small team of 3 to develop and maintain
             applications for 5G Networks' Access layer architecture
           </Text>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               Developed complex VNF Event Stream (VES) applications as tendered
               by international clients such as Verizon, AT&T, and Docomo to name
               a few prominent ones.
             </Text>
           </Flex>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>Developed Citizens Broadband Radio Service for Verizon</Text>
           </Flex>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               Develped one-of-a-kind document parser for a statistics module
               that enables it to read and write data as per the operator's
@@ -219,28 +219,28 @@ function GeoConnectWork() {
             seed startup which included considerations of scalability and
             extensibility
           </Text>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               An application that enables temporary sharing of location with
               one's family and friends
             </Text>
           </Flex>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               Developed a large part of the functionality for the application
             </Text>
           </Flex>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               Developed a logger system that integrated with the cloud service
               for storage of said logs
             </Text>
           </Flex>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               Pitched in ideas and future direction for the startup which were
               integrated to the application
@@ -278,52 +278,52 @@ function Masters() {
             Masters of Science by Research in Cognitive Sciences exploring
             usability challenges for a next-gen military surveillance system
           </Text>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               A thesis on the usability of interfaces for a 360° camera
               surveillance drone
             </Text>
           </Flex>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               Worked for Defence Research and Development Organization (DRDO)
               which oversees the R&D for Indian armed forces.
             </Text>
           </Flex>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               Tested monitor interface configurations for a indigenous 360°
               camera mounted on remote operated vehicles.
             </Text>
           </Flex>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               The work required that the entire 360° feed be practically
               available to the operator on a monitor such that any movement or
               presence might be detected easily by humans
             </Text>
           </Flex>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               I developed a virtual analog of the simulator in Unity 3D ( a game
               engine ) and constructed a map on which a player would be able to
               operate the camera's movements
             </Text>
           </Flex>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               The experimental interfaces for the camera were also developed
               using Unity 3D
             </Text>
           </Flex>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               Each interface was also plugged in to an eye-tracker, the data of
               which was essential in determining the best method to go about in
@@ -331,8 +331,8 @@ function Masters() {
             </Text>
           </Flex>
 
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               The experiment was done on 40+ students with a variety of
               dependent and independent factors
@@ -384,8 +384,8 @@ function Bachelor() {
             me in my life. During my course in the college, I have had the
             opportunity to develop several interesting projects
           </Text>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               A compiler for the{" "}
               <Link
@@ -397,25 +397,25 @@ function Bachelor() {
               programming language{" "}
             </Text>
           </Flex>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               Developed a large part of the functionality for the application
             </Text>
           </Flex>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>An AI sentiment analysis engine for the Hindi language</Text>
           </Flex>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>
               An experimental horror video player that changes the tone of the
               movie based on biofeedback signals of the viewer
             </Text>
           </Flex>
-          <Flex align={"center"} gap={"2"}>
-            <Asterisk size={"1rem"} />
+          <Flex  gap={"2"}>
+            <DotOutline weight="fill" size={"2rem"} style={{minWidth: "2rem"}} />
             <Text>A Reddit-like website - full stack</Text>
           </Flex>
           <Separator mt={"2"} mb={"2"} size={"4"} />
