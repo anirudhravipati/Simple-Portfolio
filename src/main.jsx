@@ -13,6 +13,7 @@ import Error from "./pages/Error/Error.jsx";
 import AlienRadio from "./pages/AlienRadio/AlienRadio.jsx";
 import SoftwareEngineering from "./pages/Software Engineering/SoftwareEngineering.jsx";
 import Interlink from "./pages/Interlink/Interlink.jsx";
+import Shunya from "./pages/Shunya/Shunya.jsx";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: "Interlink",
     element: <Interlink />
+  },
+  {
+    path: "Shunya",
+    element: <Shunya/>
   }
   
 ]);
