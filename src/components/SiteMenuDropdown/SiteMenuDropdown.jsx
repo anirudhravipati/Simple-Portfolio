@@ -7,8 +7,8 @@ export function SiteMenuDropdown() {
     <DropdownMenu.Root>
       <DropdownMenu.Trigger>
         <IconButton
-          variant="soft"
-          style={{ position: "fixed", left: "1rem", top: "1rem" }}
+          variant="ghost"
+          style={{ position: "fixed", left: "1rem", top: "1rem", zIndex: "1" }}
         >
           <List size={"1.5rem"} />
         </IconButton>

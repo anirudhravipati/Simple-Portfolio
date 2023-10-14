@@ -80,8 +80,8 @@ function App() {
       <SiteMenuDropdown />
       <IconButton
         onClick={() => setMode(!mode)}
-        variant="soft"
-        style={{ position: "fixed", right: "1rem", top: "1rem" }}
+        variant="ghost"
+        style={{ position: "fixed", right: "1rem", top: "1rem",zIndex: "1" }}
       >
         {mode ? <MoonStars size={"1.5rem"} /> : <Sun size={"1.5rem"} />}
       </IconButton>
