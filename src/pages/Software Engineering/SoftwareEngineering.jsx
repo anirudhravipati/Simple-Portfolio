@@ -73,7 +73,7 @@ export default function SoftwareEngineering() {
       <IconButton
         onClick={() => setMode(!mode)}
         variant="soft"
-        style={{ position: "absolute", right: "2rem", top: "1rem" }}
+        style={{ position: "fixed", right: "1rem", top: "1rem" }}
       >
         {mode ? <MoonStars size={"1.5rem"} /> : <Sun size={"1.5rem"} />}
       </IconButton>

@@ -8,13 +8,12 @@ export function SiteMenuDropdown() {
       <DropdownMenu.Trigger>
         <IconButton
           variant="soft"
-          color="jade"
-          style={{ position: "absolute", left: "2rem", top: "1rem" }}
+          style={{ position: "fixed", left: "1rem", top: "1rem" }}
         >
           <List size={"1.5rem"} />
         </IconButton>
       </DropdownMenu.Trigger>
-      <DropdownMenu.Content variant="soft" color="cyan">
+      <DropdownMenu.Content variant="soft">
         <DropdownMenu.Item asChild>
           <RouterLink to={"/"}> Home</RouterLink>
         </DropdownMenu.Item>
