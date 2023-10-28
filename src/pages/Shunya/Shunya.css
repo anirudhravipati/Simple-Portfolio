@@ -1,0 +1,17 @@
+.shunya-images {
+        border-radius: 0.5rem;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+}
+
+.scale-down {
+    object-fit: scale-down;
+}
+
+@media screen and (max-width: 914px) {
+    .shunya-images {
+        object-fit: fill;
+        height: 10rem;
+    }
+}

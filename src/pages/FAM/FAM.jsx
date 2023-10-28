@@ -71,7 +71,7 @@ export default function FAM() {
       <IconButton
         onClick={() => setMode(!mode)}
         variant="ghost"
-        style={{ position: "fixed", right: "1rem", top: "1rem",zIndex: "1" }}
+        style={{ position: "fixed", right: "1rem", top: "1rem", zIndex: "1" }}
       >
         {mode ? <MoonStars size={"1.5rem"} /> : <Sun size={"1.5rem"} />}
       </IconButton>
@@ -545,13 +545,22 @@ function Credits() {
             <Heading size={"1"} color="gray">
               Research & Synthesis
             </Heading>
-            <Link mb={"1"} href="https://www.linkedin.com/in/anirudh-ravipati-13541bb5/">
+            <Link
+              mb={"1"}
+              href="https://www.linkedin.com/in/anirudh-ravipati-13541bb5/"
+            >
               Aniruddh Ravipati
             </Link>
-            <Link mb={"1"} href="https://www.linkedin.com/in/pablo-corella/en?trk=people-guest_people_search-card&originalSubdomain=cr">
+            <Link
+              mb={"1"}
+              href="https://www.linkedin.com/in/pablo-corella/en?trk=people-guest_people_search-card&originalSubdomain=cr"
+            >
               Pablo Corella
             </Link>
-            <Link mb={"1"} href="https://www.linkedin.com/in/joshua-tercero-loria-369087158?originalSubdomain=cr">
+            <Link
+              mb={"1"}
+              href="https://www.linkedin.com/in/joshua-tercero-loria-369087158?originalSubdomain=cr"
+            >
               Joshua Tercero
             </Link>
           </Flex>
@@ -571,7 +580,9 @@ function Credits() {
             <Heading size={"1"} color="gray">
               Faculty
             </Heading>
-            <Link href="https://www.linkedin.com/in/melaniekahl/">Melanie Kahl</Link>
+            <Link href="https://www.linkedin.com/in/melaniekahl/">
+              Melanie Kahl
+            </Link>
           </Flex>
         </Card>
       </Grid>
