@@ -22,6 +22,7 @@ import TextHoverCard from "../../components/TextHoverCard/TextHoverCard";
 import PortfolioLogo from "../../components/Portfolio Logo/PortfolioLogo";
 import "./Shunya.css";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
+import { ArduinoBadge, ElectronicsBadge, WorkshopBadge } from "../../data/PortfolioData";
 
 export default function Shunya() {
   // Dark Mode Setup
@@ -146,6 +147,11 @@ function HeroSection() {
             states of art. It fuses aspects of meditation, opacity, transience,
             prayer and industry.
           </Text>
+          <Flex justify={"center"} gap={"1"}>
+              <WorkshopBadge/>
+              <ElectronicsBadge/>
+              <ArduinoBadge/>
+          </Flex>
         </Flex>
       </Card>
     </Container>
@@ -678,3 +684,4 @@ function BillVerplankInfo() {
     </Flex>
   );
 }
+
