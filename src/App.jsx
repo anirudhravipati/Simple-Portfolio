@@ -81,7 +81,7 @@ function App() {
       <IconButton
         onClick={() => setMode(!mode)}
         variant="ghost"
-        style={{ position: "fixed", right: "1rem", top: "1rem",zIndex: "1" }}
+        style={{ position: "fixed", right: "1rem", top: "1rem", zIndex: "1" }}
       >
         {mode ? <MoonStars size={"1.5rem"} /> : <Sun size={"1.5rem"} />}
       </IconButton>
@@ -104,7 +104,6 @@ function Home() {
   );
 }
 
-
 function Title() {
   return (
     <Flex>
@@ -119,14 +118,10 @@ function Blurb() {
   return (
     <Container>
       <Text as="p" size={"6"} align={"center"}>
-        I am a product designer with a background in software development.
-        Currently, I am designing for{" "}
-        <Link asChild>
-          <a href="https://www.cloudaeye.com/"> CloudAEye </a>
-        </Link>
-        , a SaaS startup that specialises in AIOps for Serverless Functions.
-        With my multidisciplinary training in design, research and development,
-        I aim to walk the fine line between aesthetic, utility and need.
+        With experience in software engineering, design and research, I am
+        currently on a path to bring about a seamless integration of these
+        disciplines with the aim of providing an enriching experience to my
+        users
       </Text>
       <Flex mt={"3"} gap={"6"} justify={"center"}>
         <Button size="3" variant="surface" asChild>
