@@ -135,7 +135,7 @@ function Blurb() {
             View More
           </RouterLink>
         </Button>
-        <Button size={"3"} color="teal" variant="surface" asChild>
+        <Button size={"3"} color="blue" variant="surface" asChild>
           <RouterLink
             to={"/Resume.pdf"}
             target="_blank"
