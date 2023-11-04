@@ -98,7 +98,9 @@ function Home() {
         <Title />
         <ToastMessage
           trigger={"ravipatianirudh@gmail.com"}
-          triggerFunction={() => navigator.clipboard.writeText("ravipatianirudh@gmail.com")}
+          triggerFunction={() =>
+            navigator.clipboard.writeText("ravipatianirudh@gmail.com")
+          }
           content={"copied!"}
         />
         <Blurb />
@@ -154,91 +156,89 @@ function Blurb() {
 function SpecialMention() {
   return (
     <Container mt={"5"} p={"3"}>
-      <Flex justify={"center"}>
-        <Card size={"1"} style={{ width: "fit-content" }}>
-          <Flex direction={"column"} gap={"3"}>
-            <Text align={"center"} color="gray" size={"1"}>
-              companies I've previously worked for
-            </Text>
-            <Flex wrap={"wrap"} align={"center"} gap={"3"} justify={"center"}>
-              <Link
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.google.com/"
-              >
-                <SiGoogle
-                  size={"2rem"}
-                  weight="fill"
-                  style={{ marginLeft: "0.5rem", marginRight: "0.5rem" }}
-                />
-              </Link>
-              <Separator size={"2"} orientation="vertical" />
-              <Link target="_blank" rel="noreferrer" href="https://www.fb.com/">
-                <SiFacebook
-                  size={"2rem"}
-                  weight="fill"
-                  style={{ marginLeft: "0.5rem", marginRight: "0.5rem" }}
-                />
-              </Link>
-              <Separator size={"2"} orientation="vertical" />
-              <Link
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.enel.com//"
-                ml={"3"}
-                mr={"3"}
-              >
-                <img
-                  src="/Enel_Logo_Primary_RGB.png"
-                  style={{ color: "inherit", height: "1.5rem" }}
-                />
-              </Link>
-              <Separator size={"2"} orientation="vertical" />
-              <Link
-                target="_blank"
-                rel="noreferrer"
-                href="https://research.samsung.com/sri-b"
-              >
-                <SiSamsung
-                  size={"3rem"}
-                  weight="fill"
-                  style={{ marginLeft: "0.5rem", marginRight: "0.5rem" }}
-                />
-              </Link>
-            </Flex>
-            <Separator size={"4"} />
-            <Flex wrap={"wrap"} align={"center"} justify={"center"} gap={"2"}>
-              <Text align={"center"} size={"2"} color="gray">
-                contact me on
-              </Text>
-              <HoverCard.Root>
-                <HoverCard.Trigger>
-                  <Link href="https://wa.me/qr/HZ6B54KNMH4JA1">whatsapp</Link>
-                </HoverCard.Trigger>
-                <HoverCard.Content size={"1"}>
-                  <Flex align={"center"} gap={"1"} direction={"column"}>
-                    <img
-                      src="/whatsapp.jpeg"
-                      style={{ width: "12rem", height: "12rem" }}
-                    />
-                    <Link href="tel:+919985887990">
-                      <Text size={"2"}>+91 9985887990</Text>
-                    </Link>
-                  </Flex>
-                </HoverCard.Content>
-              </HoverCard.Root>
-              <Text size={"2"} color="gray">
-                or
-              </Text>
-              <Link href="mailto: ravipatianirudh@gmail.com">email</Link>
-              <Text align={"center"} size={"2"} color="gray">
-                to discuss freelance projects in web design, development or
-                creative tech
-              </Text>
-            </Flex>
+      <Card size={"1"}>
+        <Flex direction={"column"} gap={"3"}>
+          <Text align={"center"} color="gray" size={"1"}>
+            companies I've previously worked for
+          </Text>
+          <Flex wrap={"wrap"} align={"center"} gap={"3"} justify={"center"}>
+            <Link
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.google.com/"
+            >
+              <SiGoogle
+                size={"2rem"}
+                weight="fill"
+                style={{ marginLeft: "0.5rem", marginRight: "0.5rem" }}
+              />
+            </Link>
+            <Separator size={"2"} orientation="vertical" />
+            <Link target="_blank" rel="noreferrer" href="https://www.fb.com/">
+              <SiFacebook
+                size={"2rem"}
+                weight="fill"
+                style={{ marginLeft: "0.5rem", marginRight: "0.5rem" }}
+              />
+            </Link>
+            <Separator size={"2"} orientation="vertical" />
+            <Link
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.enel.com//"
+              ml={"3"}
+              mr={"3"}
+            >
+              <img
+                src="/Enel_Logo_Primary_RGB.png"
+                style={{ color: "inherit", height: "1.5rem" }}
+              />
+            </Link>
+            <Separator size={"2"} orientation="vertical" />
+            <Link
+              target="_blank"
+              rel="noreferrer"
+              href="https://research.samsung.com/sri-b"
+            >
+              <SiSamsung
+                size={"3rem"}
+                weight="fill"
+                style={{ marginLeft: "0.5rem", marginRight: "0.5rem" }}
+              />
+            </Link>
           </Flex>
-        </Card>
-      </Flex>
+          <Separator size={"4"} />
+          <Flex wrap={"wrap"} align={"center"} justify={"center"} gap={"2"}>
+            <Text align={"center"} size={"2"} color="gray">
+              contact me on
+            </Text>
+            <HoverCard.Root>
+              <HoverCard.Trigger>
+                <Link href="https://wa.me/qr/HZ6B54KNMH4JA1">whatsapp</Link>
+              </HoverCard.Trigger>
+              <HoverCard.Content size={"1"}>
+                <Flex align={"center"} gap={"1"} direction={"column"}>
+                  <img
+                    src="/whatsapp.jpeg"
+                    style={{ width: "12rem", height: "12rem" }}
+                  />
+                  <Link href="tel:+919985887990">
+                    <Text size={"2"}>+91 9985887990</Text>
+                  </Link>
+                </Flex>
+              </HoverCard.Content>
+            </HoverCard.Root>
+            <Text size={"2"} color="gray">
+              or
+            </Text>
+            <Link href="mailto: ravipatianirudh@gmail.com">email</Link>
+            <Text align={"center"} size={"2"} color="gray">
+              to discuss freelance projects in web design, development or
+              creative tech
+            </Text>
+          </Flex>
+        </Flex>
+      </Card>
     </Container>
   );
 }
