@@ -155,8 +155,7 @@ function Blurb() {
 
 function SpecialMention() {
   return (
-    <Container mt={"5"} p={"3"}>
-      <Card size={"1"}>
+    <Card mt={"5"} size={"1"}>
         <Flex direction={"column"} gap={"3"}>
           <Text align={"center"} color="gray" size={"1"}>
             companies I've previously worked for
@@ -239,7 +238,7 @@ function SpecialMention() {
           </Flex>
         </Flex>
       </Card>
-    </Container>
+    
   );
 }
 
