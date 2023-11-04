@@ -36,7 +36,7 @@ import {
   SiSamsung,
 } from "@icons-pack/react-simple-icons";
 import PortfolioLogo from "./components/Portfolio Logo/PortfolioLogo";
-
+import ToastMessage from "./components/Toast/Toast";
 import "./App.css";
 
 function App() {
@@ -96,6 +96,11 @@ function Home() {
       <Flex p={"5"} gap={"3"} align={"center"} direction={"column"}>
         <PortfolioLogo height="3rem" />
         <Title />
+        <ToastMessage
+          trigger={"ravipatianirudh@gmail.com"}
+          triggerFunction={() => navigator.clipboard.writeText("ravipatianirudh@gmail.com")}
+          content={"copied!"}
+        />
         <Blurb />
       </Flex>
       <ProjectList />
@@ -123,21 +128,21 @@ function Blurb() {
         disciplines with the aim of providing an enriching experience to my
         users
       </Text>
-      <Flex mt={"3"} gap={"6"} justify={"center"}>
+      <Flex mt={"3"} gap={"6"} align={"center"} justify={"center"}>
         <Button size="3" variant="surface" asChild>
           <RouterLink to={"About"}>
             <ArrowRight size={"1rem"} />
             View More
           </RouterLink>
         </Button>
-        <Button size={"3"} color="yellow" variant="surface" asChild>
+        <Button size={"3"} color="teal" variant="surface" asChild>
           <RouterLink
             to={"/Resume.pdf"}
             target="_blank"
             rel="noopener noreferrer"
           >
             <File size={"1rem"} />
-            Download Résumé
+            Résumé
           </RouterLink>
         </Button>
       </Flex>
