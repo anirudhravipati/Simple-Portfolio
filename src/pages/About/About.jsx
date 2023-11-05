@@ -112,8 +112,10 @@ function AboutContent() {
                 . CIID was an important step in understanding outside the limits
                 of software. I was fortunate to work in several industry
                 projects in companies such as Meta, Google and Enel. It was
-                quite an enriching journey. Once I graduated from CIIDAbout, I
-                joined{" "}
+                quite an enriching journey.
+              </Text>
+              <Text>
+                Once I graduated from CIID, I joined{" "}
                 <Link href="cloudaeye.com" target="_blank">
                   CloudAEye
                 </Link>{" "}
