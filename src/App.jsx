@@ -101,7 +101,7 @@ function Home() {
           triggerFunction={() =>
             navigator.clipboard.writeText("ravipatianirudh@gmail.com")
           }
-          content={"copied!"}
+          content={"email copied to your clipboard!"}
         />
         <Blurb />
       </Flex>
