@@ -32,7 +32,7 @@ export default function ToastMessage({trigger, triggerFunction ,content }) {
 
       <Toast.Root className="ToastRoot" open={open} onOpenChange={setOpen}>
         <Toast.Description asChild>
-          <Text>{content}</Text>
+          <Text size="2">{content}</Text>
         </Toast.Description>
         <Toast.Close asChild>
           <IconButton variant="ghost" radius="medium">
