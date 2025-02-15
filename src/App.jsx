@@ -221,9 +221,9 @@ function SpecialMention() {
                     src="/whatsapp.png"
                     style={{ width: "12rem", height: "12rem" }}
                   />
-                  <Link href="tel:+919985887990">
-                    <Text size={"2"}>+91 9985887990</Text>
-                  </Link>
+                  <Link href="tel:+33744524849">
+                     <Text size={"2"}>+33 744 52 48 49</Text>
+                   </Link>
                 </Flex>
               </HoverCard.Content>
             </HoverCard.Root>
