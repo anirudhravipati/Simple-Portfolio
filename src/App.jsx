@@ -218,7 +218,7 @@ function SpecialMention() {
               <HoverCard.Content size={"1"}>
                 <Flex align={"center"} gap={"1"} direction={"column"}>
                   <img
-                    src="/whatsapp.jpeg"
+                    src="/whatsapp.png"
                     style={{ width: "12rem", height: "12rem" }}
                   />
                   <Link href="tel:+919985887990">
