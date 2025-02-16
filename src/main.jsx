@@ -14,6 +14,8 @@ import AlienRadio from "./pages/AlienRadio/AlienRadio.jsx";
 import SoftwareEngineering from "./pages/Software Engineering/SoftwareEngineering.jsx";
 import Interlink from "./pages/Interlink/Interlink.jsx";
 import Shunya from "./pages/Shunya/Shunya.jsx";
+import UnderConstruction from "./pages/Under Constuction/UnderConstruction.jsx";
+import CIID from "./pages/CIID/CIID.jsx";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +50,14 @@ const router = createBrowserRouter([
   {
     path: "Shunya",
     element: <Shunya/>
+  },
+  {
+    path: "Under Construction",
+    element: <UnderConstruction/>
+  },
+  {
+    path: "CIID",
+    element: <CIID/>
   }
   
 ]);

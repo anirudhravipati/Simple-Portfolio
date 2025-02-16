@@ -1,0 +1,34 @@
+.prototype-images {}
+
+.hero-image {
+    aspect-ratio: 16/9;
+    height: 70vh;
+    object-fit: scale-down;
+}
+
+.prototype-image {
+    width: 50%;
+    border-radius: 0.5rem;
+}
+
+.vimeo-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 914px) {
+    .prototype-images {
+        flex-direction: column;
+    }
+
+    .prototype-image {
+        width: 100%;
+    }
+
+    .vimeo-player {
+        width: 100px;
+    }
+}

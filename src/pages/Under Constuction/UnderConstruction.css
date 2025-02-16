@@ -1,0 +1,25 @@
+.profile-photo {
+    border-radius: 0.25rem;
+    object-fit: cover;
+    aspect-ratio: 1;
+    height: 300px;
+}
+
+.about-box {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 914px) {
+
+    .profile-photo {
+        width: 100%;
+        aspect-ratio: 1;
+        height: auto;
+        object-fit: cover;
+    }
+    .about-box {
+        flex-direction: column;
+    }
+}

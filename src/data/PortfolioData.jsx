@@ -1,512 +1,551 @@
 import {
-  SiFigma,
-  SiConfluence,
-  SiReact,
-  SiMui,
+    SiFigma, SiConfluence, SiReact, SiMui,
 } from "@icons-pack/react-simple-icons";
 import {
-  SealQuestion,
-  BoundingBox,
-  FlowArrow,
-  ShieldCheck,
-  Play,
-  Laptop,
-  DeviceMobile,
-  Circuitry,
+    SealQuestion,
+    FlowArrow,
+    ShieldCheck,
+    Play,
+    Laptop,
+    DeviceMobile,
+    Circuitry,
+    Cloud,
+    BuildingOffice,
+    Globe, Person, Folders, Storefront,
 } from "@phosphor-icons/react";
-import { Hammer } from "@phosphor-icons/react/dist/ssr";
-import { Component1Icon } from "@radix-ui/react-icons";
+import {Hammer} from "@phosphor-icons/react/dist/ssr";
+import {Component1Icon} from "@radix-ui/react-icons";
 
-import { Badge } from "@radix-ui/themes";
+import {Badge} from "@radix-ui/themes";
 
-export const ProjectListData = [
-  {
-    key: "1",
-    title: "Log Management by CloudAEye",
-    src: "/LogManagement/Cover Photos/Logs Insights/Sarari - DarkInsights.png",
-    content:
-      "Log Management is a SaaS service that takes in all logs of a user’s cloud applications,\
-       uses AI to analyze the logs and identify any anomalies, provide alerts when such anomalies occur,\
-        and provide possible solutions to the occurring anomalies",
-    tags: [
-      <ProductDesignBadge key={"product"} />,
-      <UserExperienceBadge key="ux" />,
-      <FigmaBadge key="figma" />,
-      <LaptopBadge key="mobile" />,
-    ],
-    page: "LogManagement",
-  },
-  {
-    key: "2",
-    title: "FAM",
-    src: "/FAM/cover.png",
-    content:
-      "FAM is a self-improvement app that remixes an events app with\
-      Cognitive Behavioural Therapy techniques - a way for those that\
-      are feeling lonely get out of their situation through action, led\
-      by the app’s gentle instruction and checks!",
-    tags: [
-      <UserResearchBadge key="user-research" />,
-      <UserExperienceBadge key="ux" />,
-      <FigmaBadge key="figma" />,
-      <MobileBadge key="mobile" />,
-    ],
-    page: "FAM",
-  },
+export const ProductDesignData = [
+    {
+        key: "TestRCA",
+        title: "Test RCA by CloudAEye",
+        src: "/Test RCA/Card.png",
+        content: "Designed to untangle complex error logs, Test RCA " +
+            "turns manual, time-consuming test failure analysis into a seamless, " +
+            "AI-driven experience. By integrating natively with GitHub and Jenkins," +
+            "the interface delivers succinct root-cause summaries and even enables one-click code " +
+            "fixes—eliminating tedious manual work and accelerating development workflows. " +
+            "The design journey focused on clarity, speed, and intuitive interaction, ensuring that even " +
+            "the most intricate software issues are rendered in a visually compelling and actionable format.",
+        tags: [<ProductDesignBadge key={"product"}/>, <UserResearchBadge key="user-research"/>,
+            <FigmaBadge key="figma"/>,
+            <LaptopBadge key="mobile"/>, <SaaSBadge key="saas"/>, <B2BBadge key="b2b"/>],
+        page: "Under Construction",
+    }, {
+        key: "CodeReview",
+        title: "Code Review by CloudAEye",
+        src: "/Code Review/Card Image.png",
+        content: "Merging intuitive design with intelligent analysis, " +
+            "Code Review reimagines GitHub integration by unearthing vulnerabilities and crafting detailed pull " +
+            "request narratives. The design process emphasized clarity and trust, ensuring that every interaction " +
+            "communicates precision and security. By harmonizing robust security analysis with a user-friendly interface, " +
+            "Code Review transforms the routine code review process into a streamlined, insightful experience.",
+        tags: [<ProductDesignBadge key={"product"}/>, <UserResearchBadge key="user-research"/>,
+            <FigmaBadge key="figma"/>,
+            <LaptopBadge key="mobile"/>, <SaaSBadge key="saas"/>, <B2BBadge key="b2b"/>],
+        page: "Under Construction",
+    },
+    {
+        key: "LogManagement",
+        title: "Log Management by CloudAEye",
+        src: "/LogManagement/Cover Photos/Logs Insights/Sarari - DarkInsights.png",
+        content: "Log Management is a SaaS service that takes in all logs of a user’s cloud applications,\
+             uses AI to analyze the logs and identify any anomalies, provide alerts when such anomalies occur,\
+              and provide possible solutions to the occurring anomalies",
+        tags: [<ProductDesignBadge key={"product"}/>, <UserExperienceBadge key="ux"/>, <FigmaBadge key="figma"/>,
+            <LaptopBadge key="mobile"/>,],
+        page: "LogManagement",
+    },
+    // {
+    //     key: "FAM",
+    //     title: "FAM",
+    //     src: "/FAM/cover.png",
+    //     content: "FAM is a self-improvement app that remixes an events app with\
+    //         Cognitive Behavioural Therapy techniques - a way for those that\
+    //         are feeling lonely get out of their situation through action, led\
+    //         by the app’s gentle instruction and checks!",
+    //     tags: [<UserResearchBadge key="user-research"/>, <UserExperienceBadge key="ux"/>, <FigmaBadge key="figma"/>,
+    //         <MobileBadge key="mobile"/>,],
+    //     page: "FAM",
+    // },
 ];
+export const WebDesignData = [
+    {
+        key: "CIID",
+        title: "CIID.DK",
+        src: "/CIID/Card.png",
+        content: "At the Copenhagen Institute of Interaction Design, creativity and technology converge to redefine education. " +
+            "With a life-centred approach, CIID transforms learning into a dynamic, immersive experience—equipping students with " +
+            "the skills to challenge conventions and shape a more connected, innovative future.",
+        tags: [<WebDesignBadge key={"web"}/>, <WebflowBadge key={"web"}/>, <StorefrontBadge key={"store"}/>,
+            <FigmaBadge key="figma"/>, <CMSBadge key="cms"/>, <B2CBadge key="b2c"/>],
+        page: "CIID",
+    },
+]
+export const CreativeTechData = [
+    {
+        key: "AlienRadio",
+        title: "Alien Radio",
+        src: "/Alien Radio/03-1.jpeg",
+        content: "At the Copenhagen Institute of Interaction Design, creativity and technology converge to redefine education. " +
+            "With a life-centred approach, CIID transforms learning into a dynamic, immersive experience—equipping students with " +
+            "the skills to challenge conventions and shape a more connected, innovative future.",
+        tags: [<WebDesignBadge key={"web"}/>, <WebflowBadge key={"web"}/>,<StorefrontBadge key={"store"}/>, <FigmaBadge key="figma"/>, <CMSBadge key="cms"/>,<B2CBadge key="b2c"/>],
+        page: "AlienRadio",
+    },
+    {
+        key: "Interlink",
+        title: "Interlink",
+        src: "/CIID/Card.png",
+        content: "At the Copenhagen Institute of Interaction Design, creativity and technology converge to redefine education. " +
+            "With a life-centred approach, CIID transforms learning into a dynamic, immersive experience—equipping students with " +
+            "the skills to challenge conventions and shape a more connected, innovative future.",
+        tags: [<WebDesignBadge key={"web"}/>, <WebflowBadge key={"web"}/>,<StorefrontBadge key={"store"}/>, <FigmaBadge key="figma"/>, <CMSBadge key="cms"/>,<B2CBadge key="b2c"/>],
+        page: "Interlink",
+    },
+    {
+        key: "Shunya",
+        title: "Shunya",
+        src: "/Shunya/IMG_20220714_184618.jpg",
+        content: "At the Copenhagen Institute of Interaction Design, creativity and technology converge to redefine education. " +
+            "With a life-centred approach, CIID transforms learning into a dynamic, immersive experience—equipping students with " +
+            "the skills to challenge conventions and shape a more connected, innovative future.",
+        tags: [<WebDesignBadge key={"web"}/>, <WebflowBadge key={"web"}/>,<StorefrontBadge key={"store"}/>, <FigmaBadge key="figma"/>, <CMSBadge key="cms"/>,<B2CBadge key="b2c"/>],
+        page: "Shunya",
+    },
+]
 
-export const Icons = [
-  {
-    name: "Figma",
-    tagColor: "gold",
-    logo: <SiFigma size={"1rem"} />,
-  },
-  {
-    name: "Confluence",
-    tagColor: "indigo",
-    logo: <SiConfluence size="1rem" />,
-  },
-  {
-    name: "React",
-    tagColor: "blue",
-    logo: <SiReact size="1rem" />,
-  },
-  {
-    name: "MUI",
-    tagColor: "brown",
-    logo: <SiMui size="1rem" />,
-  },
-  {
-    name: "User Research",
-    tagColor: "teal",
-    logo: <SealQuestion size={"1rem"} />,
-  },
-  {
-    name: "Product Design",
-    tagColor: "crimson",
-    logo: <BoundingBox size={"1rem"} />,
-  },
-  {
-    name: "User Experience",
-    tagColor: "plum",
-    logo: <FlowArrow size={"1rem"} />,
-  },
-  {
-    name: "Testing",
-    tagColor: "Iris",
-    logo: <ShieldCheck size={"1rem"} />,
-  },
-  {
-    name: "Advanced Prototyping",
-    tagColor: "cyan",
-    logo: <Play size={"1rem"} />,
-  },
-];
+
+export function WebflowBadge() {
+    return (<Badge size="2" color="tomato">
+        <WebflowSVG height={"1rem"}/>
+    </Badge>);
+}
+
+export function StorefrontBadge() {
+    return (<Badge size="2" color="grass">
+        <Storefront size={"1rem"}/>
+        Storefront
+    </Badge>);
+}
+
+export function CMSBadge() {
+    return (<Badge size="2" color="iris">
+        <Folders size={"1rem"}/>
+        CMS
+    </Badge>);
+}
+
+export function B2CBadge() {
+    return (<Badge size="2" color="pink">
+        <Person size={"1rem"}/>
+        B2C
+    </Badge>);
+}
+
+export function WebDesignBadge() {
+    return (<Badge size="2" color="Crimson">
+        <Globe size={"1rem"}/>
+        Web Design
+    </Badge>);
+}
+
+export function B2BBadge() {
+    return (<Badge size="2" color="Crimson">
+        <BuildingOffice size={"1rem"}/>
+        B2B
+    </Badge>);
+}
+
+
+export function SaaSBadge() {
+    return (<Badge size="2" color="iris">
+        <Cloud size={"1rem"}/>
+        SaaS
+    </Badge>);
+}
+
 
 export function AdvancedPrototypingBadge() {
-  return (
-    <Badge size="2" color="cyan">
-      <Play size={"1rem"} />
-      Advanced Prototyping
-    </Badge>
-  );
+    return (<Badge size="2" color="cyan">
+        <Play size={"1rem"}/>
+        Advanced Prototyping
+    </Badge>);
 }
 
 export function TestingBadge() {
-  return (
-    <Badge size="2" color="Iris">
-      <ShieldCheck size={"1rem"} />
-      Testing
-    </Badge>
-  );
+    return (<Badge size="2" color="Iris">
+        <ShieldCheck size={"1rem"}/>
+        Testing
+    </Badge>);
 }
 
 export function UserExperienceBadge() {
-  return (
-    <Badge size="2" color="plum">
-      <FlowArrow size={"1rem"} />
-      User Experience
-    </Badge>
-  );
+    return (<Badge size="2" color="plum">
+        <FlowArrow size={"1rem"}/>
+        UX Design
+    </Badge>);
 }
 
 export function UserResearchBadge() {
-  return (
-    <Badge size="2" color="teal">
-      <SealQuestion size={"1rem"} />
-      User Research
-    </Badge>
-  );
+    return (<Badge size="2" color="teal">
+        <SealQuestion size={"1rem"}/>
+        User Research
+    </Badge>);
 }
 
 export function MuiBadge() {
-  return (
-    <Badge size="2" color="brown">
-      <SiMui size="1rem" />
-      MUI
-    </Badge>
-  );
+    return (<Badge size="2" color="brown">
+        <SiMui size="1rem"/>
+        MUI
+    </Badge>);
 }
 
 export function ReactBadge() {
-  return (
-    <Badge size="2" color="blue">
-      <SiReact size="1rem" />
-      React
-    </Badge>
-  );
+    return (<Badge size="2" color="blue">
+        <SiReact size="1rem"/>
+        React
+    </Badge>);
 }
 
 export function ConfluenceBadge() {
-  return (
-    <Badge size="2" color="indigo">
-      <SiConfluence size="1rem" />
-      Confluence
-    </Badge>
-  );
+    return (<Badge size="2" color="indigo">
+        <SiConfluence size="1rem"/>
+        Confluence
+    </Badge>);
 }
 
 export function FigmaBadge() {
-  return (
-    <Badge size="2" color="gold">
-      <SiFigma size={"1rem"} />
-      Figma
-    </Badge>
-  );
+    return (<Badge size="2" color="gold">
+        <SiFigma size={"1rem"}/>
+        Figma
+    </Badge>);
 }
 
 export function LaptopBadge() {
-  return (
-    <Badge size="2" color="grass">
-      <Laptop size={"1rem"} />
-      Web
-    </Badge>
-  );
+    return (<Badge size="2" color="grass">
+        <Laptop size={"1rem"}/>
+        Web
+    </Badge>);
 }
 
 export function MobileBadge() {
-  return (
-    <Badge size="2" color="ruby">
-      <DeviceMobile size={"1rem"} />
-      Mobile
-    </Badge>
-  );
+    return (<Badge size="2" color="ruby">
+        <DeviceMobile size={"1rem"}/>
+        Mobile
+    </Badge>);
 }
 
 export function ProductDesignBadge() {
-  return (
-    <Badge size="2" color="purple">
-      <Component1Icon size={"1rem"} />
-      Product Design
-    </Badge>
-  );
+    return (<Badge size="2" color="purple">
+        <Component1Icon size={"1rem"}/>
+        Product Design
+    </Badge>);
 }
 
 export function CBadge() {
-  return (
-    <Badge size="2" color="violet">
-      <IconC height={"1.5rem"} /> C
-    </Badge>
-  );
+    return (<Badge size="2" color="violet">
+        <IconC height={"1.5rem"}/> C
+    </Badge>);
 }
 
 export function JenkinsBadge() {
-  return (
-    <Badge size="2" color="mint">
-      <JenkinsSVG height={"1.5rem"} /> Jenkins
-    </Badge>
-  );
+    return (<Badge size="2" color="mint">
+        <JenkinsSVG height={"1.5rem"}/> Jenkins
+    </Badge>);
 }
 
 export function CPlusPlusBadge() {
-  return (
-    <Badge size="2" color="gold">
-      <CPlusPlusSVG height={"1.5rem"} /> C++
-    </Badge>
-  );
+    return (<Badge size="2" color="gold">
+        <CPlusPlusSVG height={"1.5rem"}/> C++
+    </Badge>);
 }
 
 export function PythonBadge() {
-  return (
-    <Badge size="2" color="yellow">
-      <PythonSVG height={"1.5rem"} /> Python
-    </Badge>
-  );
+    return (<Badge size="2" color="yellow">
+        <PythonSVG height={"1.5rem"}/> Python
+    </Badge>);
 }
 
 export function AzureBadge() {
-  return (
-    <Badge size="2" color="orange">
-      <AzureSVG height={"1.5rem"} /> Azure Cloud
-    </Badge>
-  );
+    return (<Badge size="2" color="orange">
+        <AzureSVG height={"1.5rem"}/> Azure Cloud
+    </Badge>);
 }
 
 export function AndroidBadge() {
-  return (
-    <Badge size="2" color="green">
-      <AndroidSVG height={"1.5rem"} /> Android
-    </Badge>
-  );
+    return (<Badge size="2" color="green">
+        <AndroidSVG height={"1.5rem"}/> Android
+    </Badge>);
 }
 
 export function CSharpBadge() {
-  return (
-    <Badge size="2" color="ruby">
-      <CSharpSVG height={"1.5rem"} /> C#
-    </Badge>
-  );
+    return (<Badge size="2" color="ruby">
+        <CSharpSVG height={"1.5rem"}/> C#
+    </Badge>);
 }
 
 export function JavaBadge() {
-  return (
-    <Badge size="2" color="crimson">
-      <JavaSVG height={"1.5rem"} /> Java
-    </Badge>
-  );
+    return (<Badge size="2" color="crimson">
+        <JavaSVG height={"1.5rem"}/> Java
+    </Badge>);
 }
 
 export function UnityBadge() {
-  return (
-    <Badge size="2" color="indigo">
-      <UnitySVG height={"1.5rem"} /> Unity
-    </Badge>
-  );
+    return (<Badge size="2" color="indigo">
+        <UnitySVG height={"1.5rem"}/> Unity
+    </Badge>);
 }
 
 export function OrigamiBadge() {
-  return (
-    <Badge size={"2"} color="blue">
-      <img src="/Interlink/origami-logo.svg" style={{ height: "1.5rem" }} />
-      Origami Studio
-    </Badge>
-  );
+    return (<Badge size={"2"} color="blue">
+        <img src="/Interlink/origami-logo.svg" style={{height: "1.5rem"}}/>
+        Origami Studio
+    </Badge>);
 }
 
 export function TouchDesingerBadge() {
-  return (
-    <Badge size={"2"} color="amber">
-      <img src="/Icons/Touchdesigner.png" style={{ height: "1.5rem" }} />
-      TouchDesigner
-    </Badge>
-  );
+    return (<Badge size={"2"} color="amber">
+        <img src="/Icons/Touchdesigner.png" style={{height: "1.5rem"}}/>
+        TouchDesigner
+    </Badge>);
 }
 
 
 export function WorkshopBadge() {
-  return (
-    <Badge size={"2"} color="amber">
-      <Hammer size={"1rem"} />
-      Workshop
-    </Badge>
-  );
+    return (<Badge size={"2"} color="amber">
+        <Hammer size={"1rem"}/>
+        Workshop
+    </Badge>);
 }
 
 export function ElectronicsBadge() {
-  return (
-    <Badge size={"2"} color="indigo">
-      <Circuitry size={"1rem"} />
-      Basic Electronics
-    </Badge>
-  );
+    return (<Badge size={"2"} color="indigo">
+        <Circuitry size={"1rem"}/>
+        Basic Electronics
+    </Badge>);
 }
 
 export function ArduinoBadge() {
-  return (
-    <Badge size={"2"} color="orange">
-      <ArduinoSVG height={"1.5rem"} />
-      Arduino
-    </Badge>
-  );
+    return (<Badge size={"2"} color="orange">
+        <ArduinoSVG height={"1.5rem"}/>
+        Arduino
+    </Badge>);
 }
 
-function IconC({ height }) {
-  return (
-    <svg height={height} viewBox="0 0 128 128">
-      <path
-        d="M116.5 32.3c-.6-1.1-1.4-2.1-2.3-2.6L66.1 1.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7L11.4 29.7c-1.7 1-3.4 3.5-3.4 5.4v55.7c0 1.1.7 2.3 1.4 3.4l.1.1c.5.8 1.3 1.5 2 1.9l48.3 27.9c.8.5 2 .7 3.2.7 1.2 0 2.3-.3 3.1-.7l47.5-27.9c1.7-1 2.4-3.5 2.4-5.4V35.1c0-.8.4-1.8 0-2.6l.5-.2zm-4.2 2.1c0 .3-.3.5-.3.7v55.7c0 .8-.2 1.7-.4 2L64 120.6c-.1.1-.5.2-1.1.2-.6 0-1-.1-1.1-.2L13.6 92.8s-.1-.1-.2-.1l-.6-.6c-.4-.7.2-1.1-.8-1.2V35.2c1-.5.9-1.7 1.4-1.9L61.7 5.4c.1 0 .6-.2 1.2-.2s1 .1 1.1.2l48 27.7.4.9c.1.1-.1.3-.1.4zM63 38.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6C80.1 82.5 72.1 87.5 63 87.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5z"
-        fill="currentColor"
-      ></path>
-    </svg>
-  );
+function IconC({height}) {
+    return (<svg height={height} viewBox="0 0 128 128">
+        <path
+            d="M116.5 32.3c-.6-1.1-1.4-2.1-2.3-2.6L66.1 1.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7L11.4 29.7c-1.7 1-3.4 3.5-3.4 5.4v55.7c0 1.1.7 2.3 1.4 3.4l.1.1c.5.8 1.3 1.5 2 1.9l48.3 27.9c.8.5 2 .7 3.2.7 1.2 0 2.3-.3 3.1-.7l47.5-27.9c1.7-1 2.4-3.5 2.4-5.4V35.1c0-.8.4-1.8 0-2.6l.5-.2zm-4.2 2.1c0 .3-.3.5-.3.7v55.7c0 .8-.2 1.7-.4 2L64 120.6c-.1.1-.5.2-1.1.2-.6 0-1-.1-1.1-.2L13.6 92.8s-.1-.1-.2-.1l-.6-.6c-.4-.7.2-1.1-.8-1.2V35.2c1-.5.9-1.7 1.4-1.9L61.7 5.4c.1 0 .6-.2 1.2-.2s1 .1 1.1.2l48 27.7.4.9c.1.1-.1.3-.1.4zM63 38.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6C80.1 82.5 72.1 87.5 63 87.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5z"
+            fill="currentColor"
+        ></path>
+    </svg>);
 }
 
-function JenkinsSVG({ height }) {
-  return (
-    <svg height={height} viewBox="0 0 128 128">
-      <path
-        d="M63.625 127.825c-1.475-.175-3.775-.6-5.025-.95l-1.3-.375-.7-1.925c-.4-1.075-1.35-4.025-2.1-6.575l-1.4-4.625-1.975-.15c-3.025-.225-4.75-.775-9.725-3.075-2.475-1.15-4.875-2.225-5.325-2.375-.425-.175-1.025-.6-1.35-.925-.525-.575-.6-.925-.8-4.725l-.2-4.125-1.4-1.3c-7.7-7.25-12.875-17.275-14.45-27.975-.5-3.475-.5-10.225 0-13.7 1.55-10.6 6.725-20.675 14.225-27.7l2.1-1.975.3-2.075c.475-3.55 1.75-6.125 3.625-7.325.55-.375 1-.975 1.275-1.7C40.725 10.8 42.875 8.925 50 5 54.65 2.425 59.075.875 63.375.25c2.325-.325 7.225-.325 9.45.025 6.375.95 9.95 2.75 14.525 7.3 3.1 3.1 4.875 5.55 5.925 8.275.875 2.25 1.825 6.55 2.1 9.375l.175 1.85 2.375 2.65c8.025 8.95 12.325 20.2 12.325 32.15 0 7.6-1.7 14.875-5.025 21.425l-1.275 2.525.775.6c1.15.9 1.9 2.375 3.15 6.175.925 2.775 1.125 3.75 1.125 5.225 0 3.05-1.1 6.25-2.7 7.75-1.325 1.25-4.825 1.75-9 1.275-1.375-.15-1.65-.275-2.125-.925l-.55-.725-2.125.125c-2.6.175-4 .6-4 1.2 0 .825-.325 1.25-1.275 1.75-.925.45-.975.55-.975 1.6 0 .625.275 2.425.625 4.025 1.225 5.675.725 6.725-3.725 7.725-.7.15-.7.15-.55 1.625.325 2.85-1.175 4-5.825 4.475-2.35.25-11.375.325-13.15.1z"
-        fill="#201d1e"
-      ></path>
-      <g fill="#335061">
-        <path d="M51.375 110.225c-2.575-.35-6.1-1.675-10.475-3.925-3.175-1.625-4.25-2.3-4.3-2.675-.025-.275-.125-1.95-.2-3.75-.425-8.95-2.4-18.7-5.3-26-.625-1.6-1.1-2.95-1.05-3 .025-.025 1.475-1.1 3.2-2.375 3.525-2.6 8.075-5.375 10.775-6.55l1.8-.8 2.15 2.275c2.3 2.475 3.525 3.3 7.775 5.35l2.675 1.275.45 1.925c.25 1.05.825 3.1 1.275 4.575.675 2.1 1.025 2.8 1.625 3.3.825.7 1.325.8 2.325.4.85-.325.825-.1-.225 1.35-1.025 1.425-1.1 2.35-.3 3.075.55.525 7.1 3.85 9.05 4.6l1 .4-2.375.15c-1.3.1-4.15.275-6.35.425-3.525.25-7.875.675-11.2 1.15-1.125.15-1.175.15-1.375-.55-.225-.825-.25-4.875-.075-8.9.125-2.7-.05-3.4-.725-2.975-.575.35-.725 2.15-.45 5.475.275 3.45.075 6-.45 6.2-.175.075-.925-.275-1.675-.75-.725-.5-1.4-.9-1.5-.9-.375 0-.2.95.3 1.575.275.35.5.8.5 1.025 0 .425-.75.9-1.45.9-.525 0-1.475.9-1.2 1.175.075.1 1.3.15 2.725.125 1.4-.025 2.675.025 2.85.15.175.1.425 1.375.575 2.95.15 1.525.6 5.125 1 8 .675 4.95.7 5.65.3 5.575-.1-.025-.85-.125-1.675-.25zM80.4 105.925c-.325-2.45-.7-12.725-.45-12.975.125-.125 1-.25 1.95-.275l1.7-.05.3 1.35c.175.75.5 3.55.725 6.25.225 2.7.425 5.125.45 5.4.05.5-.475.675-3.6 1.2-.925.125-.925.125-1.075-.9zM82.175 88.825c.375-.675 1.4-2.375 2.3-3.825.9-1.45 2.45-4.025 3.45-5.725l1.85-3.1-.725-.9c-1.075-1.35-1.075-1.4-.625-2.425.3-.725.425-1.725.425-3.85 0-3.4-.45-5.3-1.65-6.65-.7-.775-.9-.875-1.75-.8-.525.05-.925.025-.9-.075.05-.1.775-.75 1.6-1.45l1.55-1.275 2.875 2.675c1.575 1.5 3.45 3.225 4.15 3.875 1.575 1.45 1.6 1.675.425 6.525-1.25 5.2-4.325 13.975-5.65 16.125-.65 1.05-1.1 1.2-4.2 1.4-1.425.075-2.8.25-3.05.4-.775.425-.8.3-.075-.925z"></path>
-        <path d="M80.875 87.775c.475-1.5.925-4.425 1.275-8.275.475-4.85.525-5 2.175-5 1.2 0 2.375.525 3.3 1.5l.7.725-1.575 2.7c-2.125 3.65-5.55 8.825-5.825 8.825-.1 0-.15-.2-.05-.475z"></path>
-      </g>
-      <g fill="#d33833">
-        <path d="M31.9 92.225c-14.425-15.9-15.6-40.3-2.75-57.375C30.7 32.8 34.175 29 34.525 29c.1 0 .275.375.35.825.125.65-.025 1.175-.675 2.425-.8 1.575-.825 1.65-.8 4.725 0 2.825.075 3.35.7 5.025 1.35 3.6 3.425 5.825 6.25 6.775l1.25.425.45 1.825c.25.975.95 2.725 1.575 3.85 1.225 2.25 1.375 3.075.7 3.7-.25.2-2.425 1.525-4.825 2.925-2.4 1.425-5.3 3.175-6.45 3.9a49.433 49.433 0 01-3.275 1.975c-1.625.825-2.525 1.9-2.525 3.1 0 .875 2.125 7.35 3.675 11.275.425 1.025 1 2.825 1.275 4 .6 2.5 1.375 7.375 1.25 7.775-.05.175-.75-.425-1.55-1.3zM91.75 88.325c0-.1.675-2.125 1.525-4.55 2.5-7.25 5-15.55 5.15-17.025.15-1.75-.225-2.35-3.425-5.2-4.6-4.1-5.5-5.05-5.5-5.725 0-.35.525-1.6 1.15-2.75 1.25-2.3 2.05-4.45 3-8.1.725-2.825 1.6-8.525 1.6-10.5 0-.775.075-1.775.15-2.2l.175-.8.625.575c2.65 2.475 6.8 9.425 8.525 14.3 1.925 5.425 2.6 9.55 2.6 15.525 0 4.625-.275 7.175-1.225 10.9-.9 3.6-1.975 6.5-3.625 9.775l-1.5 2.9-1.6.275c-1.6.275-3.575.95-6.175 2.1-.8.35-1.45.575-1.45.5zM62.15 77.95c-.175-.325-.725-1.65-1.175-2.95-.775-2.2-.85-2.6-.85-5.5 0-3.45.35-4.6 1.475-4.9 1-.25 4.525.875 7.6 2.425 1.6.825 3.075 1.475 3.25 1.475.375 0 .4.65.025.9-.15.1-.8.3-1.45.475-1.2.325-1.175.375.8.875C72.95 71.05 73 71.1 73 72c0 .85-.15 1.025-2.05 2.55-2.775 2.2-3.5 2.6-5.775 3.325-2.4.775-2.575.775-3.025.075zM81.375 72.85c-2.725-.475-2.625-.4-2.625-1.825 0-1.375.375-1.775 1.625-1.775.375 0 .6-.1.5-.25-.075-.125-.625-.25-1.2-.25-.95 0-1.1-.075-1.35-.75-.275-.725-.275-.75 1.725-2 5.4-3.475 6.475-3.1 7.2 2.575.225 1.875.125 3.425-.3 4.25-.275.525-2.6.55-5.575.025zM74.625 71.65c-.375-.275-.475-.675-.5-1.8 0-1.425.025-1.45.8-1.675 2.125-.625 3.2 2.625 1.175 3.55-.8.35-.9.35-1.475-.075z"></path>
-      </g>
-      <g fill="#6f6c6e">
-        <path d="M64.625 124.975c-.825-.125-2.5-.475-3.75-.775l-2.25-.575-1.025-3.5c-2-6.7-3.525-14.25-4.575-22.375-.25-2-.375-3.725-.275-3.825.3-.35 8.2-1.375 12.8-1.675 3.225-.2 5.325-.2 7.75-.025 4.275.35 4.75.5 4.975 1.4.125.375.325 3.25.475 6.35.175 3.1.325 5.725.4 5.8.05.075.2 3 .35 6.5.25 5.875.575 10.25.9 11.275.15.5-.675.8-3.675 1.325-2.325.4-9.525.475-12.1.1zM80.9 117.325c-.075-1.075-.2-3.3-.3-4.975-.175-3.4-.275-3.2 1.85-3.5l1.2-.15.675 3.45c.375 1.925.675 4.1.675 4.875v1.4l-1.45.425c-2.475.7-2.475.7-2.65-1.525zM97 105.025c-.575-.425-.025-.65 2.575-1.175 3.4-.65 2.275-.975-2.725-.75l-4.075.15-.125-1.05c-.075-.6-.275-2.25-.425-3.7a50.93 50.93 0 00-.625-4.475c-.35-1.675-.35-1.875.025-2.275.55-.6 2.225-1.375 4.75-2.25 1.1-.375 2.475-.925 3.05-1.225 2.55-1.275 4.5 0 5.675 3.675 1.95 6.175 1.975 9.05.15 11.375-1 1.25-2.325 1.725-5.25 1.85-1.625.075-2.775 0-3-.15zm4.5-6.3c-.9-.375-4.025-.575-5.15-.35l-.975.225.875.15c.475.1 2 .2 3.375.2 1.925.025 2.35-.05 1.875-.225zm-1.35-3.15c1.15-.175 1.175-.2.475-.35-1.3-.3-3.725-.225-4.5.15-.725.325-.675.325 1.025.35.975.025 2.325-.05 3-.15zm-2.4-2.875c1.725-1 1.95-1.2 1.25-1.075-1.85.35-3.225.925-4.15 1.775l-.975.875.875-.175c.475-.075 1.825-.7 3-1.4zM87.9 103.975c-.05-.2-.275-1.75-.5-3.475-.225-1.725-.575-4.25-.8-5.6-.225-1.475-.275-2.575-.15-2.7.125-.125.775-.2 1.45-.15l1.225.075.6 1.5c.8 2.025 1.25 4.775 1.275 7.575 0 2.3 0 2.325-.675 2.575-1.25.475-2.3.575-2.425.2zM73.875 87.15C72.1 86.425 69.35 85.2 67.8 84.4c-2.525-1.3-2.8-1.5-2.65-1.975.55-1.775 2.175-3.6 4.775-5.375C70.8 76.475 71.55 76 71.6 76c.475 0 3.75 6.275 5.625 10.7.65 1.55.7 1.8.325 1.8-.225 0-1.875-.6-3.675-1.35zM80.875 87.775c.475-1.5.925-4.425 1.275-8.275.325-3.275.525-4.45.8-4.675.95-.775 3.475-.1 4.75 1.25l.575.6-.625 1.1c-1.375 2.475-2.475 4.275-4.45 7.3-1.925 2.95-2.7 3.85-2.325 2.7zM79.325 87.125a89.273 89.273 0 01-1.7-3.75c-1.625-3.775-2.5-5.5-3.675-7.2-.95-1.4-.975-1.5-.55-1.95.25-.275.775-.475 1.2-.475.425-.025 1.05-.175 1.4-.375.925-.525 1.525-.45 2.825.375.65.4 1.475.825 1.825.9l.675.175-.175 3.975c-.175 3.9-.625 7.45-1.1 8.7-.225.625-.225.625-.725-.375zm.3-6c0-.625-.1-.75-.625-.75-.4 0-.65.15-.7.45-.15.75.15 1.225.75 1.125.45-.05.575-.225.575-.825zm-.775-4C79.075 76.5 78.725 76 78.1 76c-.35 0-.675.175-.75.375-.25.625.1 1.125.75 1.125.325 0 .65-.175.75-.375zM56.125 67.275c-1.775-.625-3.175-1.375-3.725-2-.55-.625-.375-1.425.3-1.15.775.325 2.15.575 4.125.75 2.125.175 2.15.2 1.65 1.95-.275 1.05-.5 1.1-2.35.45zM73.35 66.525C72.5 66.3 70.5 65.25 70.5 65c0-.1.825-.125 1.825-.05 1.35.075 2.5-.05 4.25-.45 1.35-.3 2.55-.5 2.675-.45.15.05-.5.675-1.425 1.4-1.75 1.375-2.475 1.55-4.475 1.075zM56.875 63.75c-2.375-.25-5.05-1.075-6.425-2-1.3-.875-2.575-2.625-3.725-5.175-1.125-2.475-2.225-5.75-2.375-7.25-.15-1.225-.125-1.35.75-2.425.625-.725.9-1.325.85-1.7-.1-.75-.675-.65-2.025.325-1.775 1.275-4.05.875-5.75-1-1.775-1.975-3.1-5.45-2.85-7.55.45-3.825 4.325-6.5 7.35-5.075.925.45 2.125 2.275 2.575 3.925.25.875.325.925 1.275.925.55 0 1.375-.175 1.85-.35 1.075-.45 1.125-1.025.325-3.975-.7-2.675-.675-5 .15-8.9.7-3.3.825-5.875.375-7.65-.275-1.05-.225-1.2.5-2.325 2.25-3.5 8.95-8.4 13.775-10.075 2.075-.7 6.6-.775 9.575-.125 4.25.925 8.875 2.925 11.075 4.8 1.05.9 5.1 5.85 5.1 6.25 0 .05-.425.05-.95-.05-2.025-.325-4.05.85-4.05 2.325 0 .575.025.575.55.225.975-.7 3.025-.525 4.75.4 2.6 1.375 3.525 3.2 3.975 7.85.425 4.275.15 12.8-.475 15.9C92 46 90.4 50.025 87.825 54c-2.05 3.15-2.975 4.2-4.85 5.425C79.35 61.75 75.575 63 72.125 63c-2.475 0-4.05-.45-6.975-1.95-2.675-1.375-5.85-4.275-8.35-7.6-.9-1.2-1.675-2.15-1.75-2.1-.275.3.65 2.125 1.95 3.85 1.7 2.275 5.25 5.75 6.725 6.575.55.325 1.025.7 1.025.8 0 .125-.6.125-1.325.05-1.575-.2-3.15.175-3.8.875-.25.275-.575.475-.725.475-.15-.025-1.05-.125-2.025-.225zm23.7-8.75c.5-.15 1.15-.525 1.45-.825l.5-.55-4.2-.15c-5.8-.2-7.35-.7-9.4-2.975-.65-.7-1.325-1.25-1.55-1.2-.25.05.125.7 1.35 2.2 2.275 2.8 2.8 3.25 4.2 3.65 1.4.4 6.175.3 7.65-.15zm.325-5.425c-.075-.525-.15-1.125-.15-1.35 0-.35-.55-.425-4.05-.55-3.675-.1-5.35-.35-7.325-1.075-.925-.325 1.175 1.65 2.4 2.3 1.75.875 4.75 1.5 7.7 1.575l1.6.025-.175-.925zm3.55.3c1.625-.5 3.45-1.95 4.6-3.65.5-.75.875-1.375.825-1.425-.025-.05-1.075.425-2.325 1.05-1.225.625-2.775 1.275-3.45 1.425a27.21 27.21 0 00-1.525.375c-.2.05-.325.55-.325 1.35 0 1.45.1 1.475 2.2.875zm-3.375-4.6c2-.525 3.1-1 5.55-2.475 1.425-.825 1.55-.975 1.95-2.325.225-.8.425-1.575.425-1.75 0-.15-.975-1.3-2.15-2.55C83.225 32.3 81 29.1 79.6 25.625c-.175-.375-.225-.225-.3.65-.15 2.25 1.45 5.325 5.025 9.625 2.525 3 2.875 3.75 2.4 4.9-.25.65-.75.975-2.825 1.975-3 1.4-4.1 1.725-5.8 1.725-1.5 0-2.275-.65-2.525-2.125-.125-.75-.2-.85-.4-.5-.35.65-.25 2.225.2 3.1.375.75.45.775 2.1.775.925 0 2.55-.225 3.6-.475zm-40.9-5.95c.075-2.15.5-3.075 1.425-3.075.675 0 1.125.475 1.925 2 .575 1.125.6 1.125.675.4.125-1.1-.625-2.775-1.725-3.75-.8-.75-1.175-.9-2.075-.9-.925 0-1.2.125-1.75.775-.8.95-.825 1.35-.05.85.7-.475 1.525-.25 1.225.35-.4.775-.2 5.275.225 5.275.05 0 .1-.85.125-1.925zm31.75-6.975c.75-.575.975-1.1.825-2.1-.025-.2-.475-.825-1-1.375-.55-.55-1.375-1.85-1.875-2.875L69 24.125l.075 1.125c.1 1.15.725 2.65 1.7 4.2.5.775.525.875.125 1.25-.325.325-.775.4-1.975.35-3.75-.2-3.55-.2-3.625.35-.25 1.725 4.7 2.425 6.625.95zm18.7-1.075c.55-.25 1.2-.675 1.425-.95.425-.45.375-.6-1.05-3.4-1.325-2.575-1.5-2.825-1.5-2.05 0 .475.3 1.6.675 2.5.5 1.2.6 1.7.4 1.9-.175.175-1.175.375-2.25.5-1.075.1-1.975.2-2 .2-.2.05-.025.75.325 1.225.3.45.625.55 1.675.55.725 0 1.75-.225 2.3-.475zM59.5 20.4c1.5-2.025 2.975-2.775 5.325-2.75 1.675 0 1.7 0 1.625-.625-.125-1-1.575-1.85-2.8-1.65-2.175.325-4.925 2.525-5.8 4.6-.6 1.4-.35 3.475.275 2.375.125-.225.75-1.1 1.375-1.95z"></path>
-        <path d="M46.925 34.575c-.1-.075-.175-.425-.175-.75 0-1.575-1.875-3.675-3.925-4.35-1.2-.4-4.2-.175-4.8.375-.225.225-.525.325-.6.225-.1-.075-.175-1.65-.175-3.45 0-4.25.35-5.475 2.075-7.3 1.75-1.85 4.8-3.375 6.85-3.425l1.45-.025.225 1.725c.2 1.35.125 2.55-.3 5.75-.675 5.025-.675 5.5 0 8.325.45 1.9.475 2.35.225 2.675-.375.425-.6.5-.85.225zM41.675 14.2c.85-1.475 3.15-3.725 5.3-5.15 3.8-2.55 8.9-4.425 8.9-3.3 0 .2-.225.475-.5.625-2.025 1.025-4.15 3.05-5.25 4.925-.375.65-.975 1.525-1.375 1.95-.65.7-.825.75-2.3.725a8.491 8.491 0 00-3.05.5c-2.075.75-2.275.7-1.725-.275z"></path>
-      </g>
-      <g fill="#4a738d">
-        <path d="M37.25 104.425c-.35-.2-.6-.45-.575-.575.075-.425-.4-7.4-.675-9.725-.575-4.85-1.75-10.875-2.775-14.25-.775-2.625-1.525-4.825-1.75-5.375-.175-.35-.375-.85-.5-1.125-.9-2.2-.975-2.5-.725-2.575.15-.05.95-.625 1.75-1.275 3.2-2.525 8.15-5.725 11-7.05.9-.425 1.9-.9 2.225-1.05.55-.275.7-.175 2.175 1.45.875.95 1.6 1.8 1.6 1.875 0 .175.15.1-8.375 3.875-3.3 1.475-6.05 2.7-6.075 2.75-.05.05.2 1.425.575 3.05 1.425 6.325 2.525 12.8 3.125 18.275.45 4.125.3 12.05-.225 12.05-.075 0-.425-.15-.775-.325zM79.95 96.6c-.25-.225-.25-1.75-.05-2.8.175-.875.5-1.05 2.325-1.15 1.2-.1 1.25-.075 1.5.675.15.4.275 1.125.275 1.6 0 .75-.125.9-.925 1.25-1.1.45-2.875.7-3.125.425zM49 95.75c-1.75-.3-2.65-.6-3.45-1.125-.725-.475-.975-.775-.75-.9.15-.1.425-.125.575-.025.125.1 1.45.175 2.925.175 1.625 0 2.775.1 2.95.275.15.15.25.675.2 1.15l-.075.85-2.375-.4zM52.4 91.1c-.2-.525-.2-6.675 0-9.55l.175-2.275.95 1.2.975 1.225v4.775c0 2.625-.075 4.775-.175 4.8-.125 0-.55.05-1 .1-.55.075-.825 0-.925-.275zM74.525 87.375c-2.7-1.075-8.55-3.875-9.2-4.425-.475-.4.65-2.375 2.2-3.825 1.75-1.65 3.675-2.95 4.1-2.8.6.25 2.825 4.175 4.5 7.95 1.6 3.7 1.8 4.225 1.45 4.225-.125 0-1.475-.525-3.05-1.125zM80.875 87.875c.675-1.95 1.275-6 1.525-10.075.175-2.7.2-2.85.775-3.075 1.425-.525 3.3.025 4.525 1.35l.575.6-.625 1.1c-3.05 5.475-7.4 11.925-6.775 10.1zM91.95 66.125c-2.025-1.5-4.075-3.15-4.525-3.6-.475-.475-1.2-1-1.65-1.15l-.8-.25 1.35-1.175 1.35-1.175 2.35 2.3c1.3 1.275 3.1 2.95 4.025 3.75 1.75 1.5 2.225 2.45 1.775 3.55-.175.45-.55.25-3.875-2.25z"></path>
-      </g>
-      <g fill="#83b3c7">
-        <path d="M65 124.9c-3.225-.5-5.925-1.15-6.2-1.475-.35-.425-1.625-4.925-2.775-9.7-1.6-6.5-3.6-19.275-3.1-19.725.275-.275 6.525-1.175 10.575-1.525 4.825-.425 14-.05 14.625.575.075.05.3 3.075.5 6.725.2 3.625.425 7.05.5 7.6.075.55.25 3.675.375 6.925s.375 6.725.525 7.725c.225 1.425.2 1.825-.05 2-1.5.925-11.025 1.475-14.975.875zM81.125 119c-.05-.075-.175-2.3-.275-4.9l-.175-4.75 1.3-.3c1.5-.35 1.775-.25 1.775.55 0 .325.225 1.625.5 2.925.275 1.3.575 3.1.65 4.025.175 1.675.175 1.675-.55 1.975-.975.375-3.1.7-3.225.475zM97.625 105.025c-.975-.175-.975-.2-.375-.45.35-.15 1.025-.325 1.5-.425 2.725-.525 3.275-.725 3-1-.2-.175-1.625-.25-4.6-.2l-4.3.075-.425-3.95c-.25-2.175-.6-4.625-.8-5.45l-.35-1.5.675-.55c.375-.325 1.475-.875 2.425-1.225.975-.375 2.7-1.05 3.875-1.55 2.55-1.05 3.6-1.125 4.725-.3 1.1.775 1.825 2.425 2.775 6.25.8 3.35.925 5 .45 6.575-.425 1.4-2.05 3.05-3.325 3.375-1.425.375-4.075.525-5.25.325zm4.175-6.3c-1.325-.525-3.85-.75-5.2-.475-2.325.5-1.525.75 2.225.725 2.45 0 3.375-.075 2.975-.25zm-.475-3.2c.45-.175.35-.25-.7-.425-2.525-.425-5.375-.05-5.375.725 0 .275 5.2.025 6.075-.3zm-3.4-2.8c1.3-.7 2.325-1.3 2.275-1.35-.175-.175-2.525.4-3.675.875-.675.3-1.55.875-1.925 1.3l-.725.775.85-.175c.45-.075 1.9-.725 3.2-1.425zM88 104c0-.275-1.4-9.9-1.625-11.05-.1-.7-.1-.7 1.275-.7h1.375l.5 1.125c.75 1.675 1.2 4.125 1.4 7.275l.15 2.775-1.2.425c-1.4.45-1.875.5-1.875.15zM76.875 88.175c-3.45-1.125-11.625-4.95-11.625-5.45 0-1.3 2.2-3.9 4.65-5.5l1.65-1.05.575.725c1.125 1.35 5.9 11.2 5.575 11.475-.05.025-.4-.05-.825-.2zM81.1 87.625c.475-1.275 1.35-7.85 1.425-11.075l.05-1.55.9-.25c1.275-.325 2.675.05 3.675 1.025.475.45.85.925.85 1.05 0 .325-3.35 5.95-5.2 8.75-1.5 2.275-2.05 2.925-1.7 2.05zM79.175 86.575c-.325-.65-1.3-2.8-2.15-4.725-.85-1.95-2.05-4.3-2.675-5.25-1-1.55-1.1-1.775-.8-2.3.2-.4.45-.55.775-.45.275.075 1.05-.1 1.725-.375L77.275 73l1.575.875c.875.475 1.75.875 1.975.875.5 0 .5-.225.175 4.9-.225 3.575-.775 7.725-1.1 8.025-.075.075-.4-.425-.725-1.1zm.6-4.975c.425-.525 0-1.225-.775-1.225s-1.2.7-.775 1.225c.2.225.525.4.775.4s.575-.175.775-.4zm-.925-4.4c.325-.525-.05-1.275-.65-1.4-.4-.075-1.2.575-1.2.95s.8 1.025 1.2.95c.2-.05.5-.275.65-.5zM56.125 67.15c-1.625-.525-3.575-1.6-3.875-2.15-.425-.775-.1-1 .85-.625.45.2 1.85.425 3.125.525 1.25.1 2.325.25 2.4.35.05.075-.025.625-.175 1.2-.3 1.175-.575 1.25-2.325.7zM73 66.325c-.85-.3-2.5-1.175-2.5-1.325 0-.1.575-.05 1.275.1 1.075.225 1.75.15 4.375-.375 1.7-.375 3.1-.625 3.1-.575 0 .025-.675.575-1.475 1.2-1.4 1.075-1.575 1.15-2.95 1.125-.8 0-1.625-.075-1.825-.15zM56.375 63.575c-1.275-.125-4.225-1-5.4-1.575-1.275-.65-2.45-2.075-3.65-4.375-1.125-2.2-2.675-6.6-2.95-8.4-.15-1.075-.125-1.2.85-2.325 1.075-1.225 1.175-1.525.775-2.15-.2-.325-.375-.3-1.175.175-2.3 1.325-2.475 1.4-3.675 1.225-1.825-.275-3.075-1.425-4.375-3.95-.975-1.875-1.125-2.425-1.225-4.125-.1-1.7-.025-2.15.45-3.1 1.25-2.5 2.9-3.4 5.85-3.25 1.05.05 2.425 1.6 3.025 3.4.25.825.55 1.6.65 1.7.3.375 2.75-.125 3.425-.7l.65-.55-.675-2.85c-.85-3.625-.85-4.825.075-9.3.85-4.125.9-5.225.4-7.175l-.375-1.375.8-1.35c2.1-3.5 10.05-9.1 14.425-10.125 5.975-1.425 16.025 1.225 20.325 5.325C85.75 9.85 89 13.925 89 14.3c0 .025-.725.075-1.6.075-1.375 0-1.7.1-2.275.625-.725.675-1.2 1.65-1 2 .075.125.525.05 1-.15 1.675-.7 3.85-.2 5.6 1.325C92.85 20 93.425 22.2 93.65 29.5c.275 8.775-.95 15.15-4.05 21.325-.725 1.4-3.275 5.325-4.3 6.55-2.05 2.475-7.975 5.175-12.15 5.525-2.35.2-4.25-.2-7.025-1.5-3.85-1.825-6.425-4.1-9.7-8.625-.85-1.15-1.575-1.975-1.625-1.8-.15.425 1.125 3.025 2.175 4.4 1.475 1.95 5.025 5.475 6.35 6.325l1.2.75-2 .075c-1.65.075-2.1.2-2.575.675-.625.55-1.1.6-3.575.375zm24.025-8.45c1.075-.325 2.35-1.225 2.35-1.625 0-.1-1.65-.175-3.675-.175-5.875.025-8.525-.775-10.275-3.075-.475-.625-1-1.15-1.175-1.2-.725-.175-.6.5.225 1.525.5.575 1.375 1.65 1.95 2.4 1.2 1.5 2.325 2.2 4.125 2.525 1.525.275 5 .075 6.475-.375zm.55-5.925l-.075-1.325-3.5-.175c-3.775-.175-6.225-.525-7.6-1.1-.475-.2-.9-.325-.925-.275-.05.05.25.5.675 1 1.5 1.8 5.375 3.125 9.425 3.15l2.075.025-.075-1.3zm4.925.2c.6-.35 1.5-1.075 2-1.625C88.9 46.7 90.3 44.7 90.125 44.55c-.05-.05-.925.35-1.925.875-1.925 1.05-4.6 2.075-5.45 2.075-.45 0-.5.175-.5 1.4v1.425l1.275-.15c.7-.1 1.75-.45 2.35-.775zm-4.625-4.075c1.675-.425 3.55-1.275 5.525-2.475 1.325-.8 1.5-1 1.85-2.15.575-2 .5-2.25-1.075-3.875-3.425-3.45-7.15-8.775-7.65-10.875-.075-.4-.325-.7-.525-.7-.925 0 .05 3.725 1.625 6.35.475.775 1.675 2.4 2.625 3.55 3.375 4.125 3.525 4.425 2.85 5.925-.55 1.225-7.2 3.675-9.05 3.325-1.075-.2-1.45-.65-1.65-1.85-.175-1.075-.55-1.175-.875-.25-.325.9.05 2.4.75 3.125.6.6.725.625 2.425.45 1-.1 2.425-.35 3.175-.55zm-40.4-8.55c.275-.3.6-.525.775-.525.425 0 1.225.95 1.9 2.25l.6 1.125.075-1.175c.1-1.4-.55-2.825-1.7-3.8-1.525-1.25-3.2-1.125-4.175.325-.725 1.075-.725 1.425-.025.925.3-.225.775-.4 1.025-.4.4 0 .425.125.25.825-.3 1.175-.2 3.7.2 4.55.3.725.325.65.475-1.425.1-1.625.25-2.3.6-2.675zm31.3-4.525c1.175-1.175 1.125-1.875-.275-3.45-.625-.7-1.55-2.15-2.075-3.225-.8-1.725-.925-1.875-1-1.225-.1.75.775 3.5 1.325 4.15.175.2.5.725.7 1.15.4.8.4.8-.325 1.1-.525.225-1.3.25-2.675.1-1.075-.1-2.05-.2-2.2-.225-.45 0-.425 1.15.025 1.65.65.725 1.75.975 3.8.875 1.675-.075 1.9-.15 2.7-.9zm19.025-1.125c.6-.375 1.175-.825 1.25-1 .1-.325-2.85-6.625-3.125-6.625-.325 0 .225 2.8.825 4.1.775 1.75.725 1.8-1.625 2.025-.9.1-1.775.2-1.925.25-.55.175-.35 1.075.375 1.625.55.45.875.525 1.9.4.65-.075 1.7-.425 2.325-.775zm-32.45-9.475c.9-1.525 2.425-3.025 3.675-3.55.45-.2 1.55-.35 2.45-.35.9 0 1.7-.125 1.775-.25.5-.825-1.175-2.25-2.675-2.25-1.15 0-3.2 1.05-4.475 2.325-1.05 1.05-2.225 3.15-2.225 4 0 .45.425 1.425.625 1.425.05 0 .425-.6.85-1.35z"></path>
-        <path d="M37.35 28.6c-.2-1.7 0-5.375.4-6.65.825-2.8 4.625-5.475 8.65-6.1.925-.125 1.05-.1 1.175.425.25.9.225.975-.4.975-.975 0-3.725 1-4.975 1.8-3 1.9-4.775 5.8-4.3 9.425.1.75.05 1.275-.1 1.375-.175.1-.325-.375-.45-1.25zM41.5 14.75c0-.1.525-.875 1.15-1.725C44 11.225 46.8 9.05 49.7 7.55c2.275-1.175 5.475-2.375 5.825-2.15.45.25.2.775-.5 1.125-5.325 2.6-7.15 3.8-9.5 6.25-1.1 1.125-1.7 1.525-2.7 1.825-.725.2-1.325.275-1.325.15z"></path>
-      </g>
-      <g fill="#f1d8b9">
-        <path d="M73 66.275C72.125 66 70.8 65.3 70.625 65c-.1-.175.075-.175.5 0 1.025.375 2.5.3 5.45-.35 1.475-.325 2.675-.55 2.675-.525 0 .025-.675.575-1.475 1.225-1.35 1.05-1.6 1.15-2.825 1.125-.725 0-1.6-.1-1.95-.2zM56.075 63.475c-2.025-.25-4.625-1.15-5.8-1.975-1.35-.975-2.675-3.05-3.975-6.15-.975-2.375-2.05-5.975-2.05-6.875 0-.25.45-.975 1.025-1.625 1.05-1.2 1.225-2.15.425-2.3-.225-.05-1.05.325-1.8.85-1.2.8-1.525.9-2.425.775-1.7-.225-3.225-1.35-4.3-3.175-2.525-4.35-2.175-8.375.925-10.425 1.05-.725 1.425-.825 2.775-.825 1.225 0 1.7.125 2.25.55.7.55 2.125 3.225 2.125 4.025 0 .25.175.5.375.575.7.275 2.625-.175 3.3-.75l.65-.575-.65-2.9c-.85-3.675-.85-4.725.075-9.15.85-4.025.925-5.625.375-7.425-.35-1.175-.325-1.25.25-2.25 1.525-2.6 5.125-5.7 9.625-8.25 3.35-1.875 4.875-2.375 8-2.525 4.4-.225 8.725.775 13.65 3.175 2.175 1.05 2.775 1.475 4.25 3.075.95 1.025 2.2 2.55 2.8 3.4l1.075 1.525H87.6c-1.6 0-2.575.475-3.2 1.5-.55.95-.525 1.6.05 1.375 2-.85 3.575-.675 5.6.6 2.45 1.55 3.075 3.375 3.5 10 .525 8.5-.625 15.825-3.425 21.95-1.125 2.45-4.1 6.975-5.425 8.225-1.9 1.825-5.375 3.6-8.7 4.475-2.25.6-5.75.6-7.5.025-4.325-1.45-7.875-4.175-11.35-8.725-1.225-1.6-2.275-2.875-2.35-2.825-.225.225.75 2.575 1.525 3.7 1.4 2.025 5.1 5.85 6.725 6.95l1.55 1.025-1.325-.1c-1.6-.15-2.65.125-3.4.825-.575.55-.975.55-3.8.225zm23.65-8.15c1.525-.325 3.025-1.25 3.025-1.875 0-.1-1.65-.2-3.675-.2-4.25.025-5.45-.125-7.275-.8-1.525-.575-2.55-1.375-3.3-2.575-.325-.5-.75-.875-1.025-.875-.875 0-.725.225 2.55 4.325.425.525 1.025 1.125 1.375 1.325 1.6 1.075 5.125 1.35 8.325.675zm1.275-6c0-.85-.125-1.375-.3-1.45-.175-.05-1.775-.15-3.575-.25-4.1-.175-6.15-.525-7.975-1.25-.4-.175-.425-.125-.175.3 1.175 2.25 5.85 3.925 10.975 3.975H81v-1.325zm4.4.3c.725-.3 1.75-1.025 2.325-1.6.95-.95 2.6-3.3 2.425-3.475-.05-.025-1.225.5-2.625 1.175s-3.15 1.375-3.9 1.525l-1.375.275v3.025l.95-.175c.5-.075 1.5-.425 2.2-.75zm-3.85-4.275c1.475-.45 3.125-1.225 5.25-2.5 1.2-.725 1.475-1.05 1.8-2.025.625-1.8.525-2.7-.35-3.375-2.275-1.775-7.35-8.625-8.125-10.95-.25-.775-.55-1.25-.8-1.25-.325 0-.375.225-.225 1.45.25 2.1 2 5.45 4.275 8.175 2.95 3.525 3.375 4.15 3.375 4.9 0 1.425-.4 1.8-3.225 3.05-2.9 1.275-4.35 1.625-5.875 1.5-1.25-.1-1.625-.425-1.8-1.625-.2-1.15-.475-1.4-.825-.725-.55 1.025-.275 2.5.7 3.625.35.4.65.425 2.45.3 1.125-.1 2.65-.35 3.375-.55zm-40.6-8.65c.5-.5.55-.5 1.15-.1.35.225.95 1 1.325 1.725l.7 1.3.075-1.175c.2-3-3.075-5.75-5.15-4.3-.6.4-1.425 1.8-1.2 2.025.075.075.3-.05.525-.275.225-.225.625-.4.925-.4.425 0 .475.1.275.825-.3 1.225-.2 3.975.2 4.675.325.575.35.475.5-1.575.125-1.775.25-2.325.675-2.725zm30.45-3.85c1.95-.925 2.1-2.325.475-4.075-.6-.65-1.525-2.075-2.05-3.175-.825-1.75-.95-1.9-1.025-1.25-.125.925.55 3 1.475 4.425.4.625.725 1.275.725 1.425 0 .8-2.15.975-4.8.4-.8-.175-1.1.275-.85 1.25.3 1.25 4.175 1.875 6.05 1zm19.65-1.65c1.7-.95 1.7-1-.05-4.525-.85-1.75-1.6-3.175-1.675-3.175-.35 0 .2 2.825.8 4.125.725 1.6.625 1.85-.75 1.9-.975.025-2.425.2-2.8.35-.55.2-.35 1.075.375 1.625.55.45.875.525 1.875.4.675-.075 1.675-.4 2.225-.7zM58.6 21.925c.275-.575 1.075-1.625 1.75-2.325 1.475-1.45 2.925-1.975 4.9-1.8 1.05.1 1.275.05 1.375-.325.35-1.05-1.1-2.225-2.675-2.225-2.05 0-5 2.225-6.1 4.575-.65 1.425-.725 1.975-.35 2.7.375.7.575.6 1.1-.6z"></path>
-      </g>
-      <g fill="#f6f5f5">
-        <path d="M66.75 125.1c-.35-.05-1.475-.225-2.5-.375-2.3-.325-5.05-.975-5.35-1.25-.525-.475-2.75-8.65-3.875-14.275-.825-4.025-1.975-11.8-2.075-13.95l-.075-1.35L54 93.7c6.525-1.175 16.075-1.75 20.875-1.225 1.525.175 2.9.45 3.05.6.3.3.75 6.225 1.325 17.925.275 5.6.7 11.25.9 12.275.15.625.075.675-1.475 1.05-3 .75-9.25 1.15-11.925.775zM80.925 115.85c-.1-1.775-.175-3.95-.175-4.875v-1.625l1.325-.275c.7-.15 1.35-.225 1.4-.2.175.175 1.5 7.55 1.525 8.45 0 1.075-.475 1.375-2.65 1.6l-1.275.125-.15-3.2zM97.95 105.075c-.525-.05-.95-.2-.95-.35 0-.125.05-.225.1-.225.125 0 3.5-.675 4.375-.9.475-.1.525-.2.3-.425-.225-.225-1.525-.275-4.6-.225l-4.325.05-.425-4.05c-.25-2.25-.6-4.7-.8-5.45l-.375-1.375.675-.55c.375-.325 2-1.025 3.575-1.6 1.575-.575 3.425-1.325 4.075-1.65 1.85-.925 3.7-.25 4.675 1.675.7 1.35 2.25 7.55 2.25 8.95 0 2.8-1.525 5.225-3.625 5.75-1.25.325-3.725.5-4.925.375zm4.5-6.2c-.075-.075-1.025-.3-2.1-.525-2.375-.45-5.1-.225-5.1.425 0 .125 1.65.225 3.675.225 2 0 3.6-.05 3.525-.125zm-.95-3.375c.425-.25-1.525-.6-3.375-.625-1.3 0-2.875.5-2.875.95 0 .275 5.65 0 6.25-.325zm-4.975-2a55.39 55.39 0 012.675-1.4c.725-.35 1.275-.7 1.225-.75-.05-.075-.925.05-1.95.25C96.7 91.975 94 93.425 94 94c0 .475 1.2.25 2.525-.5zM87.875 102.825c-.075-.8-.425-3.2-.775-5.325-.325-2.125-.6-4.175-.6-4.55 0-.675.05-.7 1.275-.7 1.25 0 1.25 0 1.75 1.125.725 1.65 1.2 4.1 1.375 7.275l.175 2.75-1.325.425c-.725.225-1.4.425-1.5.425-.1 0-.275-.65-.375-1.425zM78.95 86c-.5-1.025-1.475-3.2-2.2-4.8-.7-1.6-1.8-3.675-2.4-4.6-.6-.925-1.1-1.725-1.1-1.8 0-.35.825-1 1.125-.9.175.075.725-.05 1.25-.25 1.35-.575 2.1-.5 3.375.35.625.4 1.375.75 1.7.75.55 0 .55.025.425 2.825-.2 3.925-.625 7.675-1 9.1l-.325 1.2L78.95 86zm.825-4.4c.425-.525 0-1.225-.775-1.225s-1.2.7-.775 1.225c.2.225.525.4.775.4s.575-.175.775-.4zm-.925-4.4c.325-.525-.05-1.275-.65-1.4-.4-.075-1.2.575-1.2.95s.8 1.025 1.2.95c.2-.05.5-.275.65-.5zM55.8 67c-2.525-.9-4.1-2.075-3.675-2.75.075-.125.5-.075.95.125.425.175 1.85.425 3.125.575 1.275.125 2.375.275 2.425.35.05.05-.025.575-.175 1.15-.3 1.225-.6 1.3-2.65.55zM50.825 61.75c-1.15-.675-1.025-.85.125-.2 1.15.675 1.2.7.9.7-.125 0-.6-.225-1.025-.5zM47.35 57.475c-.35-.7-.6-1.325-.55-1.375.05-.05.4.525.775 1.275.375.75.625 1.375.55 1.375-.075 0-.4-.575-.775-1.275zM44.5 47.975c0-.2.325-.575.7-.825l.675-.475-.625.725c-.35.4-.65.775-.675.825-.05.05-.075-.05-.075-.25zM35.575 37.625c0-.55.05-.75.1-.425.05.3.05.75 0 1-.075.225-.125-.025-.1-.575zM37.25 33.375c.475-.475.9-.875.975-.875.075 0-.25.4-.725.875s-.9.875-.975.875c-.075 0 .25-.4.725-.875zM43.575 33.175c-.1-.175-.475-.525-.825-.75-.325-.225-.525-.425-.425-.425.35 0 1.375.775 1.525 1.15.175.45 0 .45-.275.025zM40.45 31.825c.3-.05.75-.05 1 0 .225.075-.025.125-.575.1-.55 0-.75-.05-.425-.1zM37.375 28.35c-.25-2.2 0-5.15.525-6.725.825-2.375 4.025-4.725 7.575-5.525 1-.225 1.85-.35 1.9-.3.075.05.15.35.175.675.075.5-.1.625-1.75 1.05-2.45.625-4.1 1.55-5.55 3.15-1.7 1.875-2.325 3.575-2.375 6.625-.025 1.35-.1 2.5-.175 2.6-.1.075-.225-.625-.325-1.55zM58.175 18.625c.3-.4.9-1.075 1.35-1.5.625-.55.55-.425-.25.5-1.475 1.675-1.7 1.875-1.1 1zM41.5 14.875c0-.375 1.225-1.975 2.425-3.2 2.325-2.35 5.675-4.4 9.55-5.775 1.275-.475 1.925-.6 2.125-.4.425.425-.1.8-3.25 2.325-2.6 1.25-4.75 2.775-6.6 4.675-.9.925-1.85 1.75-2.125 1.825-.275.075-.875.25-1.3.375-.45.15-.825.225-.825.175zM88.25 13.75c-.15-.275-.175-.5-.075-.5.125 0 .35.225.525.5.175.275.2.5.05.5-.125 0-.35-.225-.5-.5zM52.125 11c.95-.95 1.8-1.75 1.85-1.75.075 0-.65.8-1.6 1.75-.95.975-1.8 1.75-1.85 1.75-.075 0 .65-.775 1.6-1.75zM54.35 9.05c.2-.325 1.65-1.4 1.65-1.225 0 .075-.425.425-.925.825-.5.375-.825.575-.725.4zM79.5 5.875c-.35-.2-.5-.35-.375-.35.15 0 .525.15.875.35.35.2.525.35.375.35-.125 0-.525-.15-.875-.35zM60 5.375C60 5.2 62.025 4.2 62.15 4.3c.05.075-.425.35-1.025.65-.625.3-1.125.5-1.125.425zM67.7 3.075c.3-.05.8-.05 1.125 0 .3.05.05.1-.575.1s-.875-.05-.55-.1z"></path>
-      </g>
-    </svg>
-  );
+function WebflowSVG({height}) {
+    return (
+        <svg height={height} viewBox="0 0 1090 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M288.606 0.684082L196.515 180.711H110.016L148.556 106.1H146.827C115.032 147.374 67.5931 174.545 0 180.711V107.133C0 107.133 43.2409 104.579 68.661 77.8531H0V0.685504H77.1676V64.1547L78.8996 64.1476L110.433 0.685504H168.793V63.7523L170.525 63.7495L203.241 0.684082H288.606Z"
+                  fill="#146EF5"/>
+            <path d="M790.78 160.84H815.632V18.1868H790.78V160.84Z" fill="#146EF5"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M653.772 159.383C659.174 161.629 664.666 162.751 670.25 162.751C679.475 162.751 687.728 160.506 695.011 156.015C702.294 151.524 707.938 145.333 711.944 137.444C715.95 129.493 717.952 120.481 717.952 110.406C717.952 100.331 715.889 91.3188 711.762 83.3683C707.635 75.4179 701.9 69.2578 694.556 64.8881C687.213 60.4577 678.868 58.2728 669.521 58.3335C663.574 58.3335 657.869 59.4866 652.407 61.7929C646.944 64.0991 642.393 67.3764 638.751 71.6247C638.47 71.9482 638.197 72.2749 637.932 72.6048V18.2778H612.988V160.84H637.75L637.7 147.522C638.341 148.307 639.025 149.074 639.753 149.824C643.698 153.891 648.371 157.077 653.772 159.383ZM679.262 136.351C675.196 138.839 670.553 140.084 665.334 140.084C660.175 140.084 655.441 138.809 651.132 136.26C646.823 133.65 643.394 130.1 640.845 125.609C638.357 121.118 637.113 116.02 637.113 110.315C637.052 104.61 638.266 99.512 640.754 95.0209C643.303 90.4691 646.732 86.9491 651.041 84.4608C655.35 81.9118 660.114 80.6676 665.334 80.7283C670.553 80.6676 675.196 81.8814 679.262 84.3697C683.389 86.7973 686.545 90.287 688.73 94.8388C690.975 99.3299 692.098 104.489 692.098 110.315C692.098 116.141 690.975 121.3 688.73 125.791C686.545 130.282 683.389 133.802 679.262 136.351Z"
+                  fill="#146EF5"/>
+            <path
+                d="M324.611 26.8352H353.014L378.422 119.625L405.451 26.8352H429.12L458.434 117.763L482.831 26.8352H508.867L470.45 160.84H445.961L416.154 72.0107L388.791 160.84H364.029L324.611 26.8352Z"
+                fill="#146EF5"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M550.811 163.207C540.918 163.267 531.997 161.082 524.046 156.652C516.157 152.161 509.936 145.94 505.384 137.99C500.893 130.039 498.647 120.966 498.647 110.77C498.647 100.878 500.954 91.9257 505.566 83.9145C510.178 75.9034 516.43 69.6523 524.319 65.1612C532.209 60.6701 541.009 58.4245 550.72 58.4245C561.644 58.4245 571.203 60.8522 579.396 65.7074C587.65 70.5626 593.81 77.451 597.876 86.3725C602.003 95.2333 603.49 105.399 602.337 116.869H524.358C524.576 121.439 525.716 125.597 527.779 129.341C530.085 133.468 533.302 136.685 537.428 138.991C541.555 141.297 546.168 142.45 551.266 142.45C555.15 142.39 558.761 141.722 562.099 140.448C565.437 139.113 568.259 137.322 570.566 135.077C572.932 132.831 574.601 130.282 575.572 127.43H601.609C600.031 134.409 596.875 140.63 592.141 146.092C587.407 151.493 581.459 155.711 574.298 158.746C567.136 161.78 559.307 163.267 550.811 163.207ZM527.87 91.8346C526.415 94.3709 525.408 97.102 524.847 100.028H576.537C576.162 96.3314 575.021 92.9631 573.114 89.9229C570.93 86.3422 567.956 83.5807 564.193 81.6387C560.43 79.6359 556.182 78.6345 551.448 78.6345C546.411 78.6345 541.829 79.7876 537.702 82.0938C533.575 84.4001 530.297 87.647 527.87 91.8346Z"
+                  fill="#146EF5"/>
+            <path
+                d="M736.25 60.5184C736.25 52.3858 738.102 45.1637 741.804 38.8519C745.506 32.4794 750.695 27.5331 757.371 24.0131C764.107 20.4323 771.967 18.5813 780.949 18.4599V40.5815C776.761 40.6422 773.181 41.5223 770.207 43.2216C767.294 44.8602 765.048 47.2575 763.47 50.4134C762.017 53.3188 761.233 56.6871 761.118 60.5184H780.403V81.5476H761.103V160.84H736.25V81.5476H720.228V60.5184H736.25Z"
+                fill="#146EF5"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M878.811 163.025C868.676 163.025 859.603 160.809 851.591 156.379C843.641 151.888 837.39 145.697 832.838 137.808C828.347 129.857 826.101 120.845 826.101 110.77C826.101 100.635 828.347 91.5919 832.838 83.6414C837.39 75.6303 843.641 69.4095 851.591 64.9791C859.603 60.5487 868.676 58.3335 878.811 58.3335C889.007 58.3335 898.111 60.5487 906.122 64.9791C914.194 69.4095 920.475 75.5999 924.966 83.5504C929.457 91.5008 931.733 100.574 931.794 110.77C931.733 120.845 929.457 129.857 924.966 137.808C920.536 145.697 914.285 151.888 906.213 156.379C898.141 160.809 889.007 163.025 878.811 163.025ZM878.811 140.175C884.152 140.175 888.886 138.961 893.013 136.533C897.14 134.045 900.326 130.585 902.571 126.155C904.817 121.664 905.94 116.536 905.94 110.77C905.94 104.944 904.817 99.7851 902.571 95.294C900.326 90.8029 897.14 87.3436 893.013 84.9159C888.886 82.4276 884.152 81.1835 878.811 81.1835C873.531 81.1835 868.828 82.4276 864.701 84.9159C860.634 87.3436 857.478 90.8029 855.233 95.294C852.987 99.7851 851.895 104.944 851.956 110.77C851.956 116.536 853.078 121.664 855.324 126.155C857.63 130.585 860.786 134.045 864.792 136.533C868.858 138.961 873.531 140.175 878.811 140.175Z"
+                  fill="#146EF5"/>
+            <path
+                d="M958.649 60.5184H930.975L960.925 160.84H985.141L1004.84 96.7646L1026.11 160.84H1049.96L1080 60.5184H1054.97L1037.93 122.962L1019.1 60.5184H994.882L976.141 124.338L958.649 60.5184Z"
+                fill="#146EF5"/>
+        </svg>
+
+    )
 }
 
-function CPlusPlusSVG({ height }) {
-  return (
-    <svg height={height} viewBox="0 0 128 128">
-      <path
-        d="M87 70v-5h5v-4h-5v-5h-5v5h-5v4h5v5zm18-14h-4v5h-6v4h6v5h4v-5h5v-4h-5zm11.5-23.7c-.6-1.1-1.4-2.1-2.3-2.6L66.1 1.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7L11.4 29.7c-1.7 1-3.4 3.5-3.4 5.4v55.7c0 1.1.7 2.3 1.4 3.4l.1.1c.5.8 1.3 1.5 2 1.9l48.3 27.9c.8.5 2 .7 3.2.7 1.2 0 2.3-.3 3.1-.7l47.5-27.9c1.7-1 2.4-3.5 2.4-5.4V35.1c0-.8.4-1.8 0-2.6l.5-.2zm-4.2 2.1c0 .3-.3.5-.3.7v55.7c0 .8-.2 1.7-.4 2L64 120.6c-.1.1-.5.2-1.1.2-.6 0-1-.1-1.1-.2L13.6 92.8s-.1-.1-.2-.1l-.6-.6c-.4-.7.2-1.1-.8-1.2V35.2c1-.5.9-1.7 1.4-1.9L61.7 5.4c.1 0 .6-.2 1.2-.2s1 .1 1.1.2l48 27.7.4.9c.1.1-.1.3-.1.4zM63 87.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6C80.1 82.5 72.1 87.5 63 87.5z"
-        fill="currentColor"
-      ></path>
-    </svg>
-  );
+
+function JenkinsSVG({height}) {
+    return (<svg height={height} viewBox="0 0 128 128">
+        <path
+            d="M63.625 127.825c-1.475-.175-3.775-.6-5.025-.95l-1.3-.375-.7-1.925c-.4-1.075-1.35-4.025-2.1-6.575l-1.4-4.625-1.975-.15c-3.025-.225-4.75-.775-9.725-3.075-2.475-1.15-4.875-2.225-5.325-2.375-.425-.175-1.025-.6-1.35-.925-.525-.575-.6-.925-.8-4.725l-.2-4.125-1.4-1.3c-7.7-7.25-12.875-17.275-14.45-27.975-.5-3.475-.5-10.225 0-13.7 1.55-10.6 6.725-20.675 14.225-27.7l2.1-1.975.3-2.075c.475-3.55 1.75-6.125 3.625-7.325.55-.375 1-.975 1.275-1.7C40.725 10.8 42.875 8.925 50 5 54.65 2.425 59.075.875 63.375.25c2.325-.325 7.225-.325 9.45.025 6.375.95 9.95 2.75 14.525 7.3 3.1 3.1 4.875 5.55 5.925 8.275.875 2.25 1.825 6.55 2.1 9.375l.175 1.85 2.375 2.65c8.025 8.95 12.325 20.2 12.325 32.15 0 7.6-1.7 14.875-5.025 21.425l-1.275 2.525.775.6c1.15.9 1.9 2.375 3.15 6.175.925 2.775 1.125 3.75 1.125 5.225 0 3.05-1.1 6.25-2.7 7.75-1.325 1.25-4.825 1.75-9 1.275-1.375-.15-1.65-.275-2.125-.925l-.55-.725-2.125.125c-2.6.175-4 .6-4 1.2 0 .825-.325 1.25-1.275 1.75-.925.45-.975.55-.975 1.6 0 .625.275 2.425.625 4.025 1.225 5.675.725 6.725-3.725 7.725-.7.15-.7.15-.55 1.625.325 2.85-1.175 4-5.825 4.475-2.35.25-11.375.325-13.15.1z"
+            fill="#201d1e"
+        ></path>
+        <g fill="#335061">
+            <path
+                d="M51.375 110.225c-2.575-.35-6.1-1.675-10.475-3.925-3.175-1.625-4.25-2.3-4.3-2.675-.025-.275-.125-1.95-.2-3.75-.425-8.95-2.4-18.7-5.3-26-.625-1.6-1.1-2.95-1.05-3 .025-.025 1.475-1.1 3.2-2.375 3.525-2.6 8.075-5.375 10.775-6.55l1.8-.8 2.15 2.275c2.3 2.475 3.525 3.3 7.775 5.35l2.675 1.275.45 1.925c.25 1.05.825 3.1 1.275 4.575.675 2.1 1.025 2.8 1.625 3.3.825.7 1.325.8 2.325.4.85-.325.825-.1-.225 1.35-1.025 1.425-1.1 2.35-.3 3.075.55.525 7.1 3.85 9.05 4.6l1 .4-2.375.15c-1.3.1-4.15.275-6.35.425-3.525.25-7.875.675-11.2 1.15-1.125.15-1.175.15-1.375-.55-.225-.825-.25-4.875-.075-8.9.125-2.7-.05-3.4-.725-2.975-.575.35-.725 2.15-.45 5.475.275 3.45.075 6-.45 6.2-.175.075-.925-.275-1.675-.75-.725-.5-1.4-.9-1.5-.9-.375 0-.2.95.3 1.575.275.35.5.8.5 1.025 0 .425-.75.9-1.45.9-.525 0-1.475.9-1.2 1.175.075.1 1.3.15 2.725.125 1.4-.025 2.675.025 2.85.15.175.1.425 1.375.575 2.95.15 1.525.6 5.125 1 8 .675 4.95.7 5.65.3 5.575-.1-.025-.85-.125-1.675-.25zM80.4 105.925c-.325-2.45-.7-12.725-.45-12.975.125-.125 1-.25 1.95-.275l1.7-.05.3 1.35c.175.75.5 3.55.725 6.25.225 2.7.425 5.125.45 5.4.05.5-.475.675-3.6 1.2-.925.125-.925.125-1.075-.9zM82.175 88.825c.375-.675 1.4-2.375 2.3-3.825.9-1.45 2.45-4.025 3.45-5.725l1.85-3.1-.725-.9c-1.075-1.35-1.075-1.4-.625-2.425.3-.725.425-1.725.425-3.85 0-3.4-.45-5.3-1.65-6.65-.7-.775-.9-.875-1.75-.8-.525.05-.925.025-.9-.075.05-.1.775-.75 1.6-1.45l1.55-1.275 2.875 2.675c1.575 1.5 3.45 3.225 4.15 3.875 1.575 1.45 1.6 1.675.425 6.525-1.25 5.2-4.325 13.975-5.65 16.125-.65 1.05-1.1 1.2-4.2 1.4-1.425.075-2.8.25-3.05.4-.775.425-.8.3-.075-.925z"></path>
+            <path
+                d="M80.875 87.775c.475-1.5.925-4.425 1.275-8.275.475-4.85.525-5 2.175-5 1.2 0 2.375.525 3.3 1.5l.7.725-1.575 2.7c-2.125 3.65-5.55 8.825-5.825 8.825-.1 0-.15-.2-.05-.475z"></path>
+        </g>
+        <g fill="#d33833">
+            <path
+                d="M31.9 92.225c-14.425-15.9-15.6-40.3-2.75-57.375C30.7 32.8 34.175 29 34.525 29c.1 0 .275.375.35.825.125.65-.025 1.175-.675 2.425-.8 1.575-.825 1.65-.8 4.725 0 2.825.075 3.35.7 5.025 1.35 3.6 3.425 5.825 6.25 6.775l1.25.425.45 1.825c.25.975.95 2.725 1.575 3.85 1.225 2.25 1.375 3.075.7 3.7-.25.2-2.425 1.525-4.825 2.925-2.4 1.425-5.3 3.175-6.45 3.9a49.433 49.433 0 01-3.275 1.975c-1.625.825-2.525 1.9-2.525 3.1 0 .875 2.125 7.35 3.675 11.275.425 1.025 1 2.825 1.275 4 .6 2.5 1.375 7.375 1.25 7.775-.05.175-.75-.425-1.55-1.3zM91.75 88.325c0-.1.675-2.125 1.525-4.55 2.5-7.25 5-15.55 5.15-17.025.15-1.75-.225-2.35-3.425-5.2-4.6-4.1-5.5-5.05-5.5-5.725 0-.35.525-1.6 1.15-2.75 1.25-2.3 2.05-4.45 3-8.1.725-2.825 1.6-8.525 1.6-10.5 0-.775.075-1.775.15-2.2l.175-.8.625.575c2.65 2.475 6.8 9.425 8.525 14.3 1.925 5.425 2.6 9.55 2.6 15.525 0 4.625-.275 7.175-1.225 10.9-.9 3.6-1.975 6.5-3.625 9.775l-1.5 2.9-1.6.275c-1.6.275-3.575.95-6.175 2.1-.8.35-1.45.575-1.45.5zM62.15 77.95c-.175-.325-.725-1.65-1.175-2.95-.775-2.2-.85-2.6-.85-5.5 0-3.45.35-4.6 1.475-4.9 1-.25 4.525.875 7.6 2.425 1.6.825 3.075 1.475 3.25 1.475.375 0 .4.65.025.9-.15.1-.8.3-1.45.475-1.2.325-1.175.375.8.875C72.95 71.05 73 71.1 73 72c0 .85-.15 1.025-2.05 2.55-2.775 2.2-3.5 2.6-5.775 3.325-2.4.775-2.575.775-3.025.075zM81.375 72.85c-2.725-.475-2.625-.4-2.625-1.825 0-1.375.375-1.775 1.625-1.775.375 0 .6-.1.5-.25-.075-.125-.625-.25-1.2-.25-.95 0-1.1-.075-1.35-.75-.275-.725-.275-.75 1.725-2 5.4-3.475 6.475-3.1 7.2 2.575.225 1.875.125 3.425-.3 4.25-.275.525-2.6.55-5.575.025zM74.625 71.65c-.375-.275-.475-.675-.5-1.8 0-1.425.025-1.45.8-1.675 2.125-.625 3.2 2.625 1.175 3.55-.8.35-.9.35-1.475-.075z"></path>
+        </g>
+        <g fill="#6f6c6e">
+            <path
+                d="M64.625 124.975c-.825-.125-2.5-.475-3.75-.775l-2.25-.575-1.025-3.5c-2-6.7-3.525-14.25-4.575-22.375-.25-2-.375-3.725-.275-3.825.3-.35 8.2-1.375 12.8-1.675 3.225-.2 5.325-.2 7.75-.025 4.275.35 4.75.5 4.975 1.4.125.375.325 3.25.475 6.35.175 3.1.325 5.725.4 5.8.05.075.2 3 .35 6.5.25 5.875.575 10.25.9 11.275.15.5-.675.8-3.675 1.325-2.325.4-9.525.475-12.1.1zM80.9 117.325c-.075-1.075-.2-3.3-.3-4.975-.175-3.4-.275-3.2 1.85-3.5l1.2-.15.675 3.45c.375 1.925.675 4.1.675 4.875v1.4l-1.45.425c-2.475.7-2.475.7-2.65-1.525zM97 105.025c-.575-.425-.025-.65 2.575-1.175 3.4-.65 2.275-.975-2.725-.75l-4.075.15-.125-1.05c-.075-.6-.275-2.25-.425-3.7a50.93 50.93 0 00-.625-4.475c-.35-1.675-.35-1.875.025-2.275.55-.6 2.225-1.375 4.75-2.25 1.1-.375 2.475-.925 3.05-1.225 2.55-1.275 4.5 0 5.675 3.675 1.95 6.175 1.975 9.05.15 11.375-1 1.25-2.325 1.725-5.25 1.85-1.625.075-2.775 0-3-.15zm4.5-6.3c-.9-.375-4.025-.575-5.15-.35l-.975.225.875.15c.475.1 2 .2 3.375.2 1.925.025 2.35-.05 1.875-.225zm-1.35-3.15c1.15-.175 1.175-.2.475-.35-1.3-.3-3.725-.225-4.5.15-.725.325-.675.325 1.025.35.975.025 2.325-.05 3-.15zm-2.4-2.875c1.725-1 1.95-1.2 1.25-1.075-1.85.35-3.225.925-4.15 1.775l-.975.875.875-.175c.475-.075 1.825-.7 3-1.4zM87.9 103.975c-.05-.2-.275-1.75-.5-3.475-.225-1.725-.575-4.25-.8-5.6-.225-1.475-.275-2.575-.15-2.7.125-.125.775-.2 1.45-.15l1.225.075.6 1.5c.8 2.025 1.25 4.775 1.275 7.575 0 2.3 0 2.325-.675 2.575-1.25.475-2.3.575-2.425.2zM73.875 87.15C72.1 86.425 69.35 85.2 67.8 84.4c-2.525-1.3-2.8-1.5-2.65-1.975.55-1.775 2.175-3.6 4.775-5.375C70.8 76.475 71.55 76 71.6 76c.475 0 3.75 6.275 5.625 10.7.65 1.55.7 1.8.325 1.8-.225 0-1.875-.6-3.675-1.35zM80.875 87.775c.475-1.5.925-4.425 1.275-8.275.325-3.275.525-4.45.8-4.675.95-.775 3.475-.1 4.75 1.25l.575.6-.625 1.1c-1.375 2.475-2.475 4.275-4.45 7.3-1.925 2.95-2.7 3.85-2.325 2.7zM79.325 87.125a89.273 89.273 0 01-1.7-3.75c-1.625-3.775-2.5-5.5-3.675-7.2-.95-1.4-.975-1.5-.55-1.95.25-.275.775-.475 1.2-.475.425-.025 1.05-.175 1.4-.375.925-.525 1.525-.45 2.825.375.65.4 1.475.825 1.825.9l.675.175-.175 3.975c-.175 3.9-.625 7.45-1.1 8.7-.225.625-.225.625-.725-.375zm.3-6c0-.625-.1-.75-.625-.75-.4 0-.65.15-.7.45-.15.75.15 1.225.75 1.125.45-.05.575-.225.575-.825zm-.775-4C79.075 76.5 78.725 76 78.1 76c-.35 0-.675.175-.75.375-.25.625.1 1.125.75 1.125.325 0 .65-.175.75-.375zM56.125 67.275c-1.775-.625-3.175-1.375-3.725-2-.55-.625-.375-1.425.3-1.15.775.325 2.15.575 4.125.75 2.125.175 2.15.2 1.65 1.95-.275 1.05-.5 1.1-2.35.45zM73.35 66.525C72.5 66.3 70.5 65.25 70.5 65c0-.1.825-.125 1.825-.05 1.35.075 2.5-.05 4.25-.45 1.35-.3 2.55-.5 2.675-.45.15.05-.5.675-1.425 1.4-1.75 1.375-2.475 1.55-4.475 1.075zM56.875 63.75c-2.375-.25-5.05-1.075-6.425-2-1.3-.875-2.575-2.625-3.725-5.175-1.125-2.475-2.225-5.75-2.375-7.25-.15-1.225-.125-1.35.75-2.425.625-.725.9-1.325.85-1.7-.1-.75-.675-.65-2.025.325-1.775 1.275-4.05.875-5.75-1-1.775-1.975-3.1-5.45-2.85-7.55.45-3.825 4.325-6.5 7.35-5.075.925.45 2.125 2.275 2.575 3.925.25.875.325.925 1.275.925.55 0 1.375-.175 1.85-.35 1.075-.45 1.125-1.025.325-3.975-.7-2.675-.675-5 .15-8.9.7-3.3.825-5.875.375-7.65-.275-1.05-.225-1.2.5-2.325 2.25-3.5 8.95-8.4 13.775-10.075 2.075-.7 6.6-.775 9.575-.125 4.25.925 8.875 2.925 11.075 4.8 1.05.9 5.1 5.85 5.1 6.25 0 .05-.425.05-.95-.05-2.025-.325-4.05.85-4.05 2.325 0 .575.025.575.55.225.975-.7 3.025-.525 4.75.4 2.6 1.375 3.525 3.2 3.975 7.85.425 4.275.15 12.8-.475 15.9C92 46 90.4 50.025 87.825 54c-2.05 3.15-2.975 4.2-4.85 5.425C79.35 61.75 75.575 63 72.125 63c-2.475 0-4.05-.45-6.975-1.95-2.675-1.375-5.85-4.275-8.35-7.6-.9-1.2-1.675-2.15-1.75-2.1-.275.3.65 2.125 1.95 3.85 1.7 2.275 5.25 5.75 6.725 6.575.55.325 1.025.7 1.025.8 0 .125-.6.125-1.325.05-1.575-.2-3.15.175-3.8.875-.25.275-.575.475-.725.475-.15-.025-1.05-.125-2.025-.225zm23.7-8.75c.5-.15 1.15-.525 1.45-.825l.5-.55-4.2-.15c-5.8-.2-7.35-.7-9.4-2.975-.65-.7-1.325-1.25-1.55-1.2-.25.05.125.7 1.35 2.2 2.275 2.8 2.8 3.25 4.2 3.65 1.4.4 6.175.3 7.65-.15zm.325-5.425c-.075-.525-.15-1.125-.15-1.35 0-.35-.55-.425-4.05-.55-3.675-.1-5.35-.35-7.325-1.075-.925-.325 1.175 1.65 2.4 2.3 1.75.875 4.75 1.5 7.7 1.575l1.6.025-.175-.925zm3.55.3c1.625-.5 3.45-1.95 4.6-3.65.5-.75.875-1.375.825-1.425-.025-.05-1.075.425-2.325 1.05-1.225.625-2.775 1.275-3.45 1.425a27.21 27.21 0 00-1.525.375c-.2.05-.325.55-.325 1.35 0 1.45.1 1.475 2.2.875zm-3.375-4.6c2-.525 3.1-1 5.55-2.475 1.425-.825 1.55-.975 1.95-2.325.225-.8.425-1.575.425-1.75 0-.15-.975-1.3-2.15-2.55C83.225 32.3 81 29.1 79.6 25.625c-.175-.375-.225-.225-.3.65-.15 2.25 1.45 5.325 5.025 9.625 2.525 3 2.875 3.75 2.4 4.9-.25.65-.75.975-2.825 1.975-3 1.4-4.1 1.725-5.8 1.725-1.5 0-2.275-.65-2.525-2.125-.125-.75-.2-.85-.4-.5-.35.65-.25 2.225.2 3.1.375.75.45.775 2.1.775.925 0 2.55-.225 3.6-.475zm-40.9-5.95c.075-2.15.5-3.075 1.425-3.075.675 0 1.125.475 1.925 2 .575 1.125.6 1.125.675.4.125-1.1-.625-2.775-1.725-3.75-.8-.75-1.175-.9-2.075-.9-.925 0-1.2.125-1.75.775-.8.95-.825 1.35-.05.85.7-.475 1.525-.25 1.225.35-.4.775-.2 5.275.225 5.275.05 0 .1-.85.125-1.925zm31.75-6.975c.75-.575.975-1.1.825-2.1-.025-.2-.475-.825-1-1.375-.55-.55-1.375-1.85-1.875-2.875L69 24.125l.075 1.125c.1 1.15.725 2.65 1.7 4.2.5.775.525.875.125 1.25-.325.325-.775.4-1.975.35-3.75-.2-3.55-.2-3.625.35-.25 1.725 4.7 2.425 6.625.95zm18.7-1.075c.55-.25 1.2-.675 1.425-.95.425-.45.375-.6-1.05-3.4-1.325-2.575-1.5-2.825-1.5-2.05 0 .475.3 1.6.675 2.5.5 1.2.6 1.7.4 1.9-.175.175-1.175.375-2.25.5-1.075.1-1.975.2-2 .2-.2.05-.025.75.325 1.225.3.45.625.55 1.675.55.725 0 1.75-.225 2.3-.475zM59.5 20.4c1.5-2.025 2.975-2.775 5.325-2.75 1.675 0 1.7 0 1.625-.625-.125-1-1.575-1.85-2.8-1.65-2.175.325-4.925 2.525-5.8 4.6-.6 1.4-.35 3.475.275 2.375.125-.225.75-1.1 1.375-1.95z"></path>
+            <path
+                d="M46.925 34.575c-.1-.075-.175-.425-.175-.75 0-1.575-1.875-3.675-3.925-4.35-1.2-.4-4.2-.175-4.8.375-.225.225-.525.325-.6.225-.1-.075-.175-1.65-.175-3.45 0-4.25.35-5.475 2.075-7.3 1.75-1.85 4.8-3.375 6.85-3.425l1.45-.025.225 1.725c.2 1.35.125 2.55-.3 5.75-.675 5.025-.675 5.5 0 8.325.45 1.9.475 2.35.225 2.675-.375.425-.6.5-.85.225zM41.675 14.2c.85-1.475 3.15-3.725 5.3-5.15 3.8-2.55 8.9-4.425 8.9-3.3 0 .2-.225.475-.5.625-2.025 1.025-4.15 3.05-5.25 4.925-.375.65-.975 1.525-1.375 1.95-.65.7-.825.75-2.3.725a8.491 8.491 0 00-3.05.5c-2.075.75-2.275.7-1.725-.275z"></path>
+        </g>
+        <g fill="#4a738d">
+            <path
+                d="M37.25 104.425c-.35-.2-.6-.45-.575-.575.075-.425-.4-7.4-.675-9.725-.575-4.85-1.75-10.875-2.775-14.25-.775-2.625-1.525-4.825-1.75-5.375-.175-.35-.375-.85-.5-1.125-.9-2.2-.975-2.5-.725-2.575.15-.05.95-.625 1.75-1.275 3.2-2.525 8.15-5.725 11-7.05.9-.425 1.9-.9 2.225-1.05.55-.275.7-.175 2.175 1.45.875.95 1.6 1.8 1.6 1.875 0 .175.15.1-8.375 3.875-3.3 1.475-6.05 2.7-6.075 2.75-.05.05.2 1.425.575 3.05 1.425 6.325 2.525 12.8 3.125 18.275.45 4.125.3 12.05-.225 12.05-.075 0-.425-.15-.775-.325zM79.95 96.6c-.25-.225-.25-1.75-.05-2.8.175-.875.5-1.05 2.325-1.15 1.2-.1 1.25-.075 1.5.675.15.4.275 1.125.275 1.6 0 .75-.125.9-.925 1.25-1.1.45-2.875.7-3.125.425zM49 95.75c-1.75-.3-2.65-.6-3.45-1.125-.725-.475-.975-.775-.75-.9.15-.1.425-.125.575-.025.125.1 1.45.175 2.925.175 1.625 0 2.775.1 2.95.275.15.15.25.675.2 1.15l-.075.85-2.375-.4zM52.4 91.1c-.2-.525-.2-6.675 0-9.55l.175-2.275.95 1.2.975 1.225v4.775c0 2.625-.075 4.775-.175 4.8-.125 0-.55.05-1 .1-.55.075-.825 0-.925-.275zM74.525 87.375c-2.7-1.075-8.55-3.875-9.2-4.425-.475-.4.65-2.375 2.2-3.825 1.75-1.65 3.675-2.95 4.1-2.8.6.25 2.825 4.175 4.5 7.95 1.6 3.7 1.8 4.225 1.45 4.225-.125 0-1.475-.525-3.05-1.125zM80.875 87.875c.675-1.95 1.275-6 1.525-10.075.175-2.7.2-2.85.775-3.075 1.425-.525 3.3.025 4.525 1.35l.575.6-.625 1.1c-3.05 5.475-7.4 11.925-6.775 10.1zM91.95 66.125c-2.025-1.5-4.075-3.15-4.525-3.6-.475-.475-1.2-1-1.65-1.15l-.8-.25 1.35-1.175 1.35-1.175 2.35 2.3c1.3 1.275 3.1 2.95 4.025 3.75 1.75 1.5 2.225 2.45 1.775 3.55-.175.45-.55.25-3.875-2.25z"></path>
+        </g>
+        <g fill="#83b3c7">
+            <path
+                d="M65 124.9c-3.225-.5-5.925-1.15-6.2-1.475-.35-.425-1.625-4.925-2.775-9.7-1.6-6.5-3.6-19.275-3.1-19.725.275-.275 6.525-1.175 10.575-1.525 4.825-.425 14-.05 14.625.575.075.05.3 3.075.5 6.725.2 3.625.425 7.05.5 7.6.075.55.25 3.675.375 6.925s.375 6.725.525 7.725c.225 1.425.2 1.825-.05 2-1.5.925-11.025 1.475-14.975.875zM81.125 119c-.05-.075-.175-2.3-.275-4.9l-.175-4.75 1.3-.3c1.5-.35 1.775-.25 1.775.55 0 .325.225 1.625.5 2.925.275 1.3.575 3.1.65 4.025.175 1.675.175 1.675-.55 1.975-.975.375-3.1.7-3.225.475zM97.625 105.025c-.975-.175-.975-.2-.375-.45.35-.15 1.025-.325 1.5-.425 2.725-.525 3.275-.725 3-1-.2-.175-1.625-.25-4.6-.2l-4.3.075-.425-3.95c-.25-2.175-.6-4.625-.8-5.45l-.35-1.5.675-.55c.375-.325 1.475-.875 2.425-1.225.975-.375 2.7-1.05 3.875-1.55 2.55-1.05 3.6-1.125 4.725-.3 1.1.775 1.825 2.425 2.775 6.25.8 3.35.925 5 .45 6.575-.425 1.4-2.05 3.05-3.325 3.375-1.425.375-4.075.525-5.25.325zm4.175-6.3c-1.325-.525-3.85-.75-5.2-.475-2.325.5-1.525.75 2.225.725 2.45 0 3.375-.075 2.975-.25zm-.475-3.2c.45-.175.35-.25-.7-.425-2.525-.425-5.375-.05-5.375.725 0 .275 5.2.025 6.075-.3zm-3.4-2.8c1.3-.7 2.325-1.3 2.275-1.35-.175-.175-2.525.4-3.675.875-.675.3-1.55.875-1.925 1.3l-.725.775.85-.175c.45-.075 1.9-.725 3.2-1.425zM88 104c0-.275-1.4-9.9-1.625-11.05-.1-.7-.1-.7 1.275-.7h1.375l.5 1.125c.75 1.675 1.2 4.125 1.4 7.275l.15 2.775-1.2.425c-1.4.45-1.875.5-1.875.15zM76.875 88.175c-3.45-1.125-11.625-4.95-11.625-5.45 0-1.3 2.2-3.9 4.65-5.5l1.65-1.05.575.725c1.125 1.35 5.9 11.2 5.575 11.475-.05.025-.4-.05-.825-.2zM81.1 87.625c.475-1.275 1.35-7.85 1.425-11.075l.05-1.55.9-.25c1.275-.325 2.675.05 3.675 1.025.475.45.85.925.85 1.05 0 .325-3.35 5.95-5.2 8.75-1.5 2.275-2.05 2.925-1.7 2.05zM79.175 86.575c-.325-.65-1.3-2.8-2.15-4.725-.85-1.95-2.05-4.3-2.675-5.25-1-1.55-1.1-1.775-.8-2.3.2-.4.45-.55.775-.45.275.075 1.05-.1 1.725-.375L77.275 73l1.575.875c.875.475 1.75.875 1.975.875.5 0 .5-.225.175 4.9-.225 3.575-.775 7.725-1.1 8.025-.075.075-.4-.425-.725-1.1zm.6-4.975c.425-.525 0-1.225-.775-1.225s-1.2.7-.775 1.225c.2.225.525.4.775.4s.575-.175.775-.4zm-.925-4.4c.325-.525-.05-1.275-.65-1.4-.4-.075-1.2.575-1.2.95s.8 1.025 1.2.95c.2-.05.5-.275.65-.5zM56.125 67.15c-1.625-.525-3.575-1.6-3.875-2.15-.425-.775-.1-1 .85-.625.45.2 1.85.425 3.125.525 1.25.1 2.325.25 2.4.35.05.075-.025.625-.175 1.2-.3 1.175-.575 1.25-2.325.7zM73 66.325c-.85-.3-2.5-1.175-2.5-1.325 0-.1.575-.05 1.275.1 1.075.225 1.75.15 4.375-.375 1.7-.375 3.1-.625 3.1-.575 0 .025-.675.575-1.475 1.2-1.4 1.075-1.575 1.15-2.95 1.125-.8 0-1.625-.075-1.825-.15zM56.375 63.575c-1.275-.125-4.225-1-5.4-1.575-1.275-.65-2.45-2.075-3.65-4.375-1.125-2.2-2.675-6.6-2.95-8.4-.15-1.075-.125-1.2.85-2.325 1.075-1.225 1.175-1.525.775-2.15-.2-.325-.375-.3-1.175.175-2.3 1.325-2.475 1.4-3.675 1.225-1.825-.275-3.075-1.425-4.375-3.95-.975-1.875-1.125-2.425-1.225-4.125-.1-1.7-.025-2.15.45-3.1 1.25-2.5 2.9-3.4 5.85-3.25 1.05.05 2.425 1.6 3.025 3.4.25.825.55 1.6.65 1.7.3.375 2.75-.125 3.425-.7l.65-.55-.675-2.85c-.85-3.625-.85-4.825.075-9.3.85-4.125.9-5.225.4-7.175l-.375-1.375.8-1.35c2.1-3.5 10.05-9.1 14.425-10.125 5.975-1.425 16.025 1.225 20.325 5.325C85.75 9.85 89 13.925 89 14.3c0 .025-.725.075-1.6.075-1.375 0-1.7.1-2.275.625-.725.675-1.2 1.65-1 2 .075.125.525.05 1-.15 1.675-.7 3.85-.2 5.6 1.325C92.85 20 93.425 22.2 93.65 29.5c.275 8.775-.95 15.15-4.05 21.325-.725 1.4-3.275 5.325-4.3 6.55-2.05 2.475-7.975 5.175-12.15 5.525-2.35.2-4.25-.2-7.025-1.5-3.85-1.825-6.425-4.1-9.7-8.625-.85-1.15-1.575-1.975-1.625-1.8-.15.425 1.125 3.025 2.175 4.4 1.475 1.95 5.025 5.475 6.35 6.325l1.2.75-2 .075c-1.65.075-2.1.2-2.575.675-.625.55-1.1.6-3.575.375zm24.025-8.45c1.075-.325 2.35-1.225 2.35-1.625 0-.1-1.65-.175-3.675-.175-5.875.025-8.525-.775-10.275-3.075-.475-.625-1-1.15-1.175-1.2-.725-.175-.6.5.225 1.525.5.575 1.375 1.65 1.95 2.4 1.2 1.5 2.325 2.2 4.125 2.525 1.525.275 5 .075 6.475-.375zm.55-5.925l-.075-1.325-3.5-.175c-3.775-.175-6.225-.525-7.6-1.1-.475-.2-.9-.325-.925-.275-.05.05.25.5.675 1 1.5 1.8 5.375 3.125 9.425 3.15l2.075.025-.075-1.3zm4.925.2c.6-.35 1.5-1.075 2-1.625C88.9 46.7 90.3 44.7 90.125 44.55c-.05-.05-.925.35-1.925.875-1.925 1.05-4.6 2.075-5.45 2.075-.45 0-.5.175-.5 1.4v1.425l1.275-.15c.7-.1 1.75-.45 2.35-.775zm-4.625-4.075c1.675-.425 3.55-1.275 5.525-2.475 1.325-.8 1.5-1 1.85-2.15.575-2 .5-2.25-1.075-3.875-3.425-3.45-7.15-8.775-7.65-10.875-.075-.4-.325-.7-.525-.7-.925 0 .05 3.725 1.625 6.35.475.775 1.675 2.4 2.625 3.55 3.375 4.125 3.525 4.425 2.85 5.925-.55 1.225-7.2 3.675-9.05 3.325-1.075-.2-1.45-.65-1.65-1.85-.175-1.075-.55-1.175-.875-.25-.325.9.05 2.4.75 3.125.6.6.725.625 2.425.45 1-.1 2.425-.35 3.175-.55zm-40.4-8.55c.275-.3.6-.525.775-.525.425 0 1.225.95 1.9 2.25l.6 1.125.075-1.175c.1-1.4-.55-2.825-1.7-3.8-1.525-1.25-3.2-1.125-4.175.325-.725 1.075-.725 1.425-.025.925.3-.225.775-.4 1.025-.4.4 0 .425.125.25.825-.3 1.175-.2 3.7.2 4.55.3.725.325.65.475-1.425.1-1.625.25-2.3.6-2.675zm31.3-4.525c1.175-1.175 1.125-1.875-.275-3.45-.625-.7-1.55-2.15-2.075-3.225-.8-1.725-.925-1.875-1-1.225-.1.75.775 3.5 1.325 4.15.175.2.5.725.7 1.15.4.8.4.8-.325 1.1-.525.225-1.3.25-2.675.1-1.075-.1-2.05-.2-2.2-.225-.45 0-.425 1.15.025 1.65.65.725 1.75.975 3.8.875 1.675-.075 1.9-.15 2.7-.9zm19.025-1.125c.6-.375 1.175-.825 1.25-1 .1-.325-2.85-6.625-3.125-6.625-.325 0 .225 2.8.825 4.1.775 1.75.725 1.8-1.625 2.025-.9.1-1.775.2-1.925.25-.55.175-.35 1.075.375 1.625.55.45.875.525 1.9.4.65-.075 1.7-.425 2.325-.775zm-32.45-9.475c.9-1.525 2.425-3.025 3.675-3.55.45-.2 1.55-.35 2.45-.35.9 0 1.7-.125 1.775-.25.5-.825-1.175-2.25-2.675-2.25-1.15 0-3.2 1.05-4.475 2.325-1.05 1.05-2.225 3.15-2.225 4 0 .45.425 1.425.625 1.425.05 0 .425-.6.85-1.35z"></path>
+            <path
+                d="M37.35 28.6c-.2-1.7 0-5.375.4-6.65.825-2.8 4.625-5.475 8.65-6.1.925-.125 1.05-.1 1.175.425.25.9.225.975-.4.975-.975 0-3.725 1-4.975 1.8-3 1.9-4.775 5.8-4.3 9.425.1.75.05 1.275-.1 1.375-.175.1-.325-.375-.45-1.25zM41.5 14.75c0-.1.525-.875 1.15-1.725C44 11.225 46.8 9.05 49.7 7.55c2.275-1.175 5.475-2.375 5.825-2.15.45.25.2.775-.5 1.125-5.325 2.6-7.15 3.8-9.5 6.25-1.1 1.125-1.7 1.525-2.7 1.825-.725.2-1.325.275-1.325.15z"></path>
+        </g>
+        <g fill="#f1d8b9">
+            <path
+                d="M73 66.275C72.125 66 70.8 65.3 70.625 65c-.1-.175.075-.175.5 0 1.025.375 2.5.3 5.45-.35 1.475-.325 2.675-.55 2.675-.525 0 .025-.675.575-1.475 1.225-1.35 1.05-1.6 1.15-2.825 1.125-.725 0-1.6-.1-1.95-.2zM56.075 63.475c-2.025-.25-4.625-1.15-5.8-1.975-1.35-.975-2.675-3.05-3.975-6.15-.975-2.375-2.05-5.975-2.05-6.875 0-.25.45-.975 1.025-1.625 1.05-1.2 1.225-2.15.425-2.3-.225-.05-1.05.325-1.8.85-1.2.8-1.525.9-2.425.775-1.7-.225-3.225-1.35-4.3-3.175-2.525-4.35-2.175-8.375.925-10.425 1.05-.725 1.425-.825 2.775-.825 1.225 0 1.7.125 2.25.55.7.55 2.125 3.225 2.125 4.025 0 .25.175.5.375.575.7.275 2.625-.175 3.3-.75l.65-.575-.65-2.9c-.85-3.675-.85-4.725.075-9.15.85-4.025.925-5.625.375-7.425-.35-1.175-.325-1.25.25-2.25 1.525-2.6 5.125-5.7 9.625-8.25 3.35-1.875 4.875-2.375 8-2.525 4.4-.225 8.725.775 13.65 3.175 2.175 1.05 2.775 1.475 4.25 3.075.95 1.025 2.2 2.55 2.8 3.4l1.075 1.525H87.6c-1.6 0-2.575.475-3.2 1.5-.55.95-.525 1.6.05 1.375 2-.85 3.575-.675 5.6.6 2.45 1.55 3.075 3.375 3.5 10 .525 8.5-.625 15.825-3.425 21.95-1.125 2.45-4.1 6.975-5.425 8.225-1.9 1.825-5.375 3.6-8.7 4.475-2.25.6-5.75.6-7.5.025-4.325-1.45-7.875-4.175-11.35-8.725-1.225-1.6-2.275-2.875-2.35-2.825-.225.225.75 2.575 1.525 3.7 1.4 2.025 5.1 5.85 6.725 6.95l1.55 1.025-1.325-.1c-1.6-.15-2.65.125-3.4.825-.575.55-.975.55-3.8.225zm23.65-8.15c1.525-.325 3.025-1.25 3.025-1.875 0-.1-1.65-.2-3.675-.2-4.25.025-5.45-.125-7.275-.8-1.525-.575-2.55-1.375-3.3-2.575-.325-.5-.75-.875-1.025-.875-.875 0-.725.225 2.55 4.325.425.525 1.025 1.125 1.375 1.325 1.6 1.075 5.125 1.35 8.325.675zm1.275-6c0-.85-.125-1.375-.3-1.45-.175-.05-1.775-.15-3.575-.25-4.1-.175-6.15-.525-7.975-1.25-.4-.175-.425-.125-.175.3 1.175 2.25 5.85 3.925 10.975 3.975H81v-1.325zm4.4.3c.725-.3 1.75-1.025 2.325-1.6.95-.95 2.6-3.3 2.425-3.475-.05-.025-1.225.5-2.625 1.175s-3.15 1.375-3.9 1.525l-1.375.275v3.025l.95-.175c.5-.075 1.5-.425 2.2-.75zm-3.85-4.275c1.475-.45 3.125-1.225 5.25-2.5 1.2-.725 1.475-1.05 1.8-2.025.625-1.8.525-2.7-.35-3.375-2.275-1.775-7.35-8.625-8.125-10.95-.25-.775-.55-1.25-.8-1.25-.325 0-.375.225-.225 1.45.25 2.1 2 5.45 4.275 8.175 2.95 3.525 3.375 4.15 3.375 4.9 0 1.425-.4 1.8-3.225 3.05-2.9 1.275-4.35 1.625-5.875 1.5-1.25-.1-1.625-.425-1.8-1.625-.2-1.15-.475-1.4-.825-.725-.55 1.025-.275 2.5.7 3.625.35.4.65.425 2.45.3 1.125-.1 2.65-.35 3.375-.55zm-40.6-8.65c.5-.5.55-.5 1.15-.1.35.225.95 1 1.325 1.725l.7 1.3.075-1.175c.2-3-3.075-5.75-5.15-4.3-.6.4-1.425 1.8-1.2 2.025.075.075.3-.05.525-.275.225-.225.625-.4.925-.4.425 0 .475.1.275.825-.3 1.225-.2 3.975.2 4.675.325.575.35.475.5-1.575.125-1.775.25-2.325.675-2.725zm30.45-3.85c1.95-.925 2.1-2.325.475-4.075-.6-.65-1.525-2.075-2.05-3.175-.825-1.75-.95-1.9-1.025-1.25-.125.925.55 3 1.475 4.425.4.625.725 1.275.725 1.425 0 .8-2.15.975-4.8.4-.8-.175-1.1.275-.85 1.25.3 1.25 4.175 1.875 6.05 1zm19.65-1.65c1.7-.95 1.7-1-.05-4.525-.85-1.75-1.6-3.175-1.675-3.175-.35 0 .2 2.825.8 4.125.725 1.6.625 1.85-.75 1.9-.975.025-2.425.2-2.8.35-.55.2-.35 1.075.375 1.625.55.45.875.525 1.875.4.675-.075 1.675-.4 2.225-.7zM58.6 21.925c.275-.575 1.075-1.625 1.75-2.325 1.475-1.45 2.925-1.975 4.9-1.8 1.05.1 1.275.05 1.375-.325.35-1.05-1.1-2.225-2.675-2.225-2.05 0-5 2.225-6.1 4.575-.65 1.425-.725 1.975-.35 2.7.375.7.575.6 1.1-.6z"></path>
+        </g>
+        <g fill="#f6f5f5">
+            <path
+                d="M66.75 125.1c-.35-.05-1.475-.225-2.5-.375-2.3-.325-5.05-.975-5.35-1.25-.525-.475-2.75-8.65-3.875-14.275-.825-4.025-1.975-11.8-2.075-13.95l-.075-1.35L54 93.7c6.525-1.175 16.075-1.75 20.875-1.225 1.525.175 2.9.45 3.05.6.3.3.75 6.225 1.325 17.925.275 5.6.7 11.25.9 12.275.15.625.075.675-1.475 1.05-3 .75-9.25 1.15-11.925.775zM80.925 115.85c-.1-1.775-.175-3.95-.175-4.875v-1.625l1.325-.275c.7-.15 1.35-.225 1.4-.2.175.175 1.5 7.55 1.525 8.45 0 1.075-.475 1.375-2.65 1.6l-1.275.125-.15-3.2zM97.95 105.075c-.525-.05-.95-.2-.95-.35 0-.125.05-.225.1-.225.125 0 3.5-.675 4.375-.9.475-.1.525-.2.3-.425-.225-.225-1.525-.275-4.6-.225l-4.325.05-.425-4.05c-.25-2.25-.6-4.7-.8-5.45l-.375-1.375.675-.55c.375-.325 2-1.025 3.575-1.6 1.575-.575 3.425-1.325 4.075-1.65 1.85-.925 3.7-.25 4.675 1.675.7 1.35 2.25 7.55 2.25 8.95 0 2.8-1.525 5.225-3.625 5.75-1.25.325-3.725.5-4.925.375zm4.5-6.2c-.075-.075-1.025-.3-2.1-.525-2.375-.45-5.1-.225-5.1.425 0 .125 1.65.225 3.675.225 2 0 3.6-.05 3.525-.125zm-.95-3.375c.425-.25-1.525-.6-3.375-.625-1.3 0-2.875.5-2.875.95 0 .275 5.65 0 6.25-.325zm-4.975-2a55.39 55.39 0 012.675-1.4c.725-.35 1.275-.7 1.225-.75-.05-.075-.925.05-1.95.25C96.7 91.975 94 93.425 94 94c0 .475 1.2.25 2.525-.5zM87.875 102.825c-.075-.8-.425-3.2-.775-5.325-.325-2.125-.6-4.175-.6-4.55 0-.675.05-.7 1.275-.7 1.25 0 1.25 0 1.75 1.125.725 1.65 1.2 4.1 1.375 7.275l.175 2.75-1.325.425c-.725.225-1.4.425-1.5.425-.1 0-.275-.65-.375-1.425zM78.95 86c-.5-1.025-1.475-3.2-2.2-4.8-.7-1.6-1.8-3.675-2.4-4.6-.6-.925-1.1-1.725-1.1-1.8 0-.35.825-1 1.125-.9.175.075.725-.05 1.25-.25 1.35-.575 2.1-.5 3.375.35.625.4 1.375.75 1.7.75.55 0 .55.025.425 2.825-.2 3.925-.625 7.675-1 9.1l-.325 1.2L78.95 86zm.825-4.4c.425-.525 0-1.225-.775-1.225s-1.2.7-.775 1.225c.2.225.525.4.775.4s.575-.175.775-.4zm-.925-4.4c.325-.525-.05-1.275-.65-1.4-.4-.075-1.2.575-1.2.95s.8 1.025 1.2.95c.2-.05.5-.275.65-.5zM55.8 67c-2.525-.9-4.1-2.075-3.675-2.75.075-.125.5-.075.95.125.425.175 1.85.425 3.125.575 1.275.125 2.375.275 2.425.35.05.05-.025.575-.175 1.15-.3 1.225-.6 1.3-2.65.55zM50.825 61.75c-1.15-.675-1.025-.85.125-.2 1.15.675 1.2.7.9.7-.125 0-.6-.225-1.025-.5zM47.35 57.475c-.35-.7-.6-1.325-.55-1.375.05-.05.4.525.775 1.275.375.75.625 1.375.55 1.375-.075 0-.4-.575-.775-1.275zM44.5 47.975c0-.2.325-.575.7-.825l.675-.475-.625.725c-.35.4-.65.775-.675.825-.05.05-.075-.05-.075-.25zM35.575 37.625c0-.55.05-.75.1-.425.05.3.05.75 0 1-.075.225-.125-.025-.1-.575zM37.25 33.375c.475-.475.9-.875.975-.875.075 0-.25.4-.725.875s-.9.875-.975.875c-.075 0 .25-.4.725-.875zM43.575 33.175c-.1-.175-.475-.525-.825-.75-.325-.225-.525-.425-.425-.425.35 0 1.375.775 1.525 1.15.175.45 0 .45-.275.025zM40.45 31.825c.3-.05.75-.05 1 0 .225.075-.025.125-.575.1-.55 0-.75-.05-.425-.1zM37.375 28.35c-.25-2.2 0-5.15.525-6.725.825-2.375 4.025-4.725 7.575-5.525 1-.225 1.85-.35 1.9-.3.075.05.15.35.175.675.075.5-.1.625-1.75 1.05-2.45.625-4.1 1.55-5.55 3.15-1.7 1.875-2.325 3.575-2.375 6.625-.025 1.35-.1 2.5-.175 2.6-.1.075-.225-.625-.325-1.55zM58.175 18.625c.3-.4.9-1.075 1.35-1.5.625-.55.55-.425-.25.5-1.475 1.675-1.7 1.875-1.1 1zM41.5 14.875c0-.375 1.225-1.975 2.425-3.2 2.325-2.35 5.675-4.4 9.55-5.775 1.275-.475 1.925-.6 2.125-.4.425.425-.1.8-3.25 2.325-2.6 1.25-4.75 2.775-6.6 4.675-.9.925-1.85 1.75-2.125 1.825-.275.075-.875.25-1.3.375-.45.15-.825.225-.825.175zM88.25 13.75c-.15-.275-.175-.5-.075-.5.125 0 .35.225.525.5.175.275.2.5.05.5-.125 0-.35-.225-.5-.5zM52.125 11c.95-.95 1.8-1.75 1.85-1.75.075 0-.65.8-1.6 1.75-.95.975-1.8 1.75-1.85 1.75-.075 0 .65-.775 1.6-1.75zM54.35 9.05c.2-.325 1.65-1.4 1.65-1.225 0 .075-.425.425-.925.825-.5.375-.825.575-.725.4zM79.5 5.875c-.35-.2-.5-.35-.375-.35.15 0 .525.15.875.35.35.2.525.35.375.35-.125 0-.525-.15-.875-.35zM60 5.375C60 5.2 62.025 4.2 62.15 4.3c.05.075-.425.35-1.025.65-.625.3-1.125.5-1.125.425zM67.7 3.075c.3-.05.8-.05 1.125 0 .3.05.05.1-.575.1s-.875-.05-.55-.1z"></path>
+        </g>
+    </svg>);
 }
 
-function PythonSVG({ height }) {
-  return (
-    <svg
-      height={height}
-      viewBox="0 0 128 128"
-      xmlns="http://www.w3.org/2000/svg"
+function CPlusPlusSVG({height}) {
+    return (<svg height={height} viewBox="0 0 128 128">
+        <path
+            d="M87 70v-5h5v-4h-5v-5h-5v5h-5v4h5v5zm18-14h-4v5h-6v4h6v5h4v-5h5v-4h-5zm11.5-23.7c-.6-1.1-1.4-2.1-2.3-2.6L66.1 1.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7L11.4 29.7c-1.7 1-3.4 3.5-3.4 5.4v55.7c0 1.1.7 2.3 1.4 3.4l.1.1c.5.8 1.3 1.5 2 1.9l48.3 27.9c.8.5 2 .7 3.2.7 1.2 0 2.3-.3 3.1-.7l47.5-27.9c1.7-1 2.4-3.5 2.4-5.4V35.1c0-.8.4-1.8 0-2.6l.5-.2zm-4.2 2.1c0 .3-.3.5-.3.7v55.7c0 .8-.2 1.7-.4 2L64 120.6c-.1.1-.5.2-1.1.2-.6 0-1-.1-1.1-.2L13.6 92.8s-.1-.1-.2-.1l-.6-.6c-.4-.7.2-1.1-.8-1.2V35.2c1-.5.9-1.7 1.4-1.9L61.7 5.4c.1 0 .6-.2 1.2-.2s1 .1 1.1.2l48 27.7.4.9c.1.1-.1.3-.1.4zM63 87.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6C80.1 82.5 72.1 87.5 63 87.5z"
+            fill="currentColor"
+        ></path>
+    </svg>);
+}
+
+function PythonSVG({height}) {
+    return (<svg
+        height={height}
+        viewBox="0 0 128 128"
+        xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M49.33 62h29.159C86.606 62 93 55.132 93 46.981V19.183c0-7.912-6.632-13.856-14.555-15.176-5.014-.835-10.195-1.215-15.187-1.191-4.99.023-9.612.448-13.805 1.191C37.098 6.188 35 10.758 35 19.183V30h29v4H23.776c-8.484 0-15.914 5.108-18.237 14.811-2.681 11.12-2.8 17.919 0 29.53C7.614 86.983 12.569 93 21.054 93H31V79.952C31 70.315 39.428 62 49.33 62zm-1.838-39.11c-3.026 0-5.478-2.479-5.478-5.545 0-3.079 2.451-5.581 5.478-5.581 3.015 0 5.479 2.502 5.479 5.581-.001 3.066-2.465 5.545-5.479 5.545zm74.789 25.921C120.183 40.363 116.178 34 107.682 34H97v12.981C97 57.031 88.206 65 78.489 65H49.33C41.342 65 35 72.326 35 80.326v27.8c0 7.91 6.745 12.564 14.462 14.834 9.242 2.717 17.994 3.208 29.051 0C85.862 120.831 93 116.549 93 108.126V97H64v-4h43.682c8.484 0 11.647-5.776 14.599-14.66 3.047-9.145 2.916-17.799 0-29.529zm-41.955 55.606c3.027 0 5.479 2.479 5.479 5.547 0 3.076-2.451 5.579-5.479 5.579-3.015 0-5.478-2.502-5.478-5.579 0-3.068 2.463-5.547 5.478-5.547z"
-        fill="currentColor"
-      />
-    </svg>
-  );
+        <path
+            d="M49.33 62h29.159C86.606 62 93 55.132 93 46.981V19.183c0-7.912-6.632-13.856-14.555-15.176-5.014-.835-10.195-1.215-15.187-1.191-4.99.023-9.612.448-13.805 1.191C37.098 6.188 35 10.758 35 19.183V30h29v4H23.776c-8.484 0-15.914 5.108-18.237 14.811-2.681 11.12-2.8 17.919 0 29.53C7.614 86.983 12.569 93 21.054 93H31V79.952C31 70.315 39.428 62 49.33 62zm-1.838-39.11c-3.026 0-5.478-2.479-5.478-5.545 0-3.079 2.451-5.581 5.478-5.581 3.015 0 5.479 2.502 5.479 5.581-.001 3.066-2.465 5.545-5.479 5.545zm74.789 25.921C120.183 40.363 116.178 34 107.682 34H97v12.981C97 57.031 88.206 65 78.489 65H49.33C41.342 65 35 72.326 35 80.326v27.8c0 7.91 6.745 12.564 14.462 14.834 9.242 2.717 17.994 3.208 29.051 0C85.862 120.831 93 116.549 93 108.126V97H64v-4h43.682c8.484 0 11.647-5.776 14.599-14.66 3.047-9.145 2.916-17.799 0-29.529zm-41.955 55.606c3.027 0 5.479 2.479 5.479 5.547 0 3.076-2.451 5.579-5.479 5.579-3.015 0-5.478-2.502-5.478-5.579 0-3.068 2.463-5.547 5.478-5.547z"
+            fill="currentColor"
+        />
+    </svg>);
 }
 
-function AzureSVG({ height }) {
-  return (
-    <svg height={height} viewBox="0 0 128 128">
-      <defs>
-        <linearGradient
-          id="azure-original-a"
-          x1="60.919"
-          y1="9.602"
-          x2="18.667"
-          y2="134.423"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#114A8B"></stop>
-          <stop offset="1" stop-color="#0669BC"></stop>
-        </linearGradient>
-        <linearGradient
-          id="azure-original-b"
-          x1="74.117"
-          y1="67.772"
-          x2="64.344"
-          y2="71.076"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-opacity=".3"></stop>
-          <stop offset=".071" stop-opacity=".2"></stop>
-          <stop offset=".321" stop-opacity=".1"></stop>
-          <stop offset=".623" stop-opacity=".05"></stop>
-          <stop offset="1" stop-opacity="0"></stop>
-        </linearGradient>
-        <linearGradient
-          id="azure-original-c"
-          x1="68.742"
-          y1="5.961"
-          x2="115.122"
-          y2="129.525"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#3CCBF4"></stop>
-          <stop offset="1" stop-color="#2892DF"></stop>
-        </linearGradient>
-      </defs>
-      <path
-        d="M46.09.002h40.685L44.541 125.137a6.485 6.485 0 01-6.146 4.413H6.733a6.482 6.482 0 01-5.262-2.699 6.474 6.474 0 01-.876-5.848L39.944 4.414A6.488 6.488 0 0146.09 0z"
-        fill="url(#azure-original-a)"
-        transform="translate(.587 4.468) scale(.91904)"
-      ></path>
-      <path
-        d="M97.28 81.607H37.987a2.743 2.743 0 00-1.874 4.751l38.1 35.562a5.991 5.991 0 004.087 1.61h33.574z"
-        fill="#0078d4"
-      ></path>
-      <path
-        d="M46.09.002A6.434 6.434 0 0039.93 4.5L.644 120.897a6.469 6.469 0 006.106 8.653h32.48a6.942 6.942 0 005.328-4.531l7.834-23.089 27.985 26.101a6.618 6.618 0 004.165 1.519h36.396l-15.963-45.616-46.533.011L86.922.002z"
-        fill="url(#azure-original-b)"
-        transform="translate(.587 4.468) scale(.91904)"
-      ></path>
-      <path
-        d="M98.055 4.408A6.476 6.476 0 0091.917.002H46.575a6.478 6.478 0 016.137 4.406l39.35 116.594a6.476 6.476 0 01-6.137 8.55h45.344a6.48 6.48 0 006.136-8.55z"
-        fill="url(#azure-original-c)"
-        transform="translate(.587 4.468) scale(.91904)"
-      ></path>
-    </svg>
-  );
+function AzureSVG({height}) {
+    return (<svg height={height} viewBox="0 0 128 128">
+        <defs>
+            <linearGradient
+                id="azure-original-a"
+                x1="60.919"
+                y1="9.602"
+                x2="18.667"
+                y2="134.423"
+                gradientUnits="userSpaceOnUse"
+            >
+                <stop stop-color="#114A8B"></stop>
+                <stop offset="1" stop-color="#0669BC"></stop>
+            </linearGradient>
+            <linearGradient
+                id="azure-original-b"
+                x1="74.117"
+                y1="67.772"
+                x2="64.344"
+                y2="71.076"
+                gradientUnits="userSpaceOnUse"
+            >
+                <stop stop-opacity=".3"></stop>
+                <stop offset=".071" stop-opacity=".2"></stop>
+                <stop offset=".321" stop-opacity=".1"></stop>
+                <stop offset=".623" stop-opacity=".05"></stop>
+                <stop offset="1" stop-opacity="0"></stop>
+            </linearGradient>
+            <linearGradient
+                id="azure-original-c"
+                x1="68.742"
+                y1="5.961"
+                x2="115.122"
+                y2="129.525"
+                gradientUnits="userSpaceOnUse"
+            >
+                <stop stop-color="#3CCBF4"></stop>
+                <stop offset="1" stop-color="#2892DF"></stop>
+            </linearGradient>
+        </defs>
+        <path
+            d="M46.09.002h40.685L44.541 125.137a6.485 6.485 0 01-6.146 4.413H6.733a6.482 6.482 0 01-5.262-2.699 6.474 6.474 0 01-.876-5.848L39.944 4.414A6.488 6.488 0 0146.09 0z"
+            fill="url(#azure-original-a)"
+            transform="translate(.587 4.468) scale(.91904)"
+        ></path>
+        <path
+            d="M97.28 81.607H37.987a2.743 2.743 0 00-1.874 4.751l38.1 35.562a5.991 5.991 0 004.087 1.61h33.574z"
+            fill="#0078d4"
+        ></path>
+        <path
+            d="M46.09.002A6.434 6.434 0 0039.93 4.5L.644 120.897a6.469 6.469 0 006.106 8.653h32.48a6.942 6.942 0 005.328-4.531l7.834-23.089 27.985 26.101a6.618 6.618 0 004.165 1.519h36.396l-15.963-45.616-46.533.011L86.922.002z"
+            fill="url(#azure-original-b)"
+            transform="translate(.587 4.468) scale(.91904)"
+        ></path>
+        <path
+            d="M98.055 4.408A6.476 6.476 0 0091.917.002H46.575a6.478 6.478 0 016.137 4.406l39.35 116.594a6.476 6.476 0 01-6.137 8.55h45.344a6.48 6.48 0 006.136-8.55z"
+            fill="url(#azure-original-c)"
+            transform="translate(.587 4.468) scale(.91904)"
+        ></path>
+    </svg>);
 }
 
-function JavaSVG({ height }) {
-  return (
-    <svg height={height} viewBox="0 0 128 128">
-      <path
-        fill="currentColor"
-        d="M47.617 98.12c-19.192 5.362 11.677 16.439 36.115 5.969-4.003-1.556-6.874-3.351-6.874-3.351-10.897 2.06-15.952 2.222-25.844 1.092-8.164-.935-3.397-3.71-3.397-3.71zm33.189-10.46c-14.444 2.779-22.787 2.69-33.354 1.6-8.171-.845-2.822-4.805-2.822-4.805-21.137 7.016 11.767 14.977 41.309 6.336-3.14-1.106-5.133-3.131-5.133-3.131zm11.319-60.575c.001 0-42.731 10.669-22.323 34.187 6.024 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.793 15.634-29.58zm9.998 81.144s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.095.171-4.45-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.952-3.487-32.013 6.85-13.742 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM85 77.896c2.395-1.634 5.703-3.053 5.703-3.053s-9.424 1.685-18.813 2.474c-11.494.964-23.823 1.154-30.012.326-14.652-1.959 8.033-7.348 8.033-7.348s-8.812-.596-19.644 4.644C17.455 81.134 61.958 83.958 85 77.896zm5.609 15.145c-.108.29-.468.616-.468.616 31.273-8.221 19.775-28.979 4.822-23.725-1.312.464-2 1.543-2 1.543s.829-.334 2.678-.72c7.559-1.575 18.389 10.119-5.032 22.286zM64.181 70.069c-4.614-10.429-20.26-19.553.007-35.559C89.459 14.563 76.492 1.587 76.492 1.587c5.23 20.608-18.451 26.833-26.999 39.667-5.821 8.745 2.857 18.142 14.688 28.815zm27.274 51.748c-19.187 3.612-42.854 3.191-56.887.874 0 0 2.874 2.38 17.646 3.331 22.476 1.437 57-.8 57.816-11.436.001 0-1.57 4.032-18.575 7.231z"
-      ></path>
-    </svg>
-  );
+function JavaSVG({height}) {
+    return (<svg height={height} viewBox="0 0 128 128">
+        <path
+            fill="currentColor"
+            d="M47.617 98.12c-19.192 5.362 11.677 16.439 36.115 5.969-4.003-1.556-6.874-3.351-6.874-3.351-10.897 2.06-15.952 2.222-25.844 1.092-8.164-.935-3.397-3.71-3.397-3.71zm33.189-10.46c-14.444 2.779-22.787 2.69-33.354 1.6-8.171-.845-2.822-4.805-2.822-4.805-21.137 7.016 11.767 14.977 41.309 6.336-3.14-1.106-5.133-3.131-5.133-3.131zm11.319-60.575c.001 0-42.731 10.669-22.323 34.187 6.024 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.793 15.634-29.58zm9.998 81.144s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.095.171-4.45-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.952-3.487-32.013 6.85-13.742 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM85 77.896c2.395-1.634 5.703-3.053 5.703-3.053s-9.424 1.685-18.813 2.474c-11.494.964-23.823 1.154-30.012.326-14.652-1.959 8.033-7.348 8.033-7.348s-8.812-.596-19.644 4.644C17.455 81.134 61.958 83.958 85 77.896zm5.609 15.145c-.108.29-.468.616-.468.616 31.273-8.221 19.775-28.979 4.822-23.725-1.312.464-2 1.543-2 1.543s.829-.334 2.678-.72c7.559-1.575 18.389 10.119-5.032 22.286zM64.181 70.069c-4.614-10.429-20.26-19.553.007-35.559C89.459 14.563 76.492 1.587 76.492 1.587c5.23 20.608-18.451 26.833-26.999 39.667-5.821 8.745 2.857 18.142 14.688 28.815zm27.274 51.748c-19.187 3.612-42.854 3.191-56.887.874 0 0 2.874 2.38 17.646 3.331 22.476 1.437 57-.8 57.816-11.436.001 0-1.57 4.032-18.575 7.231z"
+        ></path>
+    </svg>);
 }
 
-function AndroidSVG({ height }) {
-  return (
-    <svg height={height} viewBox="0 0 128 128">
-      <path
-        fill="currentColor"
-        d="M21.005 43.003c-4.053-.002-7.338 3.291-7.339 7.341l.005 30.736a7.338 7.338 0 007.342 7.343 7.33 7.33 0 007.338-7.342V50.34a7.345 7.345 0 00-7.346-7.337m59.193-27.602l5.123-9.355a1.023 1.023 0 00-.401-1.388 1.022 1.022 0 00-1.382.407l-5.175 9.453c-4.354-1.938-9.227-3.024-14.383-3.019-5.142-.005-10.013 1.078-14.349 3.005L44.45 5.075a1.01 1.01 0 00-1.378-.406 1.007 1.007 0 00-.404 1.38l5.125 9.349c-10.07 5.193-16.874 15.083-16.868 26.438l66.118-.008c.002-11.351-6.79-21.221-16.845-26.427M48.942 29.858a2.772 2.772 0 01.003-5.545 2.78 2.78 0 012.775 2.774 2.776 2.776 0 01-2.778 2.771m30.106-.005a2.77 2.77 0 01-2.772-2.771 2.793 2.793 0 012.773-2.778 2.79 2.79 0 012.767 2.779 2.767 2.767 0 01-2.768 2.77M31.195 44.39l.011 47.635a7.822 7.822 0 007.832 7.831l5.333.002.006 16.264c-.001 4.05 3.291 7.342 7.335 7.342 4.056 0 7.342-3.295 7.343-7.347l-.004-16.26 9.909-.003.004 16.263c0 4.047 3.293 7.346 7.338 7.338 4.056.003 7.344-3.292 7.343-7.344l-.005-16.259 5.352-.004a7.835 7.835 0 007.836-7.834l-.009-47.635-65.624.011zm83.134 5.943a7.338 7.338 0 00-7.341-7.339c-4.053-.004-7.337 3.287-7.337 7.342l.006 30.738a7.334 7.334 0 007.339 7.339 7.337 7.337 0 007.338-7.343l-.005-30.737z"
-      ></path>
-    </svg>
-  );
+function AndroidSVG({height}) {
+    return (<svg height={height} viewBox="0 0 128 128">
+        <path
+            fill="currentColor"
+            d="M21.005 43.003c-4.053-.002-7.338 3.291-7.339 7.341l.005 30.736a7.338 7.338 0 007.342 7.343 7.33 7.33 0 007.338-7.342V50.34a7.345 7.345 0 00-7.346-7.337m59.193-27.602l5.123-9.355a1.023 1.023 0 00-.401-1.388 1.022 1.022 0 00-1.382.407l-5.175 9.453c-4.354-1.938-9.227-3.024-14.383-3.019-5.142-.005-10.013 1.078-14.349 3.005L44.45 5.075a1.01 1.01 0 00-1.378-.406 1.007 1.007 0 00-.404 1.38l5.125 9.349c-10.07 5.193-16.874 15.083-16.868 26.438l66.118-.008c.002-11.351-6.79-21.221-16.845-26.427M48.942 29.858a2.772 2.772 0 01.003-5.545 2.78 2.78 0 012.775 2.774 2.776 2.776 0 01-2.778 2.771m30.106-.005a2.77 2.77 0 01-2.772-2.771 2.793 2.793 0 012.773-2.778 2.79 2.79 0 012.767 2.779 2.767 2.767 0 01-2.768 2.77M31.195 44.39l.011 47.635a7.822 7.822 0 007.832 7.831l5.333.002.006 16.264c-.001 4.05 3.291 7.342 7.335 7.342 4.056 0 7.342-3.295 7.343-7.347l-.004-16.26 9.909-.003.004 16.263c0 4.047 3.293 7.346 7.338 7.338 4.056.003 7.344-3.292 7.343-7.344l-.005-16.259 5.352-.004a7.835 7.835 0 007.836-7.834l-.009-47.635-65.624.011zm83.134 5.943a7.338 7.338 0 00-7.341-7.339c-4.053-.004-7.337 3.287-7.337 7.342l.006 30.738a7.334 7.334 0 007.339 7.339 7.337 7.337 0 007.338-7.343l-.005-30.737z"
+        ></path>
+    </svg>);
 }
 
-function CSharpSVG({ height }) {
-  return (
-    <svg height={height} viewBox="0 0 128 128">
-      <path
-        d="M109 50h-4.8l-1.2 6h-3.8l1.2-6h-4.9l-1.2 6H89v5h4.4l-.9 4H89v5h2.5l-1.2 6h4.8l1.2-6h3.8l-1.2 6h4.9l1.2-6h5v-5h-4.1l.9-4h3.2v-5h-2.2l1.2-6zm-7.9 15h-3.8l.9-4h3.8l-.9 4zm15.4-32.7c-.6-1.1-1.4-2.1-2.3-2.6L66.1 1.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7L11.4 29.7c-1.7 1-3.4 3.5-3.4 5.4v55.7c0 1.1.7 2.3 1.4 3.4l.1.1c.5.8 1.3 1.5 2 1.9l48.3 27.9c.8.5 2 .7 3.2.7 1.2 0 2.3-.3 3.1-.7l47.5-27.9c1.7-1 2.4-3.5 2.4-5.4V35.1c0-.8.4-1.8 0-2.6l.5-.2zm-4.2 2.1c0 .3-.3.5-.3.7v55.7c0 .8-.2 1.7-.4 2L64 120.6c-.1.1-.5.2-1.1.2-.6 0-1-.1-1.1-.2L13.6 92.8s-.1-.1-.2-.1l-.6-.6c-.4-.7.2-1.1-.8-1.2V35.2c1-.5.9-1.7 1.4-1.9L61.7 5.4c.1 0 .6-.2 1.2-.2s1 .1 1.1.2l48 27.7.4.9c.1.1-.1.3-.1.4zM63 87.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6C80.1 82.5 72.1 87.5 63 87.5z"
-        fill="currentColor"
-      ></path>
-    </svg>
-  );
+function CSharpSVG({height}) {
+    return (<svg height={height} viewBox="0 0 128 128">
+        <path
+            d="M109 50h-4.8l-1.2 6h-3.8l1.2-6h-4.9l-1.2 6H89v5h4.4l-.9 4H89v5h2.5l-1.2 6h4.8l1.2-6h3.8l-1.2 6h4.9l1.2-6h5v-5h-4.1l.9-4h3.2v-5h-2.2l1.2-6zm-7.9 15h-3.8l.9-4h3.8l-.9 4zm15.4-32.7c-.6-1.1-1.4-2.1-2.3-2.6L66.1 1.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7L11.4 29.7c-1.7 1-3.4 3.5-3.4 5.4v55.7c0 1.1.7 2.3 1.4 3.4l.1.1c.5.8 1.3 1.5 2 1.9l48.3 27.9c.8.5 2 .7 3.2.7 1.2 0 2.3-.3 3.1-.7l47.5-27.9c1.7-1 2.4-3.5 2.4-5.4V35.1c0-.8.4-1.8 0-2.6l.5-.2zm-4.2 2.1c0 .3-.3.5-.3.7v55.7c0 .8-.2 1.7-.4 2L64 120.6c-.1.1-.5.2-1.1.2-.6 0-1-.1-1.1-.2L13.6 92.8s-.1-.1-.2-.1l-.6-.6c-.4-.7.2-1.1-.8-1.2V35.2c1-.5.9-1.7 1.4-1.9L61.7 5.4c.1 0 .6-.2 1.2-.2s1 .1 1.1.2l48 27.7.4.9c.1.1-.1.3-.1.4zM63 87.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6C80.1 82.5 72.1 87.5 63 87.5z"
+            fill="currentColor"
+        ></path>
+    </svg>);
 }
 
-function UnitySVG({ height }) {
-  return (
-    <svg height={height} viewBox="0 0 128 128">
-      <path
-        d="M82.48 63.578l22.418-38.402 10.832 38.402-10.832 38.398zm-10.926 6.238l22.422 38.402-39.047-9.922-28.211-28.48zM93.969 18.93L71.555 57.34H26.719L54.93 28.855zm32 31.582L112.293.031 61.25 13.559l-7.555 13.18-15.336-.109L1 63.582l37.359 36.949h.004l15.324-.113 7.57 13.176 51.035 13.527 13.676-50.473-7.762-13.07zm0 0"
-        fill="currentColor"
-      ></path>
-    </svg>
-  );
+function UnitySVG({height}) {
+    return (<svg height={height} viewBox="0 0 128 128">
+        <path
+            d="M82.48 63.578l22.418-38.402 10.832 38.402-10.832 38.398zm-10.926 6.238l22.422 38.402-39.047-9.922-28.211-28.48zM93.969 18.93L71.555 57.34H26.719L54.93 28.855zm32 31.582L112.293.031 61.25 13.559l-7.555 13.18-15.336-.109L1 63.582l37.359 36.949h.004l15.324-.113 7.57 13.176 51.035 13.527 13.676-50.473-7.762-13.07zm0 0"
+            fill="currentColor"
+        ></path>
+    </svg>);
 }
 
-function ArduinoSVG({ height }) {
-  return (
-    <svg height={height} viewBox="0 0 128 128">
-      <g fill="currentColor" fill-rule="evenodd">
-        <path d="M.3 66.5v-9.6c.2-.1.2-.3.2-.5 3-13.1 11.2-21 24.2-24.1 1.1-.3 2.3-.2 3.4-.6h6.4c.1.2.4.1.6.1 6.4.7 12.2 3 17.3 7 4.4 3.3 7.8 7.5 10.9 12 .4.6.6.6 1 0 1.8-2.6 3.7-5.1 5.9-7.4 5.3-5.7 11.7-9.7 19.5-11.1 1.1-.3 2.4-.2 3.5-.6h6.2c.1.2.3.1.5.1 1.9.2 3.7.6 5.5 1.1 13.4 3.9 22.9 16.2 22.1 30.1-.6 11.7-6.5 20.1-16.8 25.4-5.1 2.8-10.7 3.5-16.5 3.4-7.6-.1-14.2-2.7-19.9-7.7-4-3.5-7.1-7.7-10-12.1-.4-.6-.6-.5-1 .1-1.8 2.7-3.7 5.4-5.9 8-3.9 4.4-8.4 8-14 9.9-6.9 2.4-13.9 2.5-20.9.6-10.1-2.9-17-9.3-20.8-19.1-.6-1.6-.9-3.4-1.4-5zm31.8 14.7c5.7.2 10.6-1.7 14.8-5.6 4.3-4 7.4-9 10.5-13.9.1-.3.1-.5-.1-.8-2.6-4.1-5.3-8.2-8.9-11.6-6.9-6.6-15-8.8-24.1-5.9-7.5 2.5-12.3 7.8-13.4 15.8-1.1 7.5 1.8 13.5 7.8 18 4 2.9 8.5 4.1 13.4 4zm63.4 0c2.2 0 4.4-.1 6.5-.7 7.9-2.4 13.1-7.3 14.6-15.5 1.5-8.1-1.6-14.6-8.4-19.2-7.5-5.2-18.4-4.7-26 1-5.1 3.8-8.5 8.9-11.9 14.2-.2.3-.1.5 0 .8 2.7 4.3 5.4 8.6 8.9 12.3 4.4 4.7 9.7 7.4 16.3 7.1zm0 0"></path>
-        <path d="M32 58.5c3.2 0 6.5.1 9.7 0 .8 0 .9.2.9 1-.1.9-.1 1.8 0 2.7.1.8-.1 1-1 1H28.8c-2.2 0-4.4-.1-6.6 0-.7 0-.9-.2-.9-1 .1-.9.1-1.8 0-2.8 0-.7.2-.9.9-.9 3.2.1 6.5 0 9.8 0zm63-6.4c.8 0 1.6.1 2.3 0 .5 0 .7.2.7.7-.1 1.4 0 2.8-.1 4.2 0 .7.2.9.9.9 1.3-.1 2.7 0 4.1-.1.6 0 .8.1.8.8v4.6c0 .5-.2.7-.7.7-1.4-.1-2.8 0-4.3-.1-.6 0-.8.2-.8.8.1 1.4 0 2.8.1 4.2 0 .6-.2.9-.8.9-1.5-.1-3-.1-4.5 0-.6 0-.8-.2-.8-.8.1-1.5 0-2.9.1-4.4 0-.5-.2-.7-.7-.7-1.4.1-2.8 0-4.2.1-.8 0-.9-.3-.9-.9 0-1.4.1-2.8 0-4.2-.1-.8.3-1 1-1 1.4.1 2.7 0 4.1.1.5 0 .7-.2.7-.7-.1-1.4 0-2.9-.1-4.3 0-.6.2-.8.8-.8.8.1 1.5 0 2.3 0zm29.852-27.623c-.133.199-.18.265-.223.332-.242.363-.055 1.097-.664 1.086-.54-.012-.403-.684-.594-1.051-.05-.098-.11-.188-.277-.461 0 .504.008.789 0 1.078-.008.195.035.441-.274.457-.312.016-.293-.234-.297-.43-.007-.68-.007-1.355-.003-2.031 0-.23-.036-.496.324-.504.27-.004.504-.015.617.336.144.43.195.91.527 1.324.317-.402.371-.867.492-1.293.102-.347.317-.37.598-.37.356.003.34.253.344.488.004.68.004 1.355-.004 2.035-.004.191.023.445-.281.449-.305 0-.282-.242-.285-.442-.008-.289 0-.574 0-1.003zm-3.712-1.532c.087 0 .18-.015.262 0 .325.063.828-.187.934.2.144.543-.426.27-.668.386-.242.117-.195.332-.2.528-.011.468-.007.937-.007 1.406 0 .258-.05.473-.383.46-.305-.01-.293-.234-.293-.437a36.975 36.975 0 01-.004-1.316c.012-.375.016-.727-.523-.676-.188.016-.352-.039-.352-.277 0-.328.254-.262.442-.27.265-.012.527-.004.793-.004zm0 0"></path>
-      </g>
-    </svg>
-  );
+function ArduinoSVG({height}) {
+    return (<svg height={height} viewBox="0 0 128 128">
+        <g fill="currentColor" fill-rule="evenodd">
+            <path
+                d="M.3 66.5v-9.6c.2-.1.2-.3.2-.5 3-13.1 11.2-21 24.2-24.1 1.1-.3 2.3-.2 3.4-.6h6.4c.1.2.4.1.6.1 6.4.7 12.2 3 17.3 7 4.4 3.3 7.8 7.5 10.9 12 .4.6.6.6 1 0 1.8-2.6 3.7-5.1 5.9-7.4 5.3-5.7 11.7-9.7 19.5-11.1 1.1-.3 2.4-.2 3.5-.6h6.2c.1.2.3.1.5.1 1.9.2 3.7.6 5.5 1.1 13.4 3.9 22.9 16.2 22.1 30.1-.6 11.7-6.5 20.1-16.8 25.4-5.1 2.8-10.7 3.5-16.5 3.4-7.6-.1-14.2-2.7-19.9-7.7-4-3.5-7.1-7.7-10-12.1-.4-.6-.6-.5-1 .1-1.8 2.7-3.7 5.4-5.9 8-3.9 4.4-8.4 8-14 9.9-6.9 2.4-13.9 2.5-20.9.6-10.1-2.9-17-9.3-20.8-19.1-.6-1.6-.9-3.4-1.4-5zm31.8 14.7c5.7.2 10.6-1.7 14.8-5.6 4.3-4 7.4-9 10.5-13.9.1-.3.1-.5-.1-.8-2.6-4.1-5.3-8.2-8.9-11.6-6.9-6.6-15-8.8-24.1-5.9-7.5 2.5-12.3 7.8-13.4 15.8-1.1 7.5 1.8 13.5 7.8 18 4 2.9 8.5 4.1 13.4 4zm63.4 0c2.2 0 4.4-.1 6.5-.7 7.9-2.4 13.1-7.3 14.6-15.5 1.5-8.1-1.6-14.6-8.4-19.2-7.5-5.2-18.4-4.7-26 1-5.1 3.8-8.5 8.9-11.9 14.2-.2.3-.1.5 0 .8 2.7 4.3 5.4 8.6 8.9 12.3 4.4 4.7 9.7 7.4 16.3 7.1zm0 0"></path>
+            <path
+                d="M32 58.5c3.2 0 6.5.1 9.7 0 .8 0 .9.2.9 1-.1.9-.1 1.8 0 2.7.1.8-.1 1-1 1H28.8c-2.2 0-4.4-.1-6.6 0-.7 0-.9-.2-.9-1 .1-.9.1-1.8 0-2.8 0-.7.2-.9.9-.9 3.2.1 6.5 0 9.8 0zm63-6.4c.8 0 1.6.1 2.3 0 .5 0 .7.2.7.7-.1 1.4 0 2.8-.1 4.2 0 .7.2.9.9.9 1.3-.1 2.7 0 4.1-.1.6 0 .8.1.8.8v4.6c0 .5-.2.7-.7.7-1.4-.1-2.8 0-4.3-.1-.6 0-.8.2-.8.8.1 1.4 0 2.8.1 4.2 0 .6-.2.9-.8.9-1.5-.1-3-.1-4.5 0-.6 0-.8-.2-.8-.8.1-1.5 0-2.9.1-4.4 0-.5-.2-.7-.7-.7-1.4.1-2.8 0-4.2.1-.8 0-.9-.3-.9-.9 0-1.4.1-2.8 0-4.2-.1-.8.3-1 1-1 1.4.1 2.7 0 4.1.1.5 0 .7-.2.7-.7-.1-1.4 0-2.9-.1-4.3 0-.6.2-.8.8-.8.8.1 1.5 0 2.3 0zm29.852-27.623c-.133.199-.18.265-.223.332-.242.363-.055 1.097-.664 1.086-.54-.012-.403-.684-.594-1.051-.05-.098-.11-.188-.277-.461 0 .504.008.789 0 1.078-.008.195.035.441-.274.457-.312.016-.293-.234-.297-.43-.007-.68-.007-1.355-.003-2.031 0-.23-.036-.496.324-.504.27-.004.504-.015.617.336.144.43.195.91.527 1.324.317-.402.371-.867.492-1.293.102-.347.317-.37.598-.37.356.003.34.253.344.488.004.68.004 1.355-.004 2.035-.004.191.023.445-.281.449-.305 0-.282-.242-.285-.442-.008-.289 0-.574 0-1.003zm-3.712-1.532c.087 0 .18-.015.262 0 .325.063.828-.187.934.2.144.543-.426.27-.668.386-.242.117-.195.332-.2.528-.011.468-.007.937-.007 1.406 0 .258-.05.473-.383.46-.305-.01-.293-.234-.293-.437a36.975 36.975 0 01-.004-1.316c.012-.375.016-.727-.523-.676-.188.016-.352-.039-.352-.277 0-.328.254-.262.442-.27.265-.012.527-.004.793-.004zm0 0"></path>
+        </g>
+    </svg>);
 }
