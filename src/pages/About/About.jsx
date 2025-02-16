@@ -132,8 +132,8 @@ function AboutContent() {
                 </Text>{" "}
                 or shoot me a message on whatsapp at the number :{" "}
                 <Text weight={"bold"}>
-                  <Link href="https://wa.me/qr/HZ6B54KNMH4JA1">
-                    +91 9985887990
+                  <Link href="https://wa.me/qr/TQAIUGV5W5Z6L1">
+                    +33 744 52 48 49
                   </Link>
                 </Text>
               </Text>
