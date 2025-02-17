@@ -200,7 +200,7 @@ function SpecialMention() {
                     <Link
                         target="_blank"
                         rel="noreferrer"
-                        href="https://www.translated.com//"
+                        href="https://translated.com/welcome"
                         ml={"3"}
                         mr={"3"}
                     >
