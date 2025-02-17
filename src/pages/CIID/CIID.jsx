@@ -130,7 +130,7 @@ function CIIDBody() {
             <Flex>
 
 
-                <Flex pb={"1"} direction={"row"} width={"100%"} flexGrow={"0"} justify={"start"} align={"start"}
+                <Flex pb={"1"} direction={"row"} style={{width: "90vw"}} flexGrow={"0"} justify={"start"} align={"start"}
                       gap={"2"} overflowX={"auto"}>
                     <img className="screenshots" src={"/CIID/page/Screenshots/Home.jpeg"}/>
                     <img className="screenshots" src={"/CIID/page/Screenshots/Mobile.jpeg"}/>
