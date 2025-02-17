@@ -4,6 +4,7 @@
     aspect-ratio: 16/9;
     height: 70vh;
     object-fit: scale-down;
+    border-radius: 0.25rem;
 }
 
 .prototype-image {

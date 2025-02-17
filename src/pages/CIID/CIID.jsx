@@ -92,7 +92,7 @@ function CIIDBody() {
             <Container size={"3"}>
                 <Card>
                     <Flex direction={"column"} align={"center"} gap={"1"} justify={"center"}>
-                        <img className="hero-image" src={"/CIID/page/Hero.png"}/>
+                        <img className="hero-image" src={"/CIID/page/Screenshots/Home.jpeg"}/>
                         <Heading size={"4"} as={"p"}>A seamless platform for a global design community </Heading>
                         <Text align={"center"} size={"3"}>CIID.dk was designed to be more than just a website—it’s a
                             living,
@@ -130,7 +130,7 @@ function CIIDBody() {
             <Flex>
 
 
-                <Flex pb={"1"} direction={"row"} style={{width: "90vw"}} flexGrow={"0"} justify={"start"} align={"start"}
+                <Flex pb={"1"} direction={"row"} style={{width: "98vw"}} flexGrow={"0"} justify={"start"} align={"start"}
                       gap={"2"} overflowX={"auto"}>
                     <img className="screenshots" src={"/CIID/page/Screenshots/Home.jpeg"}/>
                     <img className="screenshots" src={"/CIID/page/Screenshots/Mobile.jpeg"}/>

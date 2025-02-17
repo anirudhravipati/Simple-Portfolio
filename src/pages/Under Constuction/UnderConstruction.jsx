@@ -73,7 +73,7 @@ function UnderConstructionContent() {
                 <Text color={"jade"} align="center" size={"5"}>
                     This project is under a confidentiality agreement.
                     Please contact me on my <Link weight={"medium"} color={"jade"}
-                                                  href="mailto: ravipatianirudh@gmail.com">email</Link>
+                                                  href="mailto: ravipatianirudh@gmail.com">email</Link> for access.
                 </Text>
             </Flex>
         </Flex>);
