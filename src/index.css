@@ -2,3 +2,21 @@
     padding: 0;
     margin: 0;
 }
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+    background: var(--jade-surface);
+    border-radius: 12px;
+}
+
+/* Thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: var(--jade-a11);
+
+    border-radius: 10px;
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--jade-a12);
+}
