@@ -114,13 +114,14 @@ function AboutContent() {
                 projects in companies such as Meta, Google and Enel. It was
                 quite an enriching journey.
               </Text>
+              <Heading mt={"2"} size={"3"}> Recent Work </Heading>
               <Text>
                 Once I graduated from CIID, I started freelancing for {" "}
                 <Link href="cloudaeye.com" target="_blank">
                   CloudAEye
                 </Link>{" "}
                 as a Product Designer. In this company,
-                I get to supercharge the design process with my experience in
+                I got to supercharge the design process with my experience in
                 Software Engineering and Development. I also had the honor of overseeing CIID's website refresh
                 and as such,I currently freelance for them as a web designer & developer.
               </Text>
