@@ -2,7 +2,7 @@
 import { MoonStars, Sun } from "@phosphor-icons/react";
 import {
   Card,
-  Container,
+  Container, Em,
   Flex,
   Heading,
   IconButton,
@@ -115,13 +115,20 @@ function AboutContent() {
                 quite an enriching journey.
               </Text>
               <Text>
-                Once I graduated from CIID, I joined{" "}
+                Once I graduated from CIID, I started freelancing for {" "}
                 <Link href="cloudaeye.com" target="_blank">
                   CloudAEye
                 </Link>{" "}
-                as a Product Designer (where I currently work). In this company,
+                as a Product Designer. In this company,
                 I get to supercharge the design process with my experience in
-                Software Engineering and Development.
+                Software Engineering and Development. I also had the honor of overseeing CIID's website refresh
+                and as such,I currently freelance for them as a web designer & developer.
+              </Text>
+
+              <Text>
+                In parallel, I have kept up my practice of coding, developing small applications and experimenting with front-end
+                tech such as <Em>NextJS</Em>, <Em>Astro</Em> and for systems/backend programming -<Em> Rust </Em>.
+                Take a look at my <Link href={"https://github.com/anirudhravipati"} > Github</Link> for more on this!
               </Text>
               <Text size={"2"} weight={"light"}>
                 I'm currently on the lookout for more exciting opportunities
