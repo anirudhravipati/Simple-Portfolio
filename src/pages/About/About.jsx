@@ -83,7 +83,7 @@ function AboutContent() {
       </Heading>
       <Container>
         <Card>
-          <Flex className="about-box" grow={"1"} shrink={"0"} gap={"3"}>
+          <Flex className="about-box" gap={"3"}>
             <img src="/Profile Photo.jpg" className="profile-photo" />
             <Flex direction={"column"} gap={"1"}>
               <Text weight={"bold"} align={"left"} size={"4"}>
