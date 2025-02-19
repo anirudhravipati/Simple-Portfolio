@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import {Barricade, Lock, MoonStars, Sun} from "@phosphor-icons/react";
+import { Lock, MoonStars, Sun} from "@phosphor-icons/react";
 import {
-    Box, Card, Container, Flex, Heading, IconButton, Link, Text, Theme,
+    Flex, IconButton, Link, Text, Theme,
 } from "@radix-ui/themes";
 import {useEffect, useState} from "react";
 import Footer from "../../components/Footer/Footer";
@@ -59,22 +59,22 @@ export default function UnderConstruction() {
 }
 
 function UnderConstructionContent() {
-    return (
-        <Flex
-            align={"center"}
-            direction={"column"}
-            p={"5"}
-            gap={"5"}
-            style={{minHeight: "100vh"}}>
-            <PortfolioLogo height={"3rem"}/>
-            <Flex direction={"column"} gap={"5"} align={"center"} justify={"center"} style={{height: "70vh"}}
-                  height={"100%"}>
-                <Lock style={{color: "var(--jade-a11)"}} size={"10rem"}/>
-                <Text color={"jade"} align="center" size={"5"}>
-                    This project is under a confidentiality agreement.
-                    Please contact me on my <Link weight={"medium"} color={"jade"}
-                                                  href="mailto: ravipatianirudh@gmail.com">email</Link> for access.
-                </Text>
-            </Flex>
-        </Flex>);
+    return (<Flex
+        align={"center"}
+        direction={"column"}
+        p={"5"}
+        gap={"5"}
+        style={{minHeight: "100vh"}}>
+        <PortfolioLogo height={"3rem"}/>
+        <Flex direction={"column"} gap={"5"} align={"center"} justify={"center"} style={{height: "70vh"}}
+              height={"100%"}>
+            <Lock style={{color: "var(--jade-a11)"}} size={"10rem"}/>
+            <Text color={"jade"} align="center" size={"5"}>
+                This project is under a confidentiality agreement.
+                Please contact me on my
+                <Link weight={"medium"} color={"jade"} href="mailto: ravipatianirudh@gmail.com">email</Link>
+                for access.
+            </Text>
+        </Flex>
+    </Flex>);
 }

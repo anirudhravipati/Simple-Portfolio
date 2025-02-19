@@ -16,6 +16,7 @@ import Interlink from "./pages/Interlink/Interlink.jsx";
 import Shunya from "./pages/Shunya/Shunya.jsx";
 import UnderConstruction from "./pages/Under Constuction/UnderConstruction.jsx";
 import CIID from "./pages/CIID/CIID.jsx";
+import CodeReview from "./pages/Code Review/CodeReview.jsx";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: "CIID",
     element: <CIID/>
+  },
+  {
+    path: "CodeReview",
+    element: <CodeReview/>
   }
   
 ]);

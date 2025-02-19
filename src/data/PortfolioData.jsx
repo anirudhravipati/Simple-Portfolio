@@ -20,6 +20,20 @@ import {Badge} from "@radix-ui/themes";
 
 export const ProductDesignData = [
     {
+        key: "CodeReview",
+        title: "Code Review by CloudAEye",
+        src: "/Code Review/Card Image.png",
+        content: "Merging intuitive design with intelligent analysis, " +
+            "Code Review reimagines GitHub integration by unearthing vulnerabilities and crafting detailed pull " +
+            "request narratives. The design process emphasized clarity and trust, ensuring that every interaction " +
+            "communicates precision and security. By harmonizing robust security analysis with a user-friendly interface, " +
+            "Code Review transforms the routine code review process into a streamlined, insightful experience.",
+        tags: [<ProductDesignBadge key={"product"}/>, <UserResearchBadge key="user-research"/>,
+            <FigmaBadge key="figma"/>,
+            <LaptopBadge key="mobile"/>, <SaaSBadge key="saas"/>, <B2BBadge key="b2b"/>],
+        page: "CodeReview",
+    },
+    {
         key: "TestRCA",
         title: "Test RCA by CloudAEye",
         src: "/Test RCA/Card.png",
@@ -30,19 +44,6 @@ export const ProductDesignData = [
             "fixes—eliminating tedious manual work and accelerating development workflows. " +
             "The design journey focused on clarity, speed, and intuitive interaction, ensuring that even " +
             "the most intricate software issues are rendered in a visually compelling and actionable format.",
-        tags: [<ProductDesignBadge key={"product"}/>, <UserResearchBadge key="user-research"/>,
-            <FigmaBadge key="figma"/>,
-            <LaptopBadge key="mobile"/>, <SaaSBadge key="saas"/>, <B2BBadge key="b2b"/>],
-        page: "Under Construction",
-    }, {
-        key: "CodeReview",
-        title: "Code Review by CloudAEye",
-        src: "/Code Review/Card Image.png",
-        content: "Merging intuitive design with intelligent analysis, " +
-            "Code Review reimagines GitHub integration by unearthing vulnerabilities and crafting detailed pull " +
-            "request narratives. The design process emphasized clarity and trust, ensuring that every interaction " +
-            "communicates precision and security. By harmonizing robust security analysis with a user-friendly interface, " +
-            "Code Review transforms the routine code review process into a streamlined, insightful experience.",
         tags: [<ProductDesignBadge key={"product"}/>, <UserResearchBadge key="user-research"/>,
             <FigmaBadge key="figma"/>,
             <LaptopBadge key="mobile"/>, <SaaSBadge key="saas"/>, <B2BBadge key="b2b"/>],
