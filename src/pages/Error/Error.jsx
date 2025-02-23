@@ -21,8 +21,7 @@ export default function Error() {
       >
         <Heading size={"9"} color="tomato">404</Heading>
         <Text color="tomato" size="2">
-          This is an invalid link or I didn't properly code my portfolio. I hope
-          it's you that's wrong.
+          This is an invalid link or I didn't properly code my portfolio
         </Text>
         <Button color="tomato" asChild size={"3"}>
           <Link to={"/"}>
