@@ -37,8 +37,15 @@ export function SiteMenuDropdown() {
           </DropdownMenu.SubTrigger>
           <DropdownMenu.SubContent>
             <DropdownMenu.Item asChild>
+              <RouterLink to={"/CodeReview"}> Code Review</RouterLink>
+            </DropdownMenu.Item>
+            <DropdownMenu.Item asChild>
+              <RouterLink to={"/TestRCA"}> Test RCA</RouterLink>
+            </DropdownMenu.Item>
+            <DropdownMenu.Item asChild>
               <RouterLink to={"/LogManagement"}> Log Management</RouterLink>
             </DropdownMenu.Item>
+
           </DropdownMenu.SubContent>
         </DropdownMenu.Sub>
 
