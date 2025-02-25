@@ -47,6 +47,11 @@ export default function About() {
   }, [mode]);
   // END Dark Mode Setup
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <Theme
       appearance={mode ? "light" : "dark"}

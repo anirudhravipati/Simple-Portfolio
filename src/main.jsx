@@ -17,6 +17,7 @@ import Shunya from "./pages/Shunya/Shunya.jsx";
 import UnderConstruction from "./pages/Under Constuction/UnderConstruction.jsx";
 import CIID from "./pages/CIID/CIID.jsx";
 import CodeReview from "./pages/Code Review/CodeReview.jsx";
+import TestRCA from "./pages/TestRCA/TestRCA.jsx";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
   {
     path: "CodeReview",
     element: <CodeReview/>
+  },
+  {
+    path: "TestRCA",
+    element: <TestRCA/>
   }
   
 ]);

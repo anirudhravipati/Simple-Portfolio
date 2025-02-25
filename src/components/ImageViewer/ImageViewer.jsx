@@ -7,8 +7,7 @@ export default function ImageViewer({
         width: "100%",
         objectFit: "cover",
         borderRadius: "0.5rem",
-    }
-                                    }) {
+    }}) {
     return (
         <Flex width={"100%"} position={"relative"}>
             <img

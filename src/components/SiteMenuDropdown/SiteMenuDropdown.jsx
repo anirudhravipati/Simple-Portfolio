@@ -40,7 +40,7 @@ export function SiteMenuDropdown() {
               <RouterLink to={"/CodeReview"}> Code Review</RouterLink>
             </DropdownMenu.Item>
             <DropdownMenu.Item asChild>
-              <RouterLink to={"/TestRCA"}> Test RCA</RouterLink>
+              <RouterLink to={"/Under Construction"}> Test RCA</RouterLink>
             </DropdownMenu.Item>
             <DropdownMenu.Item asChild>
               <RouterLink to={"/LogManagement"}> Log Management</RouterLink>
