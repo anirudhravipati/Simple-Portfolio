@@ -266,7 +266,7 @@ function ProjectTabs() {
                     <Flex justify={"center"} gap={"2"} width={"100%"}>
                         <Tabs.Trigger value="Product Design"><Component1Icon size="1rem" /> <Text ml={"2"}>Product Design</Text></Tabs.Trigger>
                         <Tabs.Trigger value="Web Design"><Globe size="1rem" /> <Text ml={"2"}>Web Design</Text></Tabs.Trigger>
-                        <Tabs.Trigger value="Creative Tech"><CubeFocus size="1rem" /> <Text ml={"2"}>Creative Tech</Text></Tabs.Trigger>
+                        {/*<Tabs.Trigger value="Creative Tech"><CubeFocus size="1rem" /> <Text ml={"2"}>Creative Tech</Text></Tabs.Trigger>*/}
                     </Flex>
                 </Tabs.List>
 
