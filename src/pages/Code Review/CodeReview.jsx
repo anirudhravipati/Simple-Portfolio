@@ -175,9 +175,9 @@ function Research() {
                     </Card>
                     <Card>
                         <Flex mb={"2"} direction={"column"} >
-                            <Flex pb={"1"} gap={"1"} direction={"row"} overflowX={"scroll"}>
-                                <img src={"/Code Review/page/Initial Protoype v1/image 11.png"} style={{width: "100%"}}/>
-                                <img src={"/Code Review/page/Initial Protoype v1/image 12.png"} style={{width: "100%"}}/>
+                            <Flex pb={"1"} gap={"3"} direction={"row"} overflowX={"scroll"}>
+                                <img className={"generic-mockups"} src={"/Code Review/page/Initial Protoype v1/image 11.png"} style={{width: "100%"}}/>
+                                <img className={"generic-mockups"} src={"/Code Review/page/Initial Protoype v1/image 12.png"} style={{width: "100%"}}/>
                             </Flex>
                             <Text align={"center"} size={"2"}>Initial prototype </Text>
                         </Flex>
@@ -254,7 +254,7 @@ function DesignProcess() {
                                 Integrating with GitHub
                             </Heading>
                             <Flex mb={"2"} direction={"column"} >
-                                <Flex pb={"1"} gap={"1"} direction={"row"} overflowX={"scroll"}>
+                                <Flex pb={"1"} gap={"3"} direction={"row"} overflowX={"scroll"}>
                                     <img src={"/Code Review/page/GitHub/1.png"} className={"github-mockups"}  />
                                     <img src={"/Code Review/page/GitHub/2.png"}  className={"github-mockups"}/>
                                     <img src={"/Code Review/page/GitHub/3.png"}  className={"github-mockups"}/>

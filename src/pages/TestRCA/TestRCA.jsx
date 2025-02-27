@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 import {
-    Theme, Flex, Heading, IconButton, Link, Container, Card, Text, Separator, Callout, Em
+    Theme, Flex, Heading, IconButton, Link, Container, Card, Text, Separator, Callout, Em, Box
 } from "@radix-ui/themes";
 import {SiteMenuDropdown} from "../../components/SiteMenuDropdown/SiteMenuDropdown";
 import {Sun, MoonStars, Barricade, Lightbulb} from "@phosphor-icons/react";
@@ -8,6 +8,8 @@ import Footer from "../../components/Footer/Footer";
 import TextHoverCard from "../../components/TextHoverCard/TextHoverCard";
 import "./TestRCA.css";
 import PortfolioLogo from "../../components/Portfolio Logo/PortfolioLogo";
+import {Info} from "@phosphor-icons/react/dist/ssr";
+import ImageViewer from "../../components/ImageViewer/ImageViewer.jsx";
 
 export default function TestRCA() {
     // Dark Mode Setup
@@ -38,12 +40,13 @@ export default function TestRCA() {
     }, [mode]);
     // END Dark Mode Setup
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    // }, []);
 
 
-    return (<Theme
+    return (
+        <Theme
             appearance={mode ? "light" : "dark"}
             accentColor="jade"
             grayColor="sand"
@@ -57,135 +60,154 @@ export default function TestRCA() {
             >
                 {mode ? <MoonStars size={"1.5rem"}/> : <Sun size={"1.5rem"}/>}
             </IconButton>
-
-            <CIIDBody/>
+            <TestRCABody/>
             <Footer/>
         </Theme>);
 }
 
-function CIIDBody() {
+function TestRCABody() {
     return (<Flex
-            p={"5"}
-            gap={"5"}
-            direction={"column"}
-            align={"center"}
-            style={{minHeight: "100vh"}}
-        >
-            <PortfolioLogo height={"3rem"}/>
-            <Heading align={"center"} size={"9"}>
-                Test Root Cause Analysis
-                <Heading align={"right"} size={"4"}>
-                    by CloudAEye
-                </Heading>
+        p={"5"}
+        gap={"5"}
+        direction={"column"}
+        align={"center"}
+        style={{minHeight: "100vh"}}
+    >
+        <PortfolioLogo height={"3rem"}/>
+        <Heading align={"center"} size={"9"}>
+            Test Root Cause Analysis
+            <Heading align={"right"} size={"4"}>
+                by CloudAEye
             </Heading>
-            <HeroSection/>
-            <ProjectAim/>
-            <Research/>
-            <DesignProcess/>
-            <Challenges/>
-            <Outcome/>
-        </Flex>);
+        </Heading>
+        <HeroSection/>
+        <ProjectAim/>
+        <Research/>
+        <DesignProcess/>
+        <Outcome/>
+    </Flex>);
 }
 
 function HeroSection() {
     return (<Container mt={'2'} size={"3"}>
-            <Card>
-                <Flex direction={"column"} gap={"3"} width={"100%"}>
-                    <img style={{width: "100%"}} src={"/Code Review/page/Hero.png"}/>
-                    <Text align={"center"}>
-                        Test RCA was born out of a need to revolutionize the way developers handle failing tests.
-                        Instead of manually sifting through lengthy error logs and convoluted code analyses,
-                        Test RCA leverages generative AI to transform these data dumps into clear, actionable root-cause
-                        summaries. The result?
-                    </Text>
-                    <Text color={"jade"} weight={"medium"} size={"'3'"} align={"center"}>
-                        Developers spend less time debugging and more time shipping code.
-                    </Text>
-                </Flex>
-            </Card>
-        </Container>)
+        <Card>
+            <Flex direction={"column"} gap={"3"} width={"100%"}>
+                <img style={{width: "100%"}} src={"/Code Review/page/Hero.png"}/>
+                <Text align={"center"}>
+                    Test RCA was developed to simplify and accelerate the debugging process by transforming complex
+                    test failure logs into clear, AI-driven root-cause summaries. By automating the analysis of lengthy
+                    error data, Test RCA empowers teams to quickly diagnose issues and get back to coding.
+                </Text>
+            </Flex>
+        </Card>
+    </Container>)
 }
 
 function ProjectAim() {
 
-
     return (<Container mt={'2'} size={"3"}>
-            <Card>
-                <Flex direction={"column"} gap={"3"} width={"100%"}>
-                    <Heading color={"jade"} size={"6"}>The Challenge</Heading>
-                    <Text align={"left"}>
-                        Traditional test failure analysis is a painstaking process.
-                        Developers are often confronted with massive, unstructured logs
-                        that obscure the true source of issues. {"\n"}
-                    </Text>
-
-                    <Text style={{textIndent: "4rem"}} align={"left"}>
-                        This not only slows down the debugging process but also
-                        creates significant deployment bottlenecks.
-                        Our mission was to cut through the noise and deliver
-                        concise insights right when they're needed.
-                    </Text>
-                    <Separator size={"4"}/>
-                    <img style={{width: "100%"}} src={"/Code Review/page/Aim.png"}/>
-                </Flex>
-            </Card>
-        </Container>)
+        <Card>
+            <Flex direction={"column"} gap={"3"} width={"100%"}>
+                <Heading color={"jade"} size={"6"}>The Challenge</Heading>
+                <Text align={"left"}>
+                    The primary challenge for Test RCA was the cumbersome onboarding process. Users faced a multi-step
+                    setup:
+                </Text>
+                <ul style={{listStylePosition: "inside", listStyleType: "square"}}>
+                    <li>
+                        <Em>Login & Plan Selection:</Em> The journey began with logging in and choosing the appropriate
+                        plan.
+                    </li>
+                    <li>
+                        <Em>CI Integration:</Em> Depending on the continuous integration system in use, the process
+                        diverged.
+                        For GitHub Actions users, repositories had to be configured for monitoring. For those using
+                        Jenkins
+                        or Codebuild, an additional integration step was required
+                    </li>
+                    <li>
+                        <Em>Configuration:</Em> Finally, users needed to select which CI jobs would be monitored by
+                        CloudAEye.
+                        This layered setup required careful design to ensure clarity and reduce friction right from the
+                        start.
+                    </li>
+                </ul>
+            </Flex>
+        </Card>
+    </Container>)
 }
 
 function Research() {
-    return (<Container mt={'2'} size={"3"}>
+    let competitveAnalysis = {
+        src: "/Test RCA/Competition/1.png",
+        hotspots: [
+            {
+                top: "50%",
+                left: "30%",
+                title: "Checking out the competition",
+                content: (
+                    <Text>
+                        We went through the open sandbox demos, or actually using our competitor's products to get a
+                        feel for their capabilities. Each competitor's product is broken into the constituent features
+                        and observations are recorded in Figma
+                    </Text>
+                ),
+            }]
+    }
+
+    return (
+        <Container mt={'2'} size={"3"}>
             <Card>
                 <Flex direction={"column"} gap={"3"} width={"100%"}>
                     <Heading color={"jade"} size={"6"}>Research & UX Insights</Heading>
                     <Text align={"left"}>
-                        We approached research in two phases:<br/></Text>
+                        Our research approach was multi-layered:
+                    </Text>
                     <Card>
-
-
-                        <Text style={{width: '100%'}}>
-                            <Heading size={"3"}>1. Competitive Analysis</Heading>
-                            We studied existing AI-assisted code review tools, analyzing:<br/>
-                            <ul style={{listStylePosition: "inside", listStyleType: "square"}}>
-                                <li>How they integrated into GitHub or other version control systems</li>
-                                <li>What kind of reports they generated (security vulnerabilities, code quality
-                                    insights, etc.)
-                                </li>
-                                <li>How developers interacted with these tools within their workflow</li>
-                            </ul>
-                            This led to an Figma prototype - a jumping board from which we could pivot to point of
-                            better UX.
+                        <Heading size={"3"}>
+                            Competitive Analysis
+                        </Heading>
+                        <ImageViewer {...competitveAnalysis} style={{
+                            marginTop: "0.5rem",
+                            marginBottom: "0.5rem",
+                            width: "100%",
+                            height: "auto",
+                            border: "2px solid var(--jade-11)",
+                            borderRadius: "0.25rem"
+                        }}/>
+                        <Text>
+                            We began by evaluating competitors like TestSigma and Launchable,
+                            assessing how they handled test failure analysis and user onboarding
                         </Text>
                     </Card>
                     <Card>
-                        <Flex mb={"2"} direction={"column"}>
-                            <Flex pb={"1"} gap={"1"} direction={"row"} overflowX={"scroll"}>
-                                <img src={"/Code Review/page/Initial Protoype v1/image 11.png"}
-                                     style={{width: "100%"}}/>
-                                <img src={"/Code Review/page/Initial Protoype v1/image 12.png"}
-                                     style={{width: "100%"}}/>
-                            </Flex>
-                            <Text align={"center"} size={"2"}>Initial prototype </Text>
-                        </Flex>
-
-                        <Text style={{width: '100%'}}>
-                            <Heading size={"3"}>2. User Testing & Feedback</Heading>
-                            Once we had a working prototype, we conducted hands-on user testing with a startup founder
-                            and engineers, asking them to review a Figma prototype. Their key insights shaped the next
-                            stage of our design:
-                            <ul style={{listStylePosition: "inside", listStyleType: "square"}}>
-                                <li>
-                                    Developers didn't want a separate UI –
-                                    switching between CloudAEye and GitHub was inefficient
-                                </li>
-                                <li>
-                                    Better integration was needed – surfacing
-                                    insights directly in GitHub comments was preferable
-                                </li>
-                                <li>
-                                    Report credibility was key – AI-generated
-                                    reports needed risk classification to be trusted
-                                </li>
-                            </ul>
+                        <Heading size={"3"}>
+                            Rapid Prototyping
+                        </Heading>
+                        <Text>
+                            We created a quick Figma prototype and demoed a working version
+                            using CloudAEye's own test suite at a conference
+                        </Text>
+                    </Card>
+                    <Card>
+                        <Heading size={"3"}>
+                            User Feedback
+                        </Heading>
+                        <Text>
+                            The demo generated several leads. One particularly engaged prospect highlighted
+                            the need for additional integration features—specifically, the ability to integrate Test RCA
+                            via a
+                            Jenkins plugin.
+                        </Text>
+                    </Card>
+                    <Card>
+                        <Heading size={"3"}>
+                            Iterative Refinement
+                        </Heading>
+                        <img className={"test-rca-generic-mockups"} src={"/Test RCA/Design/1.png"}/>
+                        <Text>
+                            These insights directly influenced our development strategy,
+                            leading us to shape the MVP around real customer needs
                         </Text>
                     </Card>
                 </Flex>
@@ -194,88 +216,145 @@ function Research() {
 }
 
 function DesignProcess() {
-    return (<Container mt={'2'} size={"3"}>
+    let initialPrototype = {
+        src: "/Test RCA/Initial/3.png",
+        hotspots: [
+            {
+                top: "50%",
+                left: "30%",
+                title: "Sign Up to Setup",
+                content: (
+                    <Text>
+                        The challenge was to find the balance between showing the steps ahead while also holding
+                        information and delivering it at the right time in the journey from signup to setup
+                    </Text>
+                ),
+            }]
+    }
+    let jenkins2data = {
+        src: "/Test RCA/Jenkins/1.png",
+        hotspots: [
+            {
+                top: "50%",
+                left: "30%",
+                title: "Configure at CloudAEye",
+                content: (
+                    <Text>
+                        Once they install the plugin, the user can choose which repos to be monitored by CloudAEye
+                        and which ones not to. They can also get better results for test
+                        fixes and reports by specifying which test framework is used
+                    </Text>
+                ),
+            }]
+    }
+    let jenkins1data = {
+        src: "/Test RCA/Jenkins/2.png",
+        hotspots: [
+            {
+                top: "82%",
+                left: "40%",
+                title: "Jenkins Plugin",
+                content: (
+                    <Text>
+                        First we quickly developed a Jenkins plugin that could connect to the client's account
+                        in CloudAEye and forward project & build data
+                    </Text>
+                ),
+            }]
+    }
+
+
+    return (
+        <Container  mt={'2'} size={"3"}>
             <Card>
-                <Flex direction={"column"} gap={"3"} width={"100%"}>
+                <Flex direction={"column"} gap={"3"} >
                     <Heading color={"jade"} size={"6"}>Design & Iteration Process</Heading>
-                    <Text>We designed Code Review in three key phases:</Text>
                     <Card>
-                        <Flex direction={"column"} gap={"2"}>
+                        <Flex  direction={"column"} gap={"2"}>
                             <Heading size={'3'}>
-                                UI in CloudAEye
+                                Initial Prototype & Feedback
                             </Heading>
                             <Text>
-                                Our initial prototype surfaced
-
-                                AI-generated code review reports
-                                Security vulnerability detection
-                                PR summaries
+                                We began with a prototype that visualized how AI could convert dense error
+                                logs into succinct summaries.
                             </Text>
+
                             <Callout.Root color={"ruby"} size={"2"}>
                                 <Callout.Icon>
                                     <Barricade size={"1.5rem"}/>
                                 </Callout.Icon>
                                 <Callout.Text>
-                                    <Em>Challenge</Em> Developers didn’t want to switch between GitHub and CloudAEye's
-                                    UI. The developer is already multi-tasking and they didn't want another window open.
+                                    <Em>Challenge</Em> The early prototype, while promising, exposed pain points in the
+                                    onboarding process and integration flow
                                 </Callout.Text>
                             </Callout.Root>
-                            <Callout.Root color={"green"} size={"2"}>
+
+                            <Flex px={"1"} justify={"start"} align={"center"} pb={"1"} gap={"3"} direction={"row"}
+                                  overflowX={"scroll"}>
+                                <Box>
+                                    <ImageViewer {...initialPrototype} style={{
+                                        aspectRatio: "16/9",
+                                        marginTop: "0.5rem",
+                                        marginBottom: "0.5rem",
+                                        height: "30rem",
+                                        border: "2px solid var(--jade-11)",
+                                        borderRadius: "0.25rem"
+                                    }}/>
+                                </Box>
+                                <img className={"test-rca-generic-mockups"} src={"/Test RCA/Initial/4.png"}/>
+                            </Flex>
+                        </Flex>
+                    </Card>
+                    <Card>
+                        <Flex direction={"column"} gap={"2"}>
+                            <Heading size={'3'}>
+                                Customer-Driven Iterations
+                            </Heading>
+                            Building on feedback from our conference demo, we refined the design to include
+                            a Jenkins plugin integration, addressing one of the most critical customer requests.
+                            <Flex
+                                justify={"start"}
+                                align={"center"}
+                                px={"1"} pb={"1"}
+                                maxWidth={"100%"}
+                                gap={"3"} direction={"row"}
+                                overflowX={"scroll"}
+                            >
+                                <Box>
+                                    <ImageViewer {...jenkins1data} style={{
+                                        aspectRatio: "16/9",
+                                        marginTop: "0.5rem",
+                                        marginBottom: "0.5rem",
+
+                                        height: "30rem",
+                                        border: "2px solid var(--jade-11)",
+                                        borderRadius: "0.25rem"
+                                    }}/>
+                                </Box>
+                                <img className={"test-rca-generic-mockups"} src={"/Test RCA/Jenkins/3.png"}
+                                     style={{width: "100%"}}/>
+                                <Box>
+                                    <ImageViewer {...jenkins2data} style={{
+                                        aspectRatio: "16/9",
+                                        marginTop: "0.5rem",
+                                        marginBottom: "0.5rem",
+                                        height: "30rem",
+                                        border: "2px solid var(--jade-11)",
+                                        borderRadius: "0.25rem"
+                                    }}/>
+                                </Box>
+                            </Flex>
+                            <Callout.Root color={"indigo"} size={"2"}>
                                 <Callout.Icon>
-                                    <Lightbulb size={"1.5rem"}/>
+                                    <Info size={"1.5rem"}/>
                                 </Callout.Icon>
                                 <Callout.Text>
-                                    <Em>Solution</Em> It was clear to us, that for the developer to have an integrated
-                                    experience wherein the context of the report was close to the report itself
+                                    Subsequent iterations focused on streamlining the multi-step setup.
+                                    We simplified the workflow without sacrificing the flexibility required for
+                                    different
+                                    CI environments (GitHub Actions, Jenkins, Codebuild).
                                 </Callout.Text>
                             </Callout.Root>
-                        </Flex>
-
-
-                    </Card>
-                    <Card>
-                        <Flex direction={"column"} gap={"2"}>
-                            <Heading size={'3'}>
-                                Integrating with GitHub
-                            </Heading>
-                            <Flex mb={"2"} direction={"column"}>
-                                <Flex pb={"1"} gap={"1"} direction={"row"} overflowX={"scroll"}>
-                                    <img src={"/Code Review/page/GitHub/1.png"} className={"github-mockups"}/>
-                                    <img src={"/Code Review/page/GitHub/2.png"} className={"github-mockups"}/>
-                                    <img src={"/Code Review/page/GitHub/3.png"} className={"github-mockups"}/>
-                                </Flex>
-                            </Flex>
-
-                            Based on user feedback, we transformed Code Review into a GitHub integration, featuring:
-                            <ul style={{listStylePosition: "inside", listStyleType: "square"}}>
-                                <li>AI-generated comments under pull requests</li>
-                                <li>Automated security analysis & bug detection</li>
-                                <li>A CloudAEye bot that could be invoked on-demand</li>
-                            </ul>
-                            This ensured developers never had to leave GitHub to access insights.
-                        </Flex>
-
-
-                    </Card>
-                    <Card>
-                        <Flex direction={"column"} gap={"2"}>
-                            <Heading size={'3'}>
-                                Enhancing Report Credibility
-                            </Heading>
-                            <Flex mb={"2"} direction={"column"}>
-                                <img src={"/Code Review/page/GitHub/4.png"} className={"single-image"}/>
-
-                                <Flex pb={"1"} gap={"1"} direction={"row"} overflowX={"scroll"}>
-                                </Flex>
-                            </Flex>
-
-                            To boost trust in AI-generated reports, we added:
-                            <ul style={{listStylePosition: "inside", listStyleType: "square"}}>
-                                <li>Categorization using OWASP standards</li>
-                                <li>Risk levels for security vulnerabilities</li>
-                                <li>Priority-based sorting of issues</li>
-                            </ul>
-                            This made it easier for teams to focus on high-impact issues first.
                         </Flex>
 
 
@@ -285,82 +364,112 @@ function DesignProcess() {
         </Container>)
 }
 
-function Challenges() {
-    return (<Container mt={'2'} size={"3"}>
-        <Card>
-            <Flex direction={"column"} gap={"3"} width={"100%"}>
-                <Heading color={"jade"} size={"6"}>Challenges & Solutions</Heading>
-                <Heading size={"3"}>Translating UI Data into GitHub's Markdown</Heading>
-                <Callout.Root color={"ruby"} size={"2"}>
-                    <Callout.Icon>
-                        <Barricade size={"1.5rem"}/>
-                    </Callout.Icon>
-                    <Callout.Text>
-                        <Em>Challenge</Em> Our custom UI was designed to display rich, interactive data,
-                        but when integrating into GitHub, we had to translate this into a system of commands and
-                        markdown text. This meant stripping down the complex visuals and interactivity into a
-                        limited,
-                        text-based format that GitHub’s markdown editor supports.
-                    </Callout.Text>
-                </Callout.Root>
-                <Callout.Root color={"green"} size={"2"}>
-                    <Callout.Icon>
-                        <Lightbulb size={"1.5rem"}/>
-                    </Callout.Icon>
-                    <Callout.Text>
-                        <Em>Solution</Em> We distilled the wealth of information into concise,
-                        targeted insights expressed through markdown. By doing so, developers can still access
-                        the critical data they need—requesting specific insights via simple commands—without
-                        overwhelming
-                        the interface.
-                    </Callout.Text>
-                </Callout.Root>
-                <Separator size={"4"}/>
-                <Heading size={"3"}>Enabling In-Context Fixes Within GitHub</Heading>
-                <Callout.Root color={"ruby"} size={"2"}>
-                    <Callout.Icon>
-                        <Barricade size={"1.5rem"}/>
-                    </Callout.Icon>
-                    <Callout.Text>
-                        <Em>Challenge</Em> Fixing issues directly within GitHub required converting detailed UI
-                        data into actionable markdown commands. This translation risked losing context,
-                        as developers traditionally had to switch between our custom interface and GitHub to address
-                        bugs and vulnerabilities.
-                    </Callout.Text>
-                </Callout.Root>
-                <Callout.Root color={"green"} size={"2"}>
-                    <Callout.Icon>
-                        <Lightbulb size={"1.5rem"}/>
-                    </Callout.Icon>
-                    <Callout.Text>
-                        <Em>Solution</Em> We embedded AI-generated fixes directly into GitHub’s comment threads.
-                        By converting detailed reports into succinct markdown annotations and commands, developers
-                        could review and apply fixes without ever leaving GitHub,
-                        maintaining workflow continuity and context.
-                    </Callout.Text>
-                </Callout.Root>
-
-            </Flex>
-        </Card>
-    </Container>)
-}
-
 function Outcome() {
-    return (<Container mt={'2'} size={"3"}>
-        <Card>
-            <Flex direction={"column"} gap={"3"} width={"100%"}>
-                <Heading color={"jade"} size={"6"}>Outcomes & Impact</Heading>
-                <Text>
-                    We successfully built a GitHub-integrated AI code reviewer that:<br/>
-                    🚀 Reduced post-coding workflow time from 4 days to under 1 day<br/>
-                    💡 Enabled seamless AI-powered bug fixes<br/>
-                    🔗 Kept developers entirely within GitHub for their reviews<br/>
-                    🔍 Classified security issues using OWASP standards<br/>
-                </Text>
-                By embedding intelligence directly into developer workflows, Code Review turned slow, manual review
-                cycles into an AI-assisted process, helping teams ship faster and with confidence.
+    let outcomeImages = [
+        {
+            src: "/Test RCA/Outcome/1.png",
+            hotspots: [
+                {
+                    top: "50%",
+                    left: "30%",
+                    title: "Clear steps",
+                    content: (
+                        <Text>
+                            Information about what to do is hidden until necessary so as to not overwhelm the user with
+                            what's ahead
+                        </Text>
+                    ),
+                }]
+        },
+        {
+            src: "/Test RCA/Outcome/3.png",
+            hotspots: [
+                {
+                    top: "15%",
+                    left: "75%",
+                    title: "Data / Meta-data",
+                    content: (
+                        <Text>
+                            Anything that is needed to be known about the test run - we show it here: the file links,
+                            repo names, error logs, root cause and fix
+                        </Text>
+                    ),
+                }]
+        },
+        {
+            src: "/Test RCA/Outcome/4.png",
+            hotspots: [
+                {
+                    top: "15%",
+                    left: "75%",
+                    title: "Do everything from the same screen",
+                    content: (
+                        <Text>
+                            CloudAEye also suggests code fixes for test failures where applicable
+                            so that the entire post-coding process can be smoothly taken care
+                            of from the same screen
+                        </Text>
+                    ),
+                }]
+        },
+        {
+            src: "/Test RCA/Outcome/5.png",
+            hotspots: [
+                {
+                    top: "50%",
+                    left: "50%",
+                    title: "Github Integrated",
+                    content: (
+                        <Text>
+                            You can also quickly check the status of tests, cause , and fixes from GitHub then too.
+                        </Text>
+                    ),
+                }]
+        }
+    ]
 
-            </Flex>
-        </Card>
-    </Container>)
+    return (
+        <Container mt={'2'} size={"3"}>
+            <Card>
+                <Flex direction={"column"} gap={"3"} width={"100%"}>
+                    <Heading color={"jade"} size={"6"}>Outcomes & Impact</Heading>
+                    <Flex pb={"1"} mb={"3"} direction={"row"} style={{width: "100%"}} flexGrow={"0"} justify={"start"}
+                          align={"start"}
+                          gap={"2"} overflowX={"auto"}>
+                        {
+                            outcomeImages.map((item) => (
+                                <ImageViewer key={item.src} {...item} style={{
+                                    aspectRatio: "16/9",
+                                    marginTop: "0.5rem",
+                                    marginBottom: "0.5rem",
+                                    height: "30rem",
+                                    border: "2px solid var(--jade-11)",
+                                    borderRadius: "0.25rem"
+                                }}/>
+                            ))
+
+                        }
+                    </Flex>
+                    <ul style={{listStylePosition: "inside", listStyleType: "square"}}>
+                        <li>
+                            <Em>Streamlined Onboarding:</Em> By simplifying the multi-step setup process, support
+                            queries
+                            related to integration dropped by approximately 40%, enabling teams to get up and running
+                            faster.
+                        </li>
+                        <Separator my={"2"} size={"4"}/>
+                        <li>
+                            <Em>Faster Time-to-Value:</Em> Users reported completing the entire configuration process up
+                            to 50% quicker than before, significantly reducing the friction in adopting the solution.
+                        </li>
+                        <Separator my={"2"} size={"4"}/>
+                        <li>
+                            <Em>Enhanced Customer Satisfaction:</Em> Early adopters praised the intuitive flow and clear
+                            guidance during onboarding, which translated into positive testimonials and
+                            stronger market positioning for CloudAEye.
+                        </li>
+                    </ul>
+                </Flex>
+            </Card>
+        </Container>)
 }

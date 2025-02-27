@@ -7,6 +7,15 @@
     border-radius: 0.25rem;
 }
 
+.test-rca-generic-mockups {
+    max-width: 100%;
+    object-fit: scale-down;
+    border: 2px solid var(--jade-11);
+    border-radius: 0.25rem;
+}
+
+
+
 .github-mockups {
     height: 30rem;
     border: 1px solid var(--jade-a11);

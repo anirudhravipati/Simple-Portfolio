@@ -13,6 +13,12 @@
     border-radius: 0.25rem;
 }
 
+.generic-mockups {
+    border: 1px solid var(--jade-11);
+    border-radius: 0.25rem;
+}
+
+
 .single-image {
     width: 100%;
     border: 1px solid var(--jade-a11);

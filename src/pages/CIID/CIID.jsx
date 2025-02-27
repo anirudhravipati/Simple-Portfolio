@@ -7,9 +7,8 @@ import {
     Link, Container, Card, Text, Separator
 } from "@radix-ui/themes";
 import {SiteMenuDropdown} from "../../components/SiteMenuDropdown/SiteMenuDropdown";
-import {Sun, MoonStars, Image} from "@phosphor-icons/react";
+import {Sun, MoonStars} from "@phosphor-icons/react";
 import Footer from "../../components/Footer/Footer";
-import TextHoverCard from "../../components/TextHoverCard/TextHoverCard";
 import "./CIID.css";
 import PortfolioLogo from "../../components/Portfolio Logo/PortfolioLogo";
 import {

@@ -3,9 +3,9 @@ import { Plus } from "@phosphor-icons/react";
 
 function ImageHotspot({ top, left, title, content }) {
     return (
-      <Popover.Root>
+      <Popover.Root >
         <Popover.Trigger style={{ position: "absolute", top, left }}>
-          <IconButton color="bronze" radius="full" size={"2"} variant="solid">
+          <IconButton color="jade" radius="full" size={"2"} variant="solid">
             <Plus size={"1rem"} weight="bold" />
           </IconButton>
         </Popover.Trigger>

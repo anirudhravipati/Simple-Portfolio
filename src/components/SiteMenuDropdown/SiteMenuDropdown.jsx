@@ -1,4 +1,4 @@
-import { Code, List, SealQuestion } from "@phosphor-icons/react";
+import {Code, Globe, List, SealQuestion} from "@phosphor-icons/react";
 import { CubeFocus, HouseSimple, Info } from "@phosphor-icons/react/dist/ssr";
 import { Component1Icon } from "@radix-ui/react-icons";
 import { DropdownMenu, Flex, IconButton } from "@radix-ui/themes";
@@ -25,9 +25,7 @@ export function SiteMenuDropdown() {
             </Flex>
           </RouterLink>
         </DropdownMenu.Item>
-
         <DropdownMenu.Separator />
-
         <DropdownMenu.Sub>
           <DropdownMenu.SubTrigger>
             <Flex align={"center"} gap={"2"}>
@@ -40,15 +38,26 @@ export function SiteMenuDropdown() {
               <RouterLink to={"/CodeReview"}> Code Review</RouterLink>
             </DropdownMenu.Item>
             <DropdownMenu.Item asChild>
-              <RouterLink to={"/Under Construction"}> Test RCA</RouterLink>
+              <RouterLink to={"/TestRCA"}> Test RCA</RouterLink>
             </DropdownMenu.Item>
             <DropdownMenu.Item asChild>
               <RouterLink to={"/LogManagement"}> Log Management</RouterLink>
             </DropdownMenu.Item>
-
           </DropdownMenu.SubContent>
         </DropdownMenu.Sub>
-
+        <DropdownMenu.Sub>
+          <DropdownMenu.SubTrigger>
+            <Flex align={"center"} gap={"2"}>
+              <Globe size={"1rem"} />
+              Web Design
+            </Flex>
+          </DropdownMenu.SubTrigger>
+          <DropdownMenu.SubContent>
+            <DropdownMenu.Item asChild>
+              <RouterLink to={"/CIID"}> CIID</RouterLink>
+            </DropdownMenu.Item>
+          </DropdownMenu.SubContent>
+        </DropdownMenu.Sub>
         <DropdownMenu.Sub>
           <DropdownMenu.SubTrigger>
             <Flex align={"center"} gap={"2"}>
@@ -63,7 +72,6 @@ export function SiteMenuDropdown() {
             {/* <DropdownMenu.Item>Switch Twitch</DropdownMenu.Item> */}
           </DropdownMenu.SubContent>
         </DropdownMenu.Sub>
-
         <DropdownMenu.Sub>
           <DropdownMenu.SubTrigger>
             <Flex align={"center"} gap={"2"}>
@@ -83,7 +91,6 @@ export function SiteMenuDropdown() {
             </DropdownMenu.Item>
           </DropdownMenu.SubContent>
         </DropdownMenu.Sub>
-
         <DropdownMenu.Item asChild>
           <RouterLink to={"/SoftwareEngineering"}>
             <Flex align={"center"} gap={"2"}>
@@ -92,9 +99,7 @@ export function SiteMenuDropdown() {
             </Flex>
           </RouterLink>
         </DropdownMenu.Item>
-
         <DropdownMenu.Separator />
-
         <DropdownMenu.Item asChild>
           <RouterLink to={"/About"}>
             <Flex align={"center"} gap={"2"}>

@@ -1,10 +1,11 @@
 .prototype-images {}
 
 .hero-image {
-    aspect-ratio: 16/9;
-    height: 70vh;
-    object-fit: scale-down;
+    height: 200px;
+    width: 100%;
     border-radius: 0.25rem;
+    border: 2px solid var(--jade-11);
+
 }
 
 .prototype-image {
@@ -31,7 +32,14 @@
     border: 1.5px solid var(--jade-11)
 }
 
-@media screen and (max-width: 914px) {
+@media screen and (max-width: 932px) {
+    .hero-image {
+        flex-shrink: 1;
+        max-height: 25rem;
+        overflow: scroll;
+        border: 2px solid var(--ruby-11);
+    }
+
     .prototype-images {
         flex-direction: column;
     }
