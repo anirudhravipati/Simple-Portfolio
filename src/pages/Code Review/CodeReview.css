@@ -28,7 +28,9 @@
     width: 50%;
     border-radius: 0.5rem;
 }
+.mobile-width {
 
+}
 .vimeo-player {
     position: absolute;
     top: 0;
@@ -53,6 +55,9 @@
         flex-direction: column;
     }
 
+    .mobile-width {
+        max-width: 100%;
+    }
     .prototype-image {
         width: 100%;
     }

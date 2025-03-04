@@ -211,7 +211,7 @@ function Research() {
 
 function DesignProcess() {
     return (
-        <Container mt={'2'} size={"3"}>
+        <Container className={"mobile-width"} mt={'2'} size={"3"}>
             <Card>
                 <Flex direction={"column"} gap={"3"} width={"100%"}>
                     <Heading color={"jade"} size={"6"}>Design & Iteration Process</Heading>

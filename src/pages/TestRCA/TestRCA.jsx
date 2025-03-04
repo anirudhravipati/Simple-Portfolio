@@ -265,7 +265,7 @@ function DesignProcess() {
 
 
     return (
-        <Container  mt={'2'} size={"3"}>
+        <Container className={"mobile-width"}  mt={'2'} size={"3"}>
             <Card>
                 <Flex direction={"column"} gap={"3"} >
                     <Heading color={"jade"} size={"6"}>Design & Iteration Process</Heading>
@@ -429,7 +429,7 @@ function Outcome() {
     ]
 
     return (
-        <Container mt={'2'} size={"3"}>
+        <Container className={"mobile-width"} mt={'2'} size={"3"}>
             <Card>
                 <Flex direction={"column"} gap={"3"} width={"100%"}>
                     <Heading color={"jade"} size={"6"}>Outcomes & Impact</Heading>
@@ -439,10 +439,11 @@ function Outcome() {
                         {
                             outcomeImages.map((item) => (
                                 <ImageViewer key={item.src} {...item} style={{
-                                    aspectRatio: "16/9",
+                                    minWidth: "100%",
+
                                     marginTop: "0.5rem",
                                     marginBottom: "0.5rem",
-                                    height: "30rem",
+                                    height: "auto",
                                     border: "2px solid var(--jade-11)",
                                     borderRadius: "0.25rem"
                                 }}/>
