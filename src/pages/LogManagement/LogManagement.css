@@ -1,7 +1,9 @@
 .afterword-cards{
     width: 49%;
 }
-
+.test {
+    background-color: indianred;
+}
 @media screen and (max-width: 914px) {
     .afterword-cards{
         width: 100%;

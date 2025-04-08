@@ -59,7 +59,7 @@ export const ProductDesignData = [
               and provide possible solutions to the occurring anomalies",
         tags: [<ProductDesignBadge key={"product"}/>, <UserExperienceBadge key="ux"/>, <FigmaBadge key="figma"/>,
             <LaptopBadge key="mobile"/>,],
-        page: "LogManagement",
+        page: "LM",
     },
     // {
     //     key: "FAM",

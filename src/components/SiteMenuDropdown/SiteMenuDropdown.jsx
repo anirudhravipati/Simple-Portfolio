@@ -41,7 +41,7 @@ export function SiteMenuDropdown() {
               <RouterLink to={"/TestRCA"}> Test RCA</RouterLink>
             </DropdownMenu.Item>
             <DropdownMenu.Item asChild>
-              <RouterLink to={"/LogManagement"}> Log Management</RouterLink>
+              <RouterLink to={"/LM"}> Log Management</RouterLink>
             </DropdownMenu.Item>
           </DropdownMenu.SubContent>
         </DropdownMenu.Sub>

@@ -18,6 +18,7 @@ import UnderConstruction from "./pages/Under Constuction/UnderConstruction.jsx";
 import CIID from "./pages/CIID/CIID.jsx";
 import CodeReview from "./pages/Code Review/CodeReview.jsx";
 import TestRCA from "./pages/TestRCA/TestRCA.jsx";
+import LM from "./pages/LogManagement/LM.jsx";
 
 const router = createBrowserRouter([
     {
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
     {
         path: "TestRCA",
         element: <TestRCA/>
+    },
+    {
+        path:"LM",
+        element: <LM/>
     }
 
 ]);
