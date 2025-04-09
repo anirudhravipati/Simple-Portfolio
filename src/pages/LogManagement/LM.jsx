@@ -19,7 +19,7 @@ import {
 
     FigmaBadge,
     LaptopBadge,
-     SaaSBadge, B2BBadge, ReactBadge, MuiBadge, ConfluenceBadge,
+    SaaSBadge, B2BBadge, ReactBadge, MuiBadge, ConfluenceBadge,
 } from "../../data/PortfolioData";
 import "./LogManagement.css"
 import PortfolioLogo from "../../components/Portfolio Logo/PortfolioLogo";
@@ -476,7 +476,8 @@ function DesignIteration() {
                     <Text>
                         The design process began with mapping user flows for key features, which were then refined
                         through iterative discussions with the CEO and developers to ensure speed and efficiency,
-                        following a &#39;less is more&#39; principle. These flows were translated into wireframes, iterated 2-3
+                        following a &#39;less is more&#39; principle. These flows were translated into wireframes,
+                        iterated 2-3
                         times based on focused feedback sessions about components and layout. In parallel, foundational
                         elements for CloudAEye&#39;s design system were developed organically from this product work,
                         creating reusable components.
@@ -501,10 +502,11 @@ function Outcomes() {
                     <Text>
                         Ultimately, the Log Management product was shelved before a full market launch, due to
                         challenges acquiring initial customers and a subsequent company pivot towards developer
-                        productivity tools. But in my time as a designer at CloudAEye, this was the most pivotal time in my design career.
+                        productivity tools. But in my time as a designer at CloudAEye, this was the most pivotal time in
+                        my design career.
                     </Text>
                     <Card>
-                        <Flex  gap={"3"}>
+                        <Flex gap={"3"}>
                             <NumberCircleOne size={"2.5rem"}/>
                             <Text>
                                 This experience, my first after design school transitioning from software development,
@@ -514,10 +516,11 @@ function Outcomes() {
                         </Flex>
                     </Card>
                     <Card>
-                        <Flex  gap={"3"}>
+                        <Flex gap={"3"}>
                             <NumberCircleTwo size={"2.5rem"}/>
                             <Text>
-                                Furthermore, building the design system in parallel taught me the value of letting systems
+                                Furthermore, building the design system in parallel taught me the value of letting
+                                systems
                                 grow organically from product needs, effectively managing parallel workstreams based on
                                 validated components without context switching penalties.
                             </Text>
@@ -527,13 +530,12 @@ function Outcomes() {
                         <Flex gap={"3"}>
                             <NumberCircleThree size={"2.5rem"}/>
                             <Text>
-                                Furthermore, building the design system in parallel taught me the value of letting systems
-                                grow organically from product needs, effectively managing parallel workstreams based on
-                                validated components without context switching penalties.
+                                I also realized how design documentation and annotations would constitute 50% of the
+                                output artifacts. Working at a startup, due to the fast pace of development, I was in a hurry
+                                to get to the next feature and finish the screens instead of doing diligent documentation work.
                             </Text>
                         </Flex>
                     </Card>
-
                 </Flex>
             </Card>
         </Container>
