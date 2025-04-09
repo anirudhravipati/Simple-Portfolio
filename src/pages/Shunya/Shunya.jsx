@@ -199,7 +199,7 @@ function Research() {
               <Flex direction={"column"} gap={"1"}>
                 <img
                   className="shunya-images"
-                  src="public/Shunya/mind map.jpg"
+                  src="/Shunya/mind map.jpg"
                 />
                 <Text size={"1"} align="center" color="gray">
                   A mind map for an interviewee
