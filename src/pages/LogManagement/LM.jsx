@@ -308,7 +308,7 @@ function Research() {
                         <Flex>
                             <Flex width={"100%"} align={"center"} direction={"column"}>
                                 <img
-                                    src="/public/LogManagement/New/Research-1.png"
+                                    src="/LogManagement/New/Research-1.png"
                                     style={{
                                         border: "1px solid var(--color-jade-200)",
                                         borderRadius: "0.5rem",
