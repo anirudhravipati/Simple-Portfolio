@@ -268,7 +268,7 @@ function Insights() {
             <Card>
               <Flex direction={"column"} gap={"1"}>
                 <img
-                  src="/public/Shunya/tetrad.jpeg"
+                  src="/Shunya/tetrad.jpeg"
                   className="shunya-images "
                 />
                 <Text size={"1"} mb={"3"} color="gray" align={"center"}>
